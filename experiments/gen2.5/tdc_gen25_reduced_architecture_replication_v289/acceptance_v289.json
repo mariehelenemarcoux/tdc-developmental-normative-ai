@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "ptvm_beats_full_composite": true,
+    "ptvm_beats_simple_composite": true,
+    "ptvm_best_or_tied_recall": true,
+    "ptvm_lowest_or_tied_violations": true,
+    "ptvm_best_trajectory": true,
+    "ptvm_capture_not_materially_worse_than_full": false,
+    "reduced_architecture_replication": false
+  },
+  "ptvm_minus_full_composite": 0.01791754148279101,
+  "ptvm_minus_simple_composite": 0.08712937463885939
+}

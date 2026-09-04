@@ -1,0 +1,16 @@
+{
+  "checks": {
+    "ablation_reduces_recall": true,
+    "ablation_increases_violations": true,
+    "ablation_worse_trajectory": true,
+    "internal_development_still_occurs": true,
+    "ablated_tdc_beats_simple_q058_recall": false,
+    "ablated_tdc_beats_simple_q058_trajectory": false,
+    "perception_is_primary_advantage_channel": true
+  },
+  "initial_maturity": 0.34,
+  "full_minus_ablation_recall": 0.21810223237800963,
+  "ablation_minus_simple_recall": 0.0006800551547346823,
+  "full_minus_ablation_trajectory": 0.13978492777777896,
+  "ablation_minus_simple_trajectory": -0.00032970555555544845
+}

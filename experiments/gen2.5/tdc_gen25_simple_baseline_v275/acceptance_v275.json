@@ -1,0 +1,13 @@
+{
+  "strongest_simple_baseline": "simple_quality_schedule",
+  "strongest_simple_margin": 0.00827376953039094,
+  "checks": {
+    "tdc_beats_static_recall": true,
+    "tdc_beats_static_net": true,
+    "tdc_beats_schedule_net": false,
+    "tdc_beats_online_net": true,
+    "tdc_lower_violations_than_all_simple": true,
+    "tdc_best_trajectory": true,
+    "complexity_earns_keep": false
+  }
+}

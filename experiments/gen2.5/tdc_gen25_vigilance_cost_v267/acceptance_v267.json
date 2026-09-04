@@ -1,0 +1,9 @@
+{
+  "balanced_reduces_violations": false,
+  "balanced_false_alarm_below_hyper": true,
+  "hyper_pays_vigilance_cost": true,
+  "conservative_underprotects": false,
+  "balanced_best_net_value": false,
+  "balanced_no_chronic_abstention": true,
+  "u_shaped_tradeoff": false
+}

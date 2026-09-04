@@ -1,0 +1,9 @@
+{
+  "voi_beats_threshold": false,
+  "voi_beats_hard": true,
+  "voi_not_worse_than_always_probe": true,
+  "voi_probe_rate_lower_than_always": true,
+  "voi_accuracy_at_least_080": false,
+  "voi_within_010_oracle": true,
+  "voi_probe_rate_below_030": true
+}

@@ -1,0 +1,9 @@
+{
+  "full_D5_accuracy_above_075": true,
+  "each_single_ablation_hurts_reliability": true,
+  "at_least_three_ablations_hurt_accuracy": true,
+  "integration_is_critical": true,
+  "hself_is_critical": false,
+  "single_superpower_not_enough": true,
+  "joint_product_tracks_reliability": true
+}

@@ -1,0 +1,9 @@
+{
+  "protected_prevents_ATF_collapse": true,
+  "protected_improves_R": true,
+  "protected_beats_punitive_trajectory": false,
+  "protected_beats_static_trajectory": false,
+  "error_attribution_beats_protected_only": false,
+  "capture_reduction": false,
+  "Hself_not_collapsed": true
+}

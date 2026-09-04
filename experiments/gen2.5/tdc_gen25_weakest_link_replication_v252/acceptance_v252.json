@@ -1,0 +1,9 @@
+{
+  "weakest_link_correlates_strongly": false,
+  "weakest_link_beats_mean": false,
+  "geometric_maturity_correlates_strongly": true,
+  "bottom_weakest_decile_penalty": true,
+  "high_mean_low_min_is_unreliable": false,
+  "high_min_profiles_are_reliable": true,
+  "accuracy_tracks_reliability": true
+}

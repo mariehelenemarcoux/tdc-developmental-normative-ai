@@ -1,0 +1,9 @@
+{
+  "adaptive_beats_none_transfer": false,
+  "adaptive_beats_fixed_transfer": false,
+  "adaptive_reduces_repeat_errors": false,
+  "adaptive_more_efficient_than_fixed": false,
+  "adaptive_longterm_not_worse": true,
+  "brute_rumination_not_best": true,
+  "brute_rumination_increases_Hself": true
+}

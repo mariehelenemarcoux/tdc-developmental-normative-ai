@@ -1,0 +1,9 @@
+{
+  "loop_improves_ethical_reliability": false,
+  "loop_improves_third_factor": false,
+  "loop_improves_integration": true,
+  "loop_reduces_Hself": false,
+  "loop_beats_trajectory": false,
+  "loop_reduces_capture": false,
+  "late_acceleration": true
+}

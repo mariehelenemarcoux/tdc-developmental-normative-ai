@@ -1,0 +1,14 @@
+{
+  "n_profiles": 5760,
+  "rho_weakest_reliability": 0.5937184085116269,
+  "rho_mean_reliability": 0.8472857650115833,
+  "rho_geometric_reliability": 0.8540477522739591,
+  "rho_reliability_accuracy": 0.9520354831242791,
+  "bottom_weakest_decile_reliability": 0.6783163027316522,
+  "top_weakest_decile_reliability": 0.8393808704067178,
+  "weakest_decile_gap": 0.1610645676750656,
+  "high_mean_low_min_n": 368,
+  "high_mean_low_min_reliability": 0.7955038609818471,
+  "high_min_n": 125,
+  "high_min_reliability": 0.8850480168257686
+}

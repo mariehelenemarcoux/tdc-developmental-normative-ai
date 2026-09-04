@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "tdc_lower_capture_than_anticapture": true,
+    "tdc_lower_violations_than_frozen_core": true,
+    "tdc_best_final_recall": true,
+    "tdc_best_integrated": true,
+    "complexity_earns_keep": false,
+    "anticapture_beats_time": false,
+    "frozen_core_tradeoff_visible": true
+  },
+  "tdc_margin_vs_strongest_simple": 0.028281322849541657
+}
