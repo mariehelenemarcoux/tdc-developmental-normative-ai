@@ -1,0 +1,9 @@
+{
+  "recall_constrained_meets_floor": true,
+  "recall_constrained_beats_precision_first_recall": true,
+  "recall_constrained_lower_false_alarms_than_fixed": false,
+  "recall_constrained_not_more_violations_than_fixed": true,
+  "severity_weighted_meets_floor": false,
+  "best_safe_detector_net_value": true,
+  "safety_constraint_prevents_threshold_collapse": true
+}

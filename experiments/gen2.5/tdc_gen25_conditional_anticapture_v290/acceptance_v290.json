@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "conditional_capture_close_to_full": false,
+    "conditional_recall_close_to_ptvm": true,
+    "conditional_violations_close_to_ptvm": true,
+    "conditional_trajectory_close_to_ptvm": true,
+    "conditional_activation_sparse": false,
+    "conditional_best_composite": false,
+    "conditional_dominates_tradeoff": false
+  },
+  "conditional_minus_ptvm_composite": -0.01849438888888888,
+  "conditional_minus_full_composite": 0.024615830307980313
+}

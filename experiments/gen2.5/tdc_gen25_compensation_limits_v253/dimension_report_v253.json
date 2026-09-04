@@ -1,0 +1,37 @@
+{
+  "A_TF": {
+    "monotonic": true,
+    "critical_tested_value": 0.2,
+    "critical_geometric_maturity": 0.6303477025476499,
+    "reliability_at_0.50": 0.8468070646992466,
+    "reliability_at_0.20": 0.7459892784582765
+  },
+  "I": {
+    "monotonic": true,
+    "critical_tested_value": null,
+    "critical_geometric_maturity": null,
+    "reliability_at_0.50": 0.8583986347481554,
+    "reliability_at_0.20": 0.7634650968244279
+  },
+  "C_T": {
+    "monotonic": true,
+    "critical_tested_value": null,
+    "critical_geometric_maturity": null,
+    "reliability_at_0.50": 0.9104520516389192,
+    "reliability_at_0.20": 0.8439214764687059
+  },
+  "R_C": {
+    "monotonic": true,
+    "critical_tested_value": null,
+    "critical_geometric_maturity": null,
+    "reliability_at_0.50": 0.9121172089276386,
+    "reliability_at_0.20": 0.8435883828119278
+  },
+  "one_minus_H_self": {
+    "monotonic": true,
+    "critical_tested_value": null,
+    "critical_geometric_maturity": null,
+    "reliability_at_0.50": 0.9149064660689391,
+    "reliability_at_0.20": 0.8437638235358569
+  }
+}

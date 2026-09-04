@@ -1,0 +1,2 @@
+c816ae34f817747f968da2b44802a236fcfbb0d38d95f515ece4f360dc4b8eeb  preregistered_spec_v269.json
+e07976bf8751829d8ce31f93bad2d0b803fad899e0a3dd67b3e70d10fb0d4532  run_v269.py

@@ -1,0 +1,9 @@
+{
+  "full_beats_no_ethicalsense_transfer": false,
+  "full_beats_no_idealgap_transfer": false,
+  "full_beats_no_shadow_transfer": false,
+  "full_beats_no_core_transfer": false,
+  "core_ablation_increases_capture": false,
+  "ethicalsense_ablation_lowers_core_accuracy": false,
+  "shadow_ablation_increases_Hself_or_lowers_R": false
+}

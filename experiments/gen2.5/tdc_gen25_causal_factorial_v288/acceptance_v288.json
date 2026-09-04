@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "perceptual_learning_positive_main_effect": true,
+    "third_factor_positive_main_effect": true,
+    "validation_positive_main_effect": true,
+    "memory_positive_main_effect": true,
+    "anti_capture_positive_main_effect": true,
+    "perception_largest_main_effect": true,
+    "full_not_worse_than_best_reduced": false
+  },
+  "main_effects": {
+    "P": 0.1715265299341301,
+    "T": 0.10122880767365194,
+    "V": 0.10636724450864454,
+    "M": 0.03869084922724997,
+    "Aanti": 0.02820327408992862
+  },
+  "largest_main_effect": "P",
+  "best_reduced_composite": 0.8316509905121203,
+  "full_composite": 0.8180470865450435
+}

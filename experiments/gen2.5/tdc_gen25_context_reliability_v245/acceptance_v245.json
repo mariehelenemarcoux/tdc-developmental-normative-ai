@@ -1,0 +1,9 @@
+{
+  "soft_beats_hard": false,
+  "abstain_not_worse_than_hard": false,
+  "probe_beats_soft": true,
+  "probe_accuracy_at_least_080": false,
+  "probe_rate_below_035": true,
+  "probe_within_015_oracle": true,
+  "hard_key_failure_replicates": true
+}

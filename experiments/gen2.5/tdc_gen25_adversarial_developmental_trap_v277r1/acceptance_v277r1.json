@@ -1,0 +1,12 @@
+{
+  "checks": {
+    "validated_lower_capture_than_time": true,
+    "validated_lower_false_consolidation_than_unvalidated": false,
+    "reversal_best_trap_resistance": false,
+    "reversal_recovers_better": false,
+    "validated_better_final_recall_than_time": false,
+    "validated_lower_final_violations_than_time": false,
+    "complexity_earns_keep": false
+  },
+  "best_tdc_margin_vs_best_simple": 0.02459981890280205
+}

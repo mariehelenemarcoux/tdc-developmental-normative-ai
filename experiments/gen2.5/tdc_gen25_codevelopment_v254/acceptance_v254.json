@@ -1,0 +1,9 @@
+{
+  "bidirectional_improves_reliability": false,
+  "bidirectional_improves_ATF": false,
+  "bidirectional_beats_oneway_trajectory": false,
+  "bidirectional_beats_static_trajectory": false,
+  "capture_reduction": false,
+  "Hself_reduction": false,
+  "late_acceleration": true
+}

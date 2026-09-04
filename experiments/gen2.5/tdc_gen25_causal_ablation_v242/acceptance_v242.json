@@ -1,0 +1,9 @@
+{
+  "gate_reduces_activation": true,
+  "gate_reduces_low_risk_cost": true,
+  "full_beats_no_gate_trajectory": false,
+  "context_selection_matters": true,
+  "channel_separation_matters": true,
+  "full_beats_simple_decay": true,
+  "full_accuracy_above_073": true
+}

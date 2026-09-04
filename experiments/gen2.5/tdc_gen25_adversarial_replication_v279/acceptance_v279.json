@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "tdc_best_recall": true,
+    "tdc_lowest_violations": true,
+    "tdc_lower_capture_than_best_simple": false,
+    "tdc_best_trajectory": true,
+    "tdc_best_integrated_score": true,
+    "positive_advantage_replication": true,
+    "complexity_earns_keep": false
+  },
+  "strongest_simple_baseline": "simple_time_schedule",
+  "tdc_margin_vs_strongest_simple": 0.020205800328255807
+}

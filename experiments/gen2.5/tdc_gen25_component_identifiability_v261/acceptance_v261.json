@@ -1,0 +1,9 @@
+{
+  "ethicalsense_specific_failure": true,
+  "idealgap_specific_failure": true,
+  "shadow_specific_failure": true,
+  "core_specific_failure": true,
+  "full_best_overall": false,
+  "non_target_ablations_limited": true,
+  "task_specificity": true
+}

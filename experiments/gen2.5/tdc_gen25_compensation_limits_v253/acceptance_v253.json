@@ -1,0 +1,9 @@
+{
+  "monotonic_reliability_decline": true,
+  "critical_threshold_exists": false,
+  "ATF_or_I_most_sensitive": false,
+  "high_other_capacities_compensate_moderate_weakness": true,
+  "severe_weakness_not_fully_compensable": false,
+  "geometric_transition_band": true,
+  "accuracy_tracks_reliability": true
+}
