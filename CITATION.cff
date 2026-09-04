@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it and the exact experimental version."
+title: "TDC — Developmental Normative AI"
+type: software
+authors:
+  - family-names: "Marcoux"
+    given-names: "Marie-Hélène"
+version: "2.5.0-alpha.1"
+date-released: "2026-09-04"
+license: MIT
+repository-code: "https://github.com/mariehelenemarcoux/tdc-developmental-normative-ai"
+keywords:
+  - AI safety
+  - AI alignment
+  - normative AI
+  - machine consciousness
+  - metacognition
+  - long-horizon decision-making
+  - reward capture

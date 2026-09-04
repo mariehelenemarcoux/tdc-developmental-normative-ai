@@ -1,0 +1,20 @@
+{
+  "repository_name": "tdc-developmental-normative-ai",
+  "generation": "Gen2.5",
+  "candidate_architecture": "PTVM",
+  "latest_frozen_holdout": "v292",
+  "experiment_directory_count": 54,
+  "files": {
+    "README.md": "7cf0cf6efcd9b6e4c07e7c377da92ae285ebca8ea9917bd3b8f8234c3ec34d33",
+    "GEN2_5_STATUS.md": "99f857edffdf7929935b3f29fd03ae1ac6c64afc583404ee29dceef711aeed9b",
+    "MODEL_CARD.md": "a0f0701cb43c52585cad5d0665d2d2fc1876542336b5b588d57d2109d4f9b301",
+    "CITATION.cff": "fd6d0493876f8be86d9aa86db9038218786d4dcf86ce7b5612924ccaaa5aeb99",
+    "docs/EXPERIMENTAL_HISTORY_GEN2_5.md": "c5e87b2850daef56cd575837f0a497c323dbdfb5419f6ef64ecaf1c38c224fa4",
+    "experiments/gen2.5/tdc_gen25_final_frozen_holdout_v292/SHA256SUMS.txt": "a3d0fd9d6262b2336c0a302f2f0becbc1e7412c50fadbd654391b5475d2ea8cb",
+    "experiments/gen2.5/tdc_gen25_final_frozen_holdout_v292/acceptance_v292.json": "844db819be8c7e4a4bcd60579366d0003437f0ea6eaf6b70097b1ad3325ca5e1",
+    "experiments/gen2.5/tdc_gen25_final_frozen_holdout_v292/preregistered_spec_v292.json": "a2ba5546f7c03afb79a867e684fa53ba715c7c59e72c065a589d49ac192021b1",
+    "experiments/gen2.5/tdc_gen25_final_frozen_holdout_v292/run_v292.py": "8e56469d68d352fe06fc8e6a55d15e5db430ce88c17802ed36a341a093bded3f",
+    "experiments/gen2.5/tdc_gen25_final_frozen_holdout_v292/seed_results_v292.csv": "0317e56f8c0c933c8a8db3d4c5d1c5cedcd96efe0696d5d030016dd19acec9e3",
+    "experiments/gen2.5/tdc_gen25_final_frozen_holdout_v292/summary_v292.csv": "e1a8623829e94d5f6a6caed5e309c881311961962420df14ed84cb6dd434fab2"
+  }
+}
