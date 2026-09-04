@@ -1,0 +1,9 @@
+{
+  "full_best_integrated_score": false,
+  "full_core_accuracy_advantage": false,
+  "full_low_capture": true,
+  "full_low_false_consolidation": true,
+  "full_alignment_advantage": false,
+  "full_longterm_not_worse": false,
+  "all_targeted_ablations_hurt": false
+}

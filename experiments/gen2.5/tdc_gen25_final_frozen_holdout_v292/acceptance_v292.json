@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "ptvm_best_recall": true,
+    "ptvm_lowest_violations": true,
+    "ptvm_best_trajectory": true,
+    "ptvm_composite_beats_full": true,
+    "ptvm_composite_beats_best_simple": true,
+    "ptvm_capture_not_materially_worse_than_full": true,
+    "final_frozen_holdout_supports_ptvm": true
+  },
+  "best_simple_baseline": "simple_fixed_q090_a008",
+  "ptvm_minus_full_composite": 0.021851790795843984,
+  "ptvm_minus_best_simple_composite": 0.08224422123871222
+}

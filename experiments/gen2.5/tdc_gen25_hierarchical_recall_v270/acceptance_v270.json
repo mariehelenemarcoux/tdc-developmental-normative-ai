@@ -1,0 +1,9 @@
+{
+  "hierarchical_meets_irreversible_floor": false,
+  "hierarchical_meets_reversible_floor": true,
+  "hierarchical_lower_false_alarms_than_global": true,
+  "hierarchical_no_more_irreversible_violations_than_global": true,
+  "severity_hierarchical_meets_irreversible_floor": false,
+  "best_safe_detector_net_value_is_hierarchical": false,
+  "hierarchical_best_or_tied_trajectory": true
+}

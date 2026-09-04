@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "tdc_validated_best_holdout_recall": true,
+    "tdc_validated_lower_capture_than_schedule": false,
+    "tdc_validated_lower_false_consolidation": true,
+    "tdc_validated_lower_violations_than_schedule": false,
+    "tdc_validated_better_trajectory_than_schedule": true,
+    "tdc_validated_best_integrated_score": true,
+    "complexity_earns_keep": false
+  },
+  "strongest_simple_score": 0.7819470393432105,
+  "tdc_margin_vs_strongest_simple": 0.018118448749663174
+}

@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "margin_decreases_monotonically_with_discount": true,
+    "positive_margin_at_0_25": true,
+    "positive_margin_at_0_50": true,
+    "negative_margin_at_1_00": true,
+    "break_even_exists": true,
+    "break_even_between_0_50_and_1_00": true,
+    "behavior_metrics_invariant_across_discounts": true
+  },
+  "estimated_break_even_discount": 0.6107166462221411,
+  "max_behavior_metric_spread": 0.0
+}

@@ -1,0 +1,9 @@
+{
+  "multiplicative_final_accuracy_above_078": false,
+  "multiplicative_late_jump": true,
+  "multiplicative_reliability_jump": true,
+  "multiplicative_beats_linear_stage5": false,
+  "multiplicative_not_better_early": true,
+  "sensitivity_precedes_reliability": true,
+  "joint_product_rises_nontrivially": true
+}

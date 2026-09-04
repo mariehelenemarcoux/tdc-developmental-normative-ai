@@ -1,0 +1,9 @@
+{
+  "gap_model_beats_success_trajectory": false,
+  "gap_model_beats_ethical_only_trajectory": true,
+  "gap_model_improves_alignment": true,
+  "gap_model_improves_integration": true,
+  "gap_model_reduces_capture": false,
+  "gap_model_keeps_Hself_low": true,
+  "gap_model_final_ethicsense_high": false
+}

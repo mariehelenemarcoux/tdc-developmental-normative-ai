@@ -1,0 +1,9 @@
+{
+  "emergency_reduces_core_violations": true,
+  "emergency_no_chronic_abstention": true,
+  "emergency_integrated_score_not_worse": true,
+  "hypersensitive_more_abstention": false,
+  "voi_best_or_tied_core_protection": true,
+  "voi_more_efficient": false,
+  "voi_best_integrated_score": false
+}

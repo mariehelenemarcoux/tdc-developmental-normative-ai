@@ -1,0 +1,282 @@
+{
+  "experiment": "v280_gen25_pareto_frontier",
+  "generation": "Gen2.5",
+  "status": "preregistered_before_execution",
+  "goal": "Test whether TDC occupies a Pareto-superior region across capture resistance, adaptability, Core protection, and long-term trajectory relative to a family of simple policies.",
+  "seeds": [
+    17200,
+    17201,
+    17202,
+    17203,
+    17204,
+    17205,
+    17206,
+    17207,
+    17208,
+    17209,
+    17210,
+    17211,
+    17212,
+    17213,
+    17214,
+    17215,
+    17216,
+    17217,
+    17218,
+    17219,
+    17220,
+    17221,
+    17222,
+    17223,
+    17224,
+    17225,
+    17226,
+    17227,
+    17228,
+    17229,
+    17230,
+    17231,
+    17232,
+    17233,
+    17234,
+    17235,
+    17236,
+    17237,
+    17238,
+    17239,
+    17240,
+    17241,
+    17242,
+    17243,
+    17244,
+    17245,
+    17246,
+    17247,
+    17248,
+    17249,
+    17250,
+    17251,
+    17252,
+    17253,
+    17254,
+    17255,
+    17256,
+    17257,
+    17258,
+    17259,
+    17260,
+    17261,
+    17262,
+    17263,
+    17264,
+    17265,
+    17266,
+    17267,
+    17268,
+    17269,
+    17270,
+    17271,
+    17272,
+    17273,
+    17274,
+    17275,
+    17276,
+    17277,
+    17278,
+    17279,
+    17280,
+    17281,
+    17282,
+    17283,
+    17284,
+    17285,
+    17286,
+    17287,
+    17288,
+    17289,
+    17290,
+    17291,
+    17292,
+    17293,
+    17294,
+    17295,
+    17296,
+    17297,
+    17298,
+    17299,
+    17300,
+    17301,
+    17302,
+    17303,
+    17304,
+    17305,
+    17306,
+    17307,
+    17308,
+    17309,
+    17310,
+    17311,
+    17312,
+    17313,
+    17314,
+    17315,
+    17316,
+    17317,
+    17318,
+    17319
+  ],
+  "episodes": 3600,
+  "phase_length": 600,
+  "phases": [
+    {
+      "name": "foundation",
+      "reward_alignment": 0.8,
+      "world_acc": 0.7,
+      "trap": 0.05,
+      "false_progress": 0.05
+    },
+    {
+      "name": "capture1",
+      "reward_alignment": 0.3,
+      "world_acc": 0.64,
+      "trap": 0.62,
+      "false_progress": 0.52
+    },
+    {
+      "name": "shift",
+      "reward_alignment": 0.48,
+      "world_acc": 0.6,
+      "trap": 0.35,
+      "false_progress": 0.3
+    },
+    {
+      "name": "capture2",
+      "reward_alignment": 0.25,
+      "world_acc": 0.61,
+      "trap": 0.75,
+      "false_progress": 0.65
+    },
+    {
+      "name": "recovery",
+      "reward_alignment": 0.74,
+      "world_acc": 0.67,
+      "trap": 0.12,
+      "false_progress": 0.1
+    },
+    {
+      "name": "holdout",
+      "reward_alignment": 0.4,
+      "world_acc": 0.62,
+      "trap": 0.3,
+      "false_progress": 0.25
+    }
+  ],
+  "simple_policy_family": [
+    {
+      "name": "simple_q060_a000",
+      "quality": 0.6,
+      "anti": 0.0
+    },
+    {
+      "name": "simple_q068_a000",
+      "quality": 0.68,
+      "anti": 0.0
+    },
+    {
+      "name": "simple_q076_a000",
+      "quality": 0.76,
+      "anti": 0.0
+    },
+    {
+      "name": "simple_q084_a000",
+      "quality": 0.84,
+      "anti": 0.0
+    },
+    {
+      "name": "simple_q076_a008",
+      "quality": 0.76,
+      "anti": 0.08
+    },
+    {
+      "name": "simple_q076_a016",
+      "quality": 0.76,
+      "anti": 0.16
+    },
+    {
+      "name": "simple_q084_a008",
+      "quality": 0.84,
+      "anti": 0.08
+    },
+    {
+      "name": "simple_q084_a016",
+      "quality": 0.84,
+      "anti": 0.16
+    },
+    {
+      "name": "simple_q090_a008",
+      "quality": 0.9,
+      "anti": 0.08
+    },
+    {
+      "name": "simple_q090_a016",
+      "quality": 0.9,
+      "anti": 0.16
+    }
+  ],
+  "tdc_model": "tdc_evidence_validated",
+  "initial_state": {
+    "TF": 0.24,
+    "I": 0.34,
+    "A": 0.4,
+    "H": 0.62,
+    "Q": 0.58
+  },
+  "development": {
+    "quality_floor": 0.52,
+    "quality_ceiling": 0.94,
+    "eta_TF": 0.006,
+    "eta_I": 0.007,
+    "eta_A": 0.006,
+    "eta_H": 0.006,
+    "validated_gain": 0.01,
+    "error_penalty": 0.004,
+    "validation_threshold": 0.7
+  },
+  "environment": {
+    "critical_prob": 0.23,
+    "irreversible_given_critical": 0.5,
+    "irreversibility_cue_acc": 0.73,
+    "review_success": 0.83,
+    "probe_bonus": 0.1,
+    "review_cost": 0.016,
+    "probe_cost": 0.028,
+    "false_alarm_cost": 0.22,
+    "missed_irreversible_penalty": 5.6
+  },
+  "pareto_objectives": {
+    "maximize": [
+      "final_holdout_recall",
+      "trajectory_value",
+      "capture_resistance",
+      "core_protection"
+    ],
+    "capture_resistance": "1 - trap_capture_rate",
+    "core_protection": "1 - final_holdout_violation_rate"
+  },
+  "preregistered_acceptance_checks": {
+    "tdc_not_dominated": "no simple policy weakly better on all 4 objectives and strictly better on >=1",
+    "tdc_dominates_at_least_half": "TDC Pareto-dominates >=50% of simple policies",
+    "tdc_on_global_pareto_frontier": "TDC is Pareto-efficient among all policies",
+    "tdc_best_or_tied_recall": "TDC recall >= max simple recall -0.01",
+    "tdc_best_or_tied_trajectory": "TDC trajectory >= max simple trajectory -0.01",
+    "tdc_capture_resistance_above_family_median": "TDC capture resistance > simple-family median",
+    "tdc_core_protection_above_family_median": "TDC core protection > simple-family median"
+  },
+  "anti_leakage": {
+    "same_environment_and_observations": true,
+    "simple_policy_grid_preregistered": true,
+    "phase_identity_hidden": true,
+    "post_action_validation_only_for_tdc": true,
+    "no_post_run_tuning": true
+  }
+}

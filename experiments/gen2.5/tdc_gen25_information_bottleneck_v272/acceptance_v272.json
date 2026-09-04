@@ -1,0 +1,9 @@
+{
+  "recall_monotonic_overall": true,
+  "quality_0_85_reaches_0_90_recall": true,
+  "quality_0_90_reaches_0_90_recall": true,
+  "quality_threshold_exists": true,
+  "false_alarm_below_0_20_at_first_safe_level": true,
+  "violations_drop_with_quality": true,
+  "net_value_not_collapsed_at_safe_level": true
+}

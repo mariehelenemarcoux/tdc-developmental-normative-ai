@@ -1,0 +1,9 @@
+{
+  "guard_probe_meets_irreversible_floor": false,
+  "boundary_probe_improves_recall": false,
+  "guard_probe_improves_recall": false,
+  "guard_probe_false_alarm_not_explosive": true,
+  "guard_probe_better_violations": false,
+  "guard_probe_more_efficient_than_global": false,
+  "best_safe_net_value_is_targeted": false
+}

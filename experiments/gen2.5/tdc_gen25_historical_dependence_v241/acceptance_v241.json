@@ -1,0 +1,9 @@
+{
+  "historical_dependence_is_real": true,
+  "tdc_beats_memoryless": true,
+  "tdc_beats_simple_principle": true,
+  "tdc_beats_simple_decay": true,
+  "tdc_high_risk_accuracy": false,
+  "tdc_selective_complexity": true,
+  "tdc_low_risk_cost": true
+}

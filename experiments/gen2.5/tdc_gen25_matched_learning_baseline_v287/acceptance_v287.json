@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "tdc_best_final_recall": true,
+    "tdc_lowest_violations": true,
+    "tdc_best_trajectory": false,
+    "tdc_higher_final_Q_than_best_simple": false,
+    "tdc_lower_capture_than_best_simple": false,
+    "tdc_beats_best_simple_on_3_of_4_behavior_metrics": false,
+    "developmental_learning_adds_value": false
+  },
+  "strongest_simple_learner": "simple_two_signal_learner",
+  "tdc_wins_vs_strongest_simple": 2
+}

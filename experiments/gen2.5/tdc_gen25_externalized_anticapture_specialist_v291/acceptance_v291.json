@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "advisory_capture_better_than_ptvm": false,
+    "advisory_recall_close_to_ptvm": false,
+    "advisory_violations_close_to_ptvm": false,
+    "advisory_trajectory_close_to_ptvm": false,
+    "advisory_better_composite_than_full": false,
+    "highconf_advice_sparse": true,
+    "specialist_authority_separation_works": false
+  },
+  "advisory_success": false,
+  "highconf_success": false
+}
