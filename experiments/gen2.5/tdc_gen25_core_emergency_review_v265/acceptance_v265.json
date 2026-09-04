@@ -1,0 +1,9 @@
+{
+  "structured_reduces_core_violations_vs_none": true,
+  "structured_reduces_core_violations_vs_brute": true,
+  "structured_improves_critical_accuracy": true,
+  "structured_uses_reversible_options": true,
+  "structured_longterm_not_worse": true,
+  "brute_not_best": true,
+  "brute_increases_Hself": true
+}

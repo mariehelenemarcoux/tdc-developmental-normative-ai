@@ -1,0 +1,9 @@
+{
+  "emergent_final_accuracy_above_080": false,
+  "emergent_late_jump": true,
+  "emergent_reliability_jump": true,
+  "emergent_beats_linear_stage5": false,
+  "emergent_not_better_early": true,
+  "sensitivity_precedes_reliability": true,
+  "static_remains_flat": true
+}

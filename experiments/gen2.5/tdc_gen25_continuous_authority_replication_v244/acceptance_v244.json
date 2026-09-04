@@ -1,0 +1,9 @@
+{
+  "continuous_beats_binary": true,
+  "continuous_beats_simple_decay": true,
+  "continuous_accuracy_at_least_080": false,
+  "continuous_activation_below_060": true,
+  "continuous_low_risk_cost_below_005": true,
+  "continuous_not_worse_than_always_by_002": true,
+  "continuous_within_020_of_oracle": true
+}

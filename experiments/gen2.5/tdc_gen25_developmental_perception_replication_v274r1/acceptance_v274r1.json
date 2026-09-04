@@ -1,0 +1,9 @@
+{
+  "feedback_crosses_0_80": true,
+  "interaction_crosses_0_80": true,
+  "feedback_recall_at_least_0_88": false,
+  "feedback_recall_not_collapse": true,
+  "feedback_better_than_static_recall": true,
+  "feedback_lower_violations_than_static": true,
+  "quality_recall_correlation_positive": true
+}

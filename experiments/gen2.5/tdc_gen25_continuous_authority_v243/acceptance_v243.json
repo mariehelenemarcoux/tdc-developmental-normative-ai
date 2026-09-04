@@ -1,0 +1,9 @@
+{
+  "continuous_beats_binary_gate": true,
+  "continuous_recovers_80pct_gap_to_always": true,
+  "continuous_activation_below_060": true,
+  "continuous_low_risk_cost_below_004": true,
+  "continuous_accuracy_above_080": true,
+  "continuous_beats_simple_decay": true,
+  "always_deep_remains_upper_than_continuous": false
+}

@@ -1,0 +1,9 @@
+{
+  "sigmoid_final_accuracy_above_080": true,
+  "sigmoid_late_gain_exceeds_early_gain": true,
+  "sigmoid_beats_linear_at_D5": true,
+  "sigmoid_not_better_early": true,
+  "sensitivity_precedes_reliability": true,
+  "tipping_region_present": true,
+  "no_development_flat": true
+}

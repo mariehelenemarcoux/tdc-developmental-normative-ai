@@ -1,0 +1,9 @@
+{
+  "success_model_captured_in_phase2": true,
+  "ethical_model_less_captured": true,
+  "ethical_model_better_phase2_core_accuracy": true,
+  "ethical_model_better_transfer": true,
+  "ethical_model_better_longterm": false,
+  "ethical_model_alignment_gain": true,
+  "hybrid_between_models": true
+}

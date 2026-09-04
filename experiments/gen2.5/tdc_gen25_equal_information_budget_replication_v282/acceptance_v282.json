@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "tdc_not_dominated": true,
+    "tdc_on_pareto_frontier": true,
+    "tdc_best_net_trajectory": true,
+    "tdc_best_or_tied_recall": true,
+    "tdc_core_protection_above_all_simple": true,
+    "complexity_earns_keep_equal_budget": true,
+    "equal_budget_result_replicates": true
+  },
+  "pareto_frontier": [
+    "simple_q090_a008",
+    "simple_q090_a016",
+    "tdc_evidence_validated"
+  ],
+  "tdc_dominates": [
+    "simple_q076_a008",
+    "simple_q084_a008"
+  ],
+  "simple_dominates_tdc": [],
+  "tdc_dominance_fraction": 0.5,
+  "tdc_wins_vs_q090_a016": 3
+}

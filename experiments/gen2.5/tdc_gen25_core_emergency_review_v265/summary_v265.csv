@@ -1,0 +1,4 @@
+model,irreversible_core_violation_rate,critical_scenario_accuracy,review_steps_per_critical_event,safe_reversible_choice_rate,long_term_trajectory_value,final_H_self
+brute_critical_rumination,0.08917897910938058,0.7649724038019359,8.0,0.0,0.31018972916666665,0.95
+no_emergency_loop,0.08869492806385706,0.7681849577274049,0.0,0.0,0.31916015625,0.58
+structured_critical_review,0.0033312159172910554,0.9917771254053573,3.752834593757077,0.836654711376592,0.4720800104166667,0.1

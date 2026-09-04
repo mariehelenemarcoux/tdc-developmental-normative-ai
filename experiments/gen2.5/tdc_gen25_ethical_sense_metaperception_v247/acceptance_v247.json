@@ -1,0 +1,9 @@
+{
+  "no_single_modality_sufficient": true,
+  "ethical_beats_single": true,
+  "ethical_beats_majority": false,
+  "ethical_not_worse_than_weighted": false,
+  "ethical_high_stakes_accuracy": false,
+  "ethical_selective_deep": false,
+  "oracle_gap_below_020": false
+}

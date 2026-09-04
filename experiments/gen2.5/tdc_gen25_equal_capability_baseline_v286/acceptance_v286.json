@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "matched_Q_recall_within_0_02": true,
+    "matched_Q_violations_within_0_02": true,
+    "matched_Q_trajectory_within_0_02": true,
+    "matched_Q_capture_within_0_03": true,
+    "anticapture_matched_Q_not_worse_than_tdc_on_capture": true,
+    "tdc_has_residual_architectural_advantage": false,
+    "perception_explains_most_advantage": true
+  },
+  "absolute_differences_tdc_vs_matched_Q": {
+    "recall": 0.0,
+    "violations": 0.0,
+    "trajectory": 0.0,
+    "capture": 0.0
+  },
+  "close_metric_count": 4,
+  "tdc_advantage_metric_count": 0
+}

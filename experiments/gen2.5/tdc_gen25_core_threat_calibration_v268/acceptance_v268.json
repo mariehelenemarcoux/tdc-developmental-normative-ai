@@ -1,0 +1,9 @@
+{
+  "calibrated_beats_fixed_precision": true,
+  "calibrated_keeps_recall": false,
+  "structural_reduces_false_alarms": false,
+  "adaptive_best_f1_like": false,
+  "adaptive_reduces_core_violations": false,
+  "adaptive_improves_net_value": false,
+  "adaptive_false_alarm_below_0_15": true
+}
