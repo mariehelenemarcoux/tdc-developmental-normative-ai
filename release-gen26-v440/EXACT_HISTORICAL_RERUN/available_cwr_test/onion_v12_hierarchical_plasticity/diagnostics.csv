@@ -1,0 +1,3 @@
+condition,mean_core_commits,known_episode_false_core_commit_rate,novel_episode_core_commit_rate
+uniform_plasticity,0.1636904761904762,0.03993055555555555,0.6458333333333334
+hierarchical_plasticity,0.0,0.0,0.0

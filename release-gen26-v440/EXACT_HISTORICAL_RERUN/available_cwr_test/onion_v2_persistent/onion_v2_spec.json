@@ -1,0 +1,31 @@
+{
+  "changes_vs_v1": [
+    "VIEW repair only after same suspect is seen twice; fit repair on last 3 blocks to avoid blockwise churn",
+    "MODE represented as soft posterior over fixed known mechanism matrices",
+    "UNKNOWN if every known mode has recent MSE above calibration 99th percentile",
+    "STATE produces no parameter rewrite; observation itself updates current state"
+  ],
+  "comparators": [
+    "frozen_single_mode",
+    "flat_recent_refit",
+    "onion_v2"
+  ],
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 14,
+  "episodes_per_seed": 50,
+  "labels_used_for_actions": false,
+  "labels_used_only_for_audit": true,
+  "name": "Onion v2: persistent local repair memory + probabilistic fixed modes",
+  "no_tuning_after_freeze": true,
+  "principle": "outer layers adapt first; core never rewritten",
+  "regimes": [
+    "STABLE",
+    "VIEW",
+    "STATE",
+    "MODE",
+    "NOVEL_MODE"
+  ],
+  "seeds": 24,
+  "status": "development correction",
+  "warmup_blocks": 4
+}

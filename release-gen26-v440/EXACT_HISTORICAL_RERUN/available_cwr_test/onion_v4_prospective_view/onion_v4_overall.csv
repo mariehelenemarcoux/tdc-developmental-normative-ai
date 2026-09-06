@@ -1,0 +1,4 @@
+condition,mean_pred_mse,mean_view_commits,mean_view_rejects
+frozen_single_mode,0.08988246994421387,0.0,0.0
+onion_v3_like,0.08366867073547112,0.0,0.0
+onion_v4,0.08121867979079629,0.27166666666666667,0.43069444444444444

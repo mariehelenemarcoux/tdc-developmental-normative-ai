@@ -1,0 +1,4 @@
+condition,mean_pred_mse
+best_discrete_known,0.08358929092868084
+frozen_single_mode,0.0866618276116868
+onion_v6_envelope,0.08321732406854024

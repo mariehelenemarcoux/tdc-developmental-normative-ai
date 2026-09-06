@@ -1,0 +1,29 @@
+{
+  "core": "fixed known mechanism matrices A_k; never rewritten",
+  "date_frozen": "2026-09-01",
+  "envelope": {
+    "UNKNOWN": "envelope loss above calibration null99 for 3 consecutive windows",
+    "constraints": "pi_k>=0, sum pi_k=1",
+    "fit_window": 5,
+    "model": "A_eff=sum_k pi_k A_k",
+    "solver": "analytic constrained least squares by checking simplex interior, edges, vertices"
+  },
+  "episode_length_blocks": 16,
+  "episodes_per_seed": 48,
+  "labels_used_for_actions": false,
+  "labels_used_only_for_offline_audit": true,
+  "name": "Onion v6 known-mechanism convex envelope (analytic simplex solver)",
+  "no_threshold_tuning": true,
+  "regimes": [
+    "STABLE",
+    "VIEW_ONLY",
+    "STATE_ONLY",
+    "MODE_ONLY",
+    "MIXED_MODE",
+    "NOVEL_MODE"
+  ],
+  "seeds": 24,
+  "status": "development synthetic benchmark",
+  "view_layer": "prospective VIEW repair as v4",
+  "warmup_blocks": 5
+}

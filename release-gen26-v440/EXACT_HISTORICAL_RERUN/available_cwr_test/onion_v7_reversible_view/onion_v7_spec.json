@@ -1,0 +1,27 @@
+{
+  "context": "convex envelope over 3 fixed known mechanisms",
+  "core": "fixed known mechanism envelope; never rewritten",
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 16,
+  "episodes_per_seed": 36,
+  "labels_used_for_actions": false,
+  "labels_used_only_for_audit": true,
+  "name": "Onion v7 reversible VIEW probation",
+  "regimes": [
+    "STABLE",
+    "VIEW_ONLY",
+    "STATE_ONLY",
+    "MODE_ONLY",
+    "MIXED_MODE",
+    "NOVEL_MODE"
+  ],
+  "seeds": 16,
+  "status": "development synthetic benchmark",
+  "view_v7": {
+    "accept": "candidate wins at least 2/3 blocks and mean suspect residual improves >=10%",
+    "candidate": "same suspect 2 blocks; fit on 3-block buffer",
+    "probation": "apply candidate temporarily for 3 future blocks",
+    "reject": "rollback exactly to prior encoder"
+  },
+  "warmup_blocks": 5
+}

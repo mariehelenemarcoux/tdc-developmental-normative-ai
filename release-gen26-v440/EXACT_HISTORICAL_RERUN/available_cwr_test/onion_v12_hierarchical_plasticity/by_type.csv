@@ -1,0 +1,15 @@
+type,condition,mse
+MIXED_MODE,hierarchical_plasticity,0.09624945666642533
+MIXED_MODE,uniform_plasticity,0.11569587692684767
+MODE_ONLY,hierarchical_plasticity,0.11007889684827649
+MODE_ONLY,uniform_plasticity,0.13997196218732885
+NOVEL_MODE,hierarchical_plasticity,0.27585075449990304
+NOVEL_MODE,uniform_plasticity,0.6506235096305879
+STABLE,hierarchical_plasticity,0.09270138947829515
+STABLE,uniform_plasticity,0.10647113712190534
+STATE_ONLY,hierarchical_plasticity,0.09298739909350674
+STATE_ONLY,uniform_plasticity,0.10257119269809663
+VIEW_ONLY,hierarchical_plasticity,0.1038303663332293
+VIEW_ONLY,uniform_plasticity,0.1038303663332293
+VIEW_PLUS_MODE,hierarchical_plasticity,0.11928196181951925
+VIEW_PLUS_MODE,uniform_plasticity,0.11928196181951925

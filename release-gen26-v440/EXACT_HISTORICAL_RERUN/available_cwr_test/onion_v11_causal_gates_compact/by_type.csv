@@ -1,0 +1,15 @@
+type,condition,mse
+MIXED_MODE,simultaneous_adaptation,0.09788425120803113
+MIXED_MODE,strict_onion_gates,0.0998915488626382
+MODE_ONLY,simultaneous_adaptation,0.11411950060361335
+MODE_ONLY,strict_onion_gates,0.11675062299650238
+NOVEL_MODE,simultaneous_adaptation,0.21987895481293457
+NOVEL_MODE,strict_onion_gates,0.23416408748457504
+STABLE,simultaneous_adaptation,0.0958431099732876
+STABLE,strict_onion_gates,0.09722859272079079
+STATE_ONLY,simultaneous_adaptation,0.09334807844142358
+STATE_ONLY,strict_onion_gates,0.09529049738526342
+VIEW_ONLY,simultaneous_adaptation,0.10112247269162847
+VIEW_ONLY,strict_onion_gates,0.10112247269162847
+VIEW_PLUS_MODE,simultaneous_adaptation,0.12651484149046888
+VIEW_PLUS_MODE,strict_onion_gates,0.12651484149046888

@@ -1,0 +1,4 @@
+condition,mean_pred_mse
+frozen_single_mode,0.08503007010282296
+onion_v4_like,0.0794818093292154
+onion_v5_escalation,0.0794818093292154

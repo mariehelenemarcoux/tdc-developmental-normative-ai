@@ -1,0 +1,57 @@
+{
+  "core": "fixed known mechanism envelope; never rewritten",
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 18,
+  "episodes_per_seed": 42,
+  "labels_used_for_actions": false,
+  "labels_used_only_for_offline_audit": true,
+  "mode_rule": "convex-envelope fit must show non-baseline mixture persistently",
+  "name": "Onion v8 evidence-gradient schedules",
+  "primary": "future deterministic latent-block prediction MSE",
+  "regimes": [
+    "STABLE",
+    "VIEW_ONLY",
+    "STATE_ONLY",
+    "MODE_ONLY",
+    "MIXED_MODE",
+    "NOVEL_MODE",
+    "VIEW_PLUS_MODE"
+  ],
+  "schedules": {
+    "flat_1_1_1_1": {
+      "MODE": 1,
+      "STATE": 1,
+      "UNKNOWN": 1,
+      "VIEW": 1
+    },
+    "graded_1_2_4_8": {
+      "MODE": 4,
+      "STATE": 2,
+      "UNKNOWN": 8,
+      "VIEW": 1
+    },
+    "mild_1_1_2_3": {
+      "MODE": 2,
+      "STATE": 1,
+      "UNKNOWN": 3,
+      "VIEW": 1
+    },
+    "steep_1_2_5_10": {
+      "MODE": 5,
+      "STATE": 2,
+      "UNKNOWN": 10,
+      "VIEW": 1
+    }
+  },
+  "secondary": [
+    "premature UNKNOWN",
+    "MODE activation on known regimes",
+    "VIEW_PLUS_MODE sequencing"
+  ],
+  "seeds": 16,
+  "state_rule": "transient one-step surprise, no parameter rewrite",
+  "status": "development synthetic benchmark",
+  "unknown_rule": "envelope loss above calibrated 99th percentile persistently",
+  "view_rule": "prospective one-block repair, no long probation",
+  "warmup_blocks": 5
+}

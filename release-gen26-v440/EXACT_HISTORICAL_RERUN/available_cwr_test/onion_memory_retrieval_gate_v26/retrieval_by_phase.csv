@@ -1,0 +1,5 @@
+phase,retrieval_rate
+known_pre,0.028819444444444446
+known_return,0.23910984848484848
+novel_first,0.22581845238095238
+novel_recall,0.376264880952381

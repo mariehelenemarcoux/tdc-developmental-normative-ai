@@ -1,0 +1,4 @@
+method,mean_first_deep_age,episodes_with_deep
+aggressive_deep,0.695619335347432,1324
+selective_1step,1.5422413793103449,1160
+evidence_accumulation,1.8065116279069768,1075

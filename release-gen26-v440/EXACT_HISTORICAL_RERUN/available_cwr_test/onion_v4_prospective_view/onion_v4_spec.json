@@ -1,0 +1,32 @@
+{
+  "changes_vs_v3": {
+    "MODE_prediction": "same soft posterior mixture over fixed known mechanisms as v2/v3",
+    "UNKNOWN": "same persistent evidence concept, no core rewrite",
+    "VIEW_after_commit": "do not relearn while residual remains below per-seed clean 99th percentile ratio",
+    "VIEW_candidate": "same suspect in 2 consecutive blocks; fit candidate on previous 3 blocks",
+    "VIEW_validation": "candidate is accepted only if on next block its suspect-view multiview residual is lower than incumbent by >=10%"
+  },
+  "comparators": [
+    "frozen_single_mode",
+    "onion_v3_like",
+    "onion_v4"
+  ],
+  "core": "fixed known mechanism matrices; never rewritten",
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 18,
+  "episodes_per_seed": 50,
+  "labels_used_for_actions": false,
+  "labels_used_only_for_offline_audit": true,
+  "name": "Onion v4: prospective one-shot VIEW repair",
+  "no_tuning_after_freeze": true,
+  "regimes": [
+    "STABLE",
+    "VIEW",
+    "STATE",
+    "MODE",
+    "NOVEL_MODE"
+  ],
+  "seeds": 24,
+  "status": "development test",
+  "warmup_blocks": 6
+}
