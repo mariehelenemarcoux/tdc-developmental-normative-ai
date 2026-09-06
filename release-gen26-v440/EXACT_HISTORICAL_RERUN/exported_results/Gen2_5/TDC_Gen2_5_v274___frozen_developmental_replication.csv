@@ -1,0 +1,5 @@
+model,final_ethical_signal_quality,phase_crossing_index,irreversible_recall_final_phase,false_alarm_rate_final_phase,irreversible_core_violation_rate_final_phase,net_vigilance_value_final_phase,developmental_maturity_final,final_TF,final_I,final_A,final_H
+feedback_development,0.9142291220435628,1.425,0.2825,0.0325,0.0675,0.6442593683065344,0.922340595673748,0.95,0.95,0.95,0.1606376173050079
+interaction_development,0.9140248564443,2.0,0.3325,0.04375,0.115,0.6549787284666451,0.9214039484481202,0.95,0.95,0.95,0.1643842062075185
+linear_development,0.9068625836201484,2.0,0.295,0.045,0.095,0.6407793875430223,0.9211021512127264,0.95,0.95,0.95,0.1655913951490942
+static_quality,0.58,99.0,0.2375,0.1875,0.1325,0.5298750000000001,0.34,0.24,0.34,0.4,0.62
