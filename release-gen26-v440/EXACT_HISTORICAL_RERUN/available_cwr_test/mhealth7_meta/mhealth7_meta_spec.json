@@ -1,0 +1,42 @@
+{
+  "conditions": [
+    "CWR_v01",
+    "CWR_meta_observable"
+  ],
+  "date_frozen": "2026-09-01",
+  "drift": "right-arm proper 3D frame rotation applied coherently to acc/gyro/mag triads",
+  "meta_rule": {
+    "alpha": "clip(0.02+0.16*C+0.10*Dhat,0.02,0.28)",
+    "residual_relative_tolerance": 0.1,
+    "stable_candidate": "no detector suspect",
+    "volatility_window": 20,
+    "window": 2
+  },
+  "name": "MHEALTH 7-subject preliminary observable metaplastic replication",
+  "no_retuning_from_synthetic/PAMAP2": true,
+  "purity": 0.95,
+  "raw_data": "real MHEALTH subject logs",
+  "status": "preliminary because subjects 8-10 unavailable from Library at execution time",
+  "stream": {
+    "P_SS": 0.9,
+    "batch": 24,
+    "stable_fraction": 0.85,
+    "steps": 100
+  },
+  "stride": 50,
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "views": {
+    "chest": "chest accelerometer + ECG",
+    "left_ankle": "accelerometer+gyro+magnetometer",
+    "right_arm": "accelerometer+gyro+magnetometer"
+  },
+  "window": 100
+}

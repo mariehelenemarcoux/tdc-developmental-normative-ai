@@ -1,0 +1,4 @@
+policy,novel_law_identification_rate,false_consolidation_rate,time_to_correct_identification,probe_efficiency,utility_proxy
+best_fit_single,0.511969696969697,0.48803030303030304,3.440151515151515,0.511969696969697,0.10618636363636359
+multi_hypothesis_passive,1.0,0.0,5.0,0.2,0.8499999999999998
+popper_active,1.0,0.0,2.4949999999999997,0.4174999999999999,0.9251499999999999

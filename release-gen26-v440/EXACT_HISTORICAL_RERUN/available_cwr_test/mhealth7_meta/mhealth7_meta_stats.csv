@@ -1,0 +1,2 @@
+mean_gain,median_gain,wins,losses,sign_test_two_sided_p,wilcoxon_two_sided_p,wilcoxon_meta_worse_one_sided_p
+-0.05182522310390754,-0.0568181818181817,6,15,0.0783538818359375,0.035056114196777344,0.017528057098388672

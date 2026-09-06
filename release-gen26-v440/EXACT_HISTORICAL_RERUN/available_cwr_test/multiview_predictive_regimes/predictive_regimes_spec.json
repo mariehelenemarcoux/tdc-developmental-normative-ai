@@ -1,0 +1,33 @@
+{
+  "actions_are_observable_only": true,
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "WORLD"
+  ],
+  "classifier": "balanced logistic regression",
+  "date_frozen": "2026-09-01",
+  "episode_definition": {
+    "STABLE": "baseline observation/dynamics for whole episode",
+    "VIEW": "one fixed local view-frame rotation for whole episode",
+    "WORLD": "one fixed shared latent dynamics/bias change for whole episode"
+  },
+  "episode_length_blocks": 12,
+  "episodes_per_class_per_seed": 18,
+  "features": [
+    "per-view predictive error (3)",
+    "locality max/median",
+    "dispersion CV",
+    "sharedness min/mean",
+    "post-one-view-repair predictive error (3)",
+    "repair gain max",
+    "repair gain shared"
+  ],
+  "labels_used_only_for_offline identifiability evaluation": true,
+  "name": "Persistent-regime identifiability with multiview predictive topology",
+  "no_tuning_after_freeze": true,
+  "seeds": 24,
+  "status": "corrected identifiability benchmark after event/state labeling flaw",
+  "validation": "6-fold GroupKFold by seed",
+  "warmup_blocks_excluded": 2
+}

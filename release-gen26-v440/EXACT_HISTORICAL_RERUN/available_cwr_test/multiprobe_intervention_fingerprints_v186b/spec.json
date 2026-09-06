@@ -1,0 +1,42 @@
+{
+  "constraints": [
+    "corruption labels hidden from policy",
+    "no test labels used in diagnosis",
+    "mechanism prototypes generated only from validation data",
+    "specialist uses training labels plus matched augmentation",
+    "shadow validation uses held-out validation labels only",
+    "authority local and revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "name": "Multi-Probe Intervention Fingerprints v186b compact",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "fingerprint_diagnosis": "full multi-probe response vector -> nearest mechanism prototype",
+    "fingerprint_shadow_specialist": "fingerprint diagnosis -> matched specialist -> shadow certification -> local blend",
+    "simple_ensemble": "SGD-log + GaussianNB soft vote",
+    "single_best_probe": "mechanism from best coherence-restoring probe"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "error_rate",
+    "diagnosis_match_rate",
+    "rotation_translation_confusion_rate",
+    "occlusion_false_diagnosis_rate",
+    "specialist_activation_rate",
+    "shadow_rejection_rate",
+    "out_of_scope_damage_rate",
+    "probe_count",
+    "utility_proxy"
+  ],
+  "probe_count": 7,
+  "seeds": 6,
+  "shadow_gain_threshold": 0.01,
+  "test_fraction": 0.25,
+  "unseen_corruptions": {
+    "block_occlusion": "random 2x2 or 3x3 block occlusion",
+    "contrast_warp": "nonlinear contrast gamma warp",
+    "rotation": "random \u00b122 degree rotation",
+    "translation": "random \u00b11.2 pixel shift"
+  }
+}

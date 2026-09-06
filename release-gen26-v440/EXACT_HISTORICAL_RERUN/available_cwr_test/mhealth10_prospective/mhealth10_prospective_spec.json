@@ -1,0 +1,55 @@
+{
+  "conditions": [
+    "CWR_v01",
+    "meta_immediate",
+    "meta_prospective"
+  ],
+  "date_frozen": "2026-09-01",
+  "drift": "right-arm proper 3D frame rotation, coherent across acc/gyro/mag triads",
+  "frozen_meta": {
+    "alpha": "clip(0.02+0.16*C+0.10*Dhat,0.02,0.28)",
+    "relative_residual_tolerance": 0.1,
+    "stable_candidate": "no v0.1 detector suspect",
+    "volatility_window": 20,
+    "window": 2
+  },
+  "name": "MHEALTH 10-subject prospective reconsolidation test",
+  "no_tuning_after_freeze": true,
+  "primary": "paired mean stream accuracy",
+  "prospective_validation": {
+    "candidate_generated": "same reconsolidation proposal as meta_immediate",
+    "commit_time": "next block, before current-block adaptation",
+    "criterion": "candidate median multiview residual on next block < current model median multiview residual",
+    "labels_used": false,
+    "margin": 0.0
+  },
+  "purity": 0.95,
+  "raw_data": "real MHEALTH subject logs",
+  "same_streams_across_conditions": true,
+  "status": "development test; prospective rule designed after MHEALTH-7 failure diagnosis",
+  "stream": {
+    "P_SS": 0.9,
+    "batch": 24,
+    "stable_fraction": 0.85,
+    "steps": 100
+  },
+  "stride": 50,
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "views": [
+    "chest",
+    "left_ankle",
+    "right_arm"
+  ],
+  "window": 100
+}

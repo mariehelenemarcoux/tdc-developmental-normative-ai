@@ -1,0 +1,2 @@
+true_drift_blocks,detector_recall_any_on_drift,detector_recall_correct_arm,false_detect_rate_stable,total_recon,recon_true_stable,recon_missed_drift,fraction_recon_on_missed_drift,mean_alpha
+294,0.6904761904761905,0.6598639455782312,0.3377630121816168,180,173,7,0.03888888888888889,0.14575491155983072

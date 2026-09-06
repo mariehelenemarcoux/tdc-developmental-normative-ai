@@ -1,0 +1,37 @@
+{
+  "batch_size": 90,
+  "constraints": [
+    "novel labels hidden from non-oracle policies",
+    "no test labels used for split/recall decisions",
+    "specialists trained only from train split",
+    "test labels audit-only",
+    "oracle is upper bound only"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 24,
+  "name": "Novel World-Model Collision Attack v195",
+  "no_tuning_after_freeze": true,
+  "novel_regimes": {
+    "gaussian_blur": "sigma 0.9\u20131.3",
+    "motion_blur_proxy": "directional horizontal blur kernel length 3"
+  },
+  "policies": {
+    "fingerprint_split": "separate novel models using richer structural fingerprint",
+    "fingerprint_split_recall": "split + memory + recurrence recall",
+    "oracle_upper_bound": "audit-only label-aware specialist selection",
+    "surface_merge": "single novel memory bucket based on coarse smoothness"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "novel_model_count",
+    "collision_merge_rate",
+    "correct_disentanglement_rate",
+    "wrong_recall_rate",
+    "correct_recall_rate",
+    "utility_proxy"
+  ],
+  "recall_distance_threshold": 0.22,
+  "seeds": 6,
+  "split_distance_threshold": 0.28
+}

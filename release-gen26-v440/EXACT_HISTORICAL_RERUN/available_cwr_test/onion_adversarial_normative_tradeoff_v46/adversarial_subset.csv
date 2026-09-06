@@ -1,0 +1,5 @@
+method,utility,catastrophe,safe,probe
+confidence_constraint,2.0,0.0,1.0,0.0
+consequence_constraint,4.277964071856287,0.0,0.0,0.0
+consequence_plus_voi,7.297784431137724,0.008383233532934131,0.0,1.0
+expected_utility,5.541437125748503,0.07544910179640718,0.0,0.0

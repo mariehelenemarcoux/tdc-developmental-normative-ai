@@ -1,0 +1,9 @@
+method,action,rate
+aggregate_mean,EFFICIENCY,0.2608333333333333
+aggregate_mean,GROWTH,0.5063888888888889
+aggregate_mean,TRANSFORM,0.23277777777777778
+global_double_materiality,EFFICIENCY,0.7116666666666667
+global_double_materiality,GROWTH,0.28833333333333333
+individual_rights,EFFICIENCY,0.9308333333333333
+individual_rights,GROWTH,0.06916666666666667
+rights_plus_rawls,EFFICIENCY,1.0

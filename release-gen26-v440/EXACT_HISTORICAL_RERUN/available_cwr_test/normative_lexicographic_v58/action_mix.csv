@@ -1,0 +1,5 @@
+method,action,rate
+aggregate_utility,CONCENTRATED_SEVERE,1.0
+lexicographic,LOW_IRREVERSIBLE,1.0
+minimax_risk,LOW_IRREVERSIBLE,1.0
+severity_weighted,LOW_IRREVERSIBLE,1.0

@@ -1,0 +1,5 @@
+method,utility,catastrophe,safe,probe,est_risk
+confidence_constraint,2.0,0.0,1.0,0.0,0.0
+consequence_constraint,4.194406280667321,0.0,0.0,0.0,0.0
+consequence_plus_voi,7.509077526987243,0.002944062806673209,0.0,1.0,0.004447961259178479
+expected_utility,5.6530912659470065,0.10304219823356231,0.0,0.0,0.10821084602940641

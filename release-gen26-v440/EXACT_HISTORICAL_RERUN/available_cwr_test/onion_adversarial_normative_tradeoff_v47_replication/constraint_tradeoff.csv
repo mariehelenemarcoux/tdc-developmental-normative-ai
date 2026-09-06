@@ -1,0 +1,5 @@
+method,cat_rate,passes_5pct,utility,utility_regret_vs_ev
+confidence_constraint,0.0,True,2.0,1.3967968750000006
+consequence_constraint,0.0,True,3.1645468750000005,0.23225000000000007
+consequence_plus_voi,0.0025,True,4.0551640625,-0.6583671874999997
+expected_utility,0.01640625,True,3.3967968750000006,0.0

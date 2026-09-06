@@ -1,0 +1,4 @@
+true_state,n,accuracy,transform_rate,conflict_rate,final_admissible_rate,restoration_rate,unnecessary_transform_rate,missed_transform_rate,mean_moral_residual,mean_utility,max_severe,max_irrev
+A_DIRECT,720,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,4.774390380422522,0.07356207475204639,0.015020435224432093
+B_TRANSFORMABLE,720,1.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,3.141558373861877,0.09599839967269957,0.015285151551910897
+C_IRREDUCIBLE,720,1.0,0.0,1.0,0.0,0.0,0.0,0.0,7.824984196425352,1.768062420163505,0.1762346794918869,0.03791490502461649

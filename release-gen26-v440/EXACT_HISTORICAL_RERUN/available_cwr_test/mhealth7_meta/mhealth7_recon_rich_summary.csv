@@ -1,0 +1,2 @@
+n_events,beneficial_rate,LOSO_auc_rich,LOSO_accuracy_rich,LOSO_signed_delta_r2,LOSO_signed_delta_spearman,LOSO_signed_delta_spearman_p
+180,0.4166666666666667,0.4052063492063492,0.4888888888888889,-0.3948028509094774,-0.2134314724807737,0.0040178422235458535

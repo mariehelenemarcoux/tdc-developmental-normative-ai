@@ -1,0 +1,25 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 260,
+  "horizon": 4,
+  "name": "Minimum Sufficient Optionality v144",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "future realized harms audit-only; policies use noisy estimated transition/risk/correctability models",
+  "policies": {
+    "dual_floor": "require both option_count>=2 and correctability>=0.58 when possible, then maximize utility",
+    "immediate_utility": "maximize immediate expected utility over admissible actions",
+    "max_optionality": "maximize estimated future admissible action count",
+    "min_correctability_floor": "require correctability >=0.58 when possible, then maximize utility",
+    "min_optionality_floor": "require >=2 future admissible actions when possible, then maximize utility"
+  },
+  "primary_metrics": [
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "mean_future_options",
+    "mean_correctability",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 24,
+  "status": "synthetic sequential decision test"
+}

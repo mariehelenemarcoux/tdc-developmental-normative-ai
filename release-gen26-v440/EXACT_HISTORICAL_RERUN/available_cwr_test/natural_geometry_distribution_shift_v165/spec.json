@@ -1,0 +1,40 @@
+{
+  "date_frozen": "2026-09-03",
+  "hard_constraints": [
+    "heldout structure labels are audit-only",
+    "geometric familiarity cannot alone authorize structure",
+    "distribution shift is preregistered"
+  ],
+  "heldout_families": [
+    "irregular_sparse",
+    "asymmetric_hierarchical",
+    "nonperiodic_modular"
+  ],
+  "name": "Natural Geometry Distribution Shift v165",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "causal_geometric": "geometry can prioritize but causal evidence controls authority",
+    "causal_only": "ignores geometry, uses causal/intervention evidence",
+    "geometry_familiarity": "learned familiarity with training geometry families",
+    "geometry_invariant": "uses generic invariance/compression descriptors + causal evidence"
+  },
+  "primary_metrics": [
+    "heldout_structure_accuracy",
+    "familiarity_bias_rate",
+    "heldout_false_rejection_rate",
+    "spurious_familiar_accept_rate",
+    "true_transition_capture_rate",
+    "task_success_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic geometry-generalization benchmark",
+  "test_episodes_per_seed": 320,
+  "train_episodes_per_seed": 260,
+  "train_families": [
+    "symmetry",
+    "spiral",
+    "fractal",
+    "periodic"
+  ]
+}

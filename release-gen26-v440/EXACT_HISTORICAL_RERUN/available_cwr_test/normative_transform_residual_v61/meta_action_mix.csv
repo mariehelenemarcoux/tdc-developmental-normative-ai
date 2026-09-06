@@ -1,0 +1,4 @@
+method,meta_action,rate
+least_violation,NONE,1.0
+transform_plus_residual,DELAY,1.0
+transform_then_choose,DELAY,1.0

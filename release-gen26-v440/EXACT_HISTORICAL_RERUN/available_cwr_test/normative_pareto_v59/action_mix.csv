@@ -1,0 +1,5 @@
+method,action,rate
+aggregate_utility,HIGH_UTILITY,1.0
+lexicographic,LOW_IRR,1.0
+minimax_risk,HIGH_UTILITY,1.0
+severity_weighted,DIFFUSE,1.0

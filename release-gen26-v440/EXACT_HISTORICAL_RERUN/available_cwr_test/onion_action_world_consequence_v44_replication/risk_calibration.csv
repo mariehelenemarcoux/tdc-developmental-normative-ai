@@ -1,0 +1,5 @@
+method,risk_bin,n,mean_est_risk,realized_cat_rate
+consequence_risk,"(-0.001000001, 0.01]",3999,0.0,0.0
+consequence_risk,"(0.01, 0.05]",321,0.021770181127493758,0.01557632398753894
+consequence_risk_voi_probe,"(-0.001000001, 0.01]",3453,0.00022511651312470145,0.0002896032435563278
+consequence_risk_voi_probe,"(0.01, 0.05]",867,0.021002722262476552,0.02191464821222607

@@ -1,0 +1,14 @@
+method,action,rate
+confidence_rule,AGGRESSIVE,0.03564814814814815
+confidence_rule,BALANCED,0.03356481481481482
+confidence_rule,BOLD,0.038657407407407404
+confidence_rule,CAUTIOUS,0.07222222222222222
+confidence_rule,SAFE,0.8199074074074074
+consequence_risk,AGGRESSIVE,0.03564814814814815
+consequence_risk,BALANCED,0.25069444444444444
+consequence_risk,BOLD,0.038657407407407404
+consequence_risk,CAUTIOUS,0.675
+consequence_risk_voi_probe,AGGRESSIVE,0.10069444444444445
+consequence_risk_voi_probe,BALANCED,0.15138888888888888
+consequence_risk_voi_probe,BOLD,0.1337962962962963
+consequence_risk_voi_probe,CAUTIOUS,0.6141203703703704

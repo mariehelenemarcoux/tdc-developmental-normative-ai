@@ -1,0 +1,2 @@
+overall_accuracy,A_unnecessary_transform_rate,B_restoration_rate,B_missed_transform_rate,C_conflict_recognition_rate,C_positive_moral_residual_rate,C_final_admissible_rate
+1.0,0.0,1.0,0.0,1.0,1.0,0.0

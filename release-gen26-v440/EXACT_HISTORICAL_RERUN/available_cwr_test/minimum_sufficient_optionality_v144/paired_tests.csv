@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+min_optionality_floor vs immediate_utility,episode_success_rate,-0.0022435897435897426,0.8750346638530986
+min_optionality_floor vs immediate_utility,catastrophic_lockin_rate,0.0,
+min_optionality_floor vs immediate_utility,mean_future_options,-0.0006009615384614716,0.6195667634650288
+min_optionality_floor vs immediate_utility,mean_correctability,-4.0418376742073124e-05,0.6884528398513794
+min_optionality_floor vs immediate_utility,immediate_utility,-0.0005929487179487103,0.6813532488915992
+min_optionality_floor vs immediate_utility,total_utility,-0.010144230769230758,0.9697864651679993
+min_correctability_floor vs immediate_utility,episode_success_rate,0.015064102564102566,3.5204274878523945e-05
+min_correctability_floor vs immediate_utility,catastrophic_lockin_rate,-0.00016025641025641026,0.8413447460685429
+min_correctability_floor vs immediate_utility,mean_future_options,0.005408653846153873,0.0008621783373869089
+min_correctability_floor vs immediate_utility,mean_correctability,0.0011637270128283205,5.960464477539063e-08
+min_correctability_floor vs immediate_utility,immediate_utility,-0.016525641025641025,1.0
+min_correctability_floor vs immediate_utility,total_utility,-0.0034567307692307675,0.6983442902565002
+dual_floor vs immediate_utility,episode_success_rate,0.02179487179487179,2.7587815940567338e-05
+dual_floor vs immediate_utility,catastrophic_lockin_rate,0.0,
+dual_floor vs immediate_utility,mean_future_options,0.004927884615384626,0.0055396596192250815
+dual_floor vs immediate_utility,mean_correctability,0.001190915578165544,5.960464477539063e-08
+dual_floor vs immediate_utility,immediate_utility,-0.01566346153846154,1.0
+dual_floor vs immediate_utility,total_utility,0.003847756410256415,0.33932469785384056
+dual_floor vs max_optionality,episode_success_rate,-0.03974358974358975,0.9999910524789266
+dual_floor vs max_optionality,catastrophic_lockin_rate,0.0,
+dual_floor vs max_optionality,mean_future_options,-0.10080128205128208,0.9999909281311876
+dual_floor vs max_optionality,mean_correctability,-0.003560275747955958,1.0
+dual_floor vs max_optionality,immediate_utility,0.028769230769230783,5.960464477539063e-08
+dual_floor vs max_optionality,total_utility,0.0026089743589743364,0.36287039518356323

@@ -1,0 +1,28 @@
+{
+  "architectures": {
+    "composed_onions": "specialized onions + explicit inter-onion relation layer",
+    "composed_with_core": "composed onions + frozen invariant core preventing cross-domain override",
+    "monolithic": "single shared controller for causal, normative, metacognitive signals",
+    "specialized_onions": "three specialized onions + late arbitration"
+  },
+  "date_frozen": "2026-09-02",
+  "domains": [
+    "causal",
+    "normative",
+    "metacognitive"
+  ],
+  "episodes_per_seed": 300,
+  "name": "Onion Composition v126",
+  "no_tuning_after_freeze": true,
+  "primary_metrics": [
+    "joint_task_accuracy",
+    "causal_accuracy",
+    "normative_accuracy",
+    "meta_accuracy",
+    "cross_domain_interference",
+    "core_violation_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic modular-vs-monolithic multi-domain integration test"
+}

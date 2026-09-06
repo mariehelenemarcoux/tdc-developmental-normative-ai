@@ -1,0 +1,47 @@
+{
+  "batch_size": 90,
+  "constraints": [
+    "novel regime labels hidden from policy",
+    "no test labels in novelty detection/recall",
+    "known bank trained only on train split",
+    "novel specialist built from train split using inferred primitive recipe",
+    "test labels audit-only",
+    "new models local and revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 24,
+  "known_bank": [
+    "clean",
+    "rotation",
+    "translation",
+    "block_occlusion",
+    "contrast_warp"
+  ],
+  "name": "Novel World-Model Formation v194",
+  "no_tuning_after_freeze": true,
+  "novel_regimes": {
+    "blur": "gaussian blur sigma 0.8\u20131.4",
+    "salt_pepper": "random 8\u201314% pixels forced to 0 or 16"
+  },
+  "novelty_scope_threshold": 0.52,
+  "policies": {
+    "known_only": "use only existing world-model bank; no new model creation",
+    "novel_detect_rebuild": "detect low scope, create temporary novel specialist each time",
+    "novel_memory": "create novel specialist, fingerprint it, store and recall later",
+    "novel_memory_scope_gate": "novel memory + scope gate before recall"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "novel_detection_rate",
+    "new_model_creation_rate",
+    "novel_recall_rate",
+    "correct_novel_recall_rate",
+    "wrong_novel_recall_rate",
+    "known_regime_false_novel_rate",
+    "catastrophic_damage_rate",
+    "utility_proxy"
+  ],
+  "recall_scope_threshold": 0.58,
+  "seeds": 4
+}

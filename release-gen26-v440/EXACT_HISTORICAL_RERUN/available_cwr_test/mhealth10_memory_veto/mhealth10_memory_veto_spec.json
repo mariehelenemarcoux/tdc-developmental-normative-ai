@@ -1,0 +1,61 @@
+{
+  "conditions": [
+    "CWR_v01",
+    "meta_prospective",
+    "meta_memory_veto"
+  ],
+  "date_frozen": "2026-09-01",
+  "drift": "right-arm proper 3D rotation on acc/gyro/mag triads",
+  "memory": {
+    "labels_used": false,
+    "memory_applies_as": "veto only; never pulls representation toward prototypes",
+    "memory_score": "mean squared distance from shared latent points to nearest frozen prototype",
+    "n_prototypes": 12,
+    "random_state": 20260901,
+    "type": "unlabeled KMeans prototypes in frozen calibration latent space",
+    "veto_rule": "candidate memory score <= current model memory score"
+  },
+  "metaplasticity": {
+    "alpha": "clip(0.02+0.16*C+0.10*Dhat,0.02,0.28)",
+    "relative_residual_tolerance": 0.1,
+    "stable_candidate": "no detector suspect",
+    "volatility_window": 20,
+    "window": 2
+  },
+  "name": "MHEALTH 10-subject prototype-memory veto test",
+  "no_tuning_after_freeze": true,
+  "primary": "paired mean stream accuracy",
+  "prospective_validation": {
+    "commit_on_next_block_if": "candidate median multiview residual < current model median multiview residual",
+    "labels_used": false
+  },
+  "purity": 0.95,
+  "raw_data": "real MHEALTH logs",
+  "same_streams_across_conditions": true,
+  "status": "discovery test designed after prospective reconsolidation failure",
+  "stream": {
+    "P_SS": 0.9,
+    "batch": 24,
+    "stable_fraction": 0.85,
+    "steps": 100
+  },
+  "stride": 50,
+  "subjects": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "views": [
+    "chest",
+    "left_ankle",
+    "right_arm"
+  ],
+  "window": 100
+}
