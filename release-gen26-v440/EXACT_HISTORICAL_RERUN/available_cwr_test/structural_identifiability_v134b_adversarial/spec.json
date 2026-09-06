@@ -1,0 +1,25 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 420,
+  "name": "Structural Identifiability v134b adversarial",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true law used only for audit",
+  "policies": {
+    "identifiability_gate": "max separation + refuse persistent commit when predicted separation/margin inadequate",
+    "max_separation_probe": "maximize predicted response separation",
+    "passive_repeat": "repeat ambiguous probe",
+    "random_probe": "uniform admissible probes"
+  },
+  "primary_metrics": [
+    "identification_accuracy",
+    "false_consolidation_rate",
+    "true_consolidation_rate",
+    "no_consolidation_rate",
+    "accuracy_on_hard_pairs",
+    "false_commit_on_hard_pairs",
+    "utility_proxy"
+  ],
+  "probe_budget": 3,
+  "seeds": 30,
+  "status": "synthetic adversarial identifiability test with near-equivalent structures"
+}

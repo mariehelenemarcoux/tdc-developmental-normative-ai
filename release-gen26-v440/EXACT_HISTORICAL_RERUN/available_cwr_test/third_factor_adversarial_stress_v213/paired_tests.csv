@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+third_factor vs reactive,task_utility,0.028518455059344822,9.5367431640625e-07
+third_factor vs reactive,normative_violation_rate,0.06718750000000001,4.231373309962671e-05
+third_factor vs reactive,attack_success_rate,0.06390625,4.2374374148069485e-05
+third_factor vs reactive,false_suspicion_rate,-0.00203125,0.9969150503397279
+third_factor vs reactive,rigidity_error_rate,0.046718749999999996,4.4161929315406386e-05
+third_factor vs reactive,autonomy_rate,0.08930131004366812,4.2374374148069485e-05
+third_factor vs reactive,joint_viability,0.05528847648122122,9.5367431640625e-07
+third_factor vs reactive,utility_proxy,0.16728905689394707,9.5367431640625e-07
+third_factor_with_self_object vs third_factor,task_utility,1.2144906424776946e-05,0.6333643045893896
+third_factor_with_self_object vs third_factor,normative_violation_rate,0.0,
+third_factor_with_self_object vs third_factor,attack_success_rate,0.0,
+third_factor_with_self_object vs third_factor,false_suspicion_rate,-0.0003125,0.9213503964748575
+third_factor_with_self_object vs third_factor,rigidity_error_rate,-6.938893903907229e-19,0.6261349176879327
+third_factor_with_self_object vs third_factor,autonomy_rate,0.0,
+third_factor_with_self_object vs third_factor,joint_viability,0.0002057921370467064,0.23015077818970942
+third_factor_with_self_object vs third_factor,utility_proxy,-2.0705823424915783e-05,0.47735377710913834
+third_factor_with_self_object vs core_rigid,task_utility,0.12870189950428418,9.5367431640625e-07
+third_factor_with_self_object vs core_rigid,normative_violation_rate,0.0,
+third_factor_with_self_object vs core_rigid,attack_success_rate,0.0,
+third_factor_with_self_object vs core_rigid,false_suspicion_rate,0.010937500000000001,3.839907090312695e-05
+third_factor_with_self_object vs core_rigid,rigidity_error_rate,0.24390625,9.5367431640625e-07
+third_factor_with_self_object vs core_rigid,autonomy_rate,0.0,
+third_factor_with_self_object vs core_rigid,joint_viability,0.02284008132102767,9.5367431640625e-07
+third_factor_with_self_object vs core_rigid,utility_proxy,0.1901204673949103,9.5367431640625e-07

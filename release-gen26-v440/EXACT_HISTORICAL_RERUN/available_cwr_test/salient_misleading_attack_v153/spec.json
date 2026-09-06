@@ -1,0 +1,30 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 460,
+  "hard_constraints": [
+    "salience cannot flip evidence sign",
+    "salience cannot write SoulCore",
+    "credibility gate must be empirical and local"
+  ],
+  "misleading_salient_rate": 0.045,
+  "name": "Salient but Misleading Experience Attack v153",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "analytic_only": "prediction-error learning only",
+    "attention_only": "salience boosts attention/memory weight, not consolidation learning rate",
+    "credibility_gated_dual": "salience boosts attention; persistent update strength also requires local replication/credibility",
+    "naive_dual": "salience boosts learning rate directly"
+  },
+  "primary_metrics": [
+    "true_rare_error",
+    "misleading_event_overfit",
+    "common_error",
+    "false_alarm_rate",
+    "catastrophic_repeat_rate",
+    "false_persistent_update_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic adversarial rare-salience test",
+  "true_rare_harm_rate": 0.08
+}

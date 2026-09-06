@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+validated_consolidation vs fixed_core,ideal_alignment,0.0,
+validated_consolidation vs fixed_core,constitutional_regression_rate,0.0,
+validated_consolidation vs fixed_core,reward_capture_rate,0.0,
+validated_consolidation vs fixed_core,developmental_gain,0.0,
+validated_consolidation vs fixed_core,good_consolidation_rate,0.0,
+validated_consolidation vs fixed_core,bad_consolidation_rate,0.0,
+validated_consolidation vs fixed_core,task_utility,0.0,
+validated_consolidation vs fixed_core,utility_proxy,0.0,
+validated_consolidation vs fast_self_rewrite,ideal_alignment,0.0012657045476057796,1.52587890625e-05
+validated_consolidation vs fast_self_rewrite,constitutional_regression_rate,1.0,3.167124183311986e-05
+validated_consolidation vs fast_self_rewrite,reward_capture_rate,0.0013020833333333333,0.032799846073535935
+validated_consolidation vs fast_self_rewrite,developmental_gain,-0.2144885820443076,1.0
+validated_consolidation vs fast_self_rewrite,good_consolidation_rate,0.0,
+validated_consolidation vs fast_self_rewrite,bad_consolidation_rate,0.0,
+validated_consolidation vs fast_self_rewrite,task_utility,-0.001274278777375376,1.0
+validated_consolidation vs fast_self_rewrite,utility_proxy,0.7999499678142867,1.52587890625e-05
+validated_consolidation vs propose_only,ideal_alignment,0.0,
+validated_consolidation vs propose_only,constitutional_regression_rate,0.0,
+validated_consolidation vs propose_only,reward_capture_rate,0.0,
+validated_consolidation vs propose_only,developmental_gain,0.0,
+validated_consolidation vs propose_only,good_consolidation_rate,0.0,
+validated_consolidation vs propose_only,bad_consolidation_rate,0.0,
+validated_consolidation vs propose_only,task_utility,0.0,
+validated_consolidation vs propose_only,utility_proxy,0.0,

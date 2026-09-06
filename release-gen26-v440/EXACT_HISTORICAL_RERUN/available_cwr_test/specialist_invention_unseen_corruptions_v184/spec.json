@@ -1,0 +1,44 @@
+{
+  "constraints": [
+    "corruption identity hidden from policy",
+    "no test labels for regime inference or recipe construction",
+    "specialist trained only on training labels plus composed augmentations",
+    "shadow validation only on held-out validation split",
+    "authority local and revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "name": "Specialist Invention Under Unseen Corruptions v184",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "composed_specialist": "infer transformation signatures from unlabeled batch and compose augmentation recipe from primitive operators",
+    "library_specialist": "reuse best of existing v183-style fixed specialists (noise/mask/mixed/clean)",
+    "shadow_certified_composed": "same composed specialist + shadow gate + local blend",
+    "simple_ensemble": "SGD-log + RF + GaussianNB soft vote"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "error_rate",
+    "specialist_activation_rate",
+    "shadow_rejection_rate",
+    "out_of_scope_damage_rate",
+    "recipe_match_score",
+    "utility_proxy"
+  ],
+  "primitive_augmentation_library": [
+    "small_rotation",
+    "small_shift",
+    "block_mask",
+    "contrast_gamma",
+    "mild_noise"
+  ],
+  "seeds": 8,
+  "shadow_gain_threshold": 0.01,
+  "test_fraction": 0.25,
+  "unseen_corruptions": {
+    "block_occlusion": "random 2x2 or 3x3 block occlusion",
+    "contrast_warp": "nonlinear contrast gamma warp",
+    "rotation": "random \u00b122 degree rotation",
+    "translation": "random \u00b11.2 pixel shift"
+  }
+}

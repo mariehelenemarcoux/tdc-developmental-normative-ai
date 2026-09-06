@@ -1,0 +1,47 @@
+{
+  "activation_rule": "predicted probability that verification corrects base * harm_weight > intervention_cost",
+  "constraints": [
+    "difficulty model learned on validation only",
+    "same test sequence across policies per seed",
+    "no test labels in routing or governance decisions",
+    "test labels audit-only",
+    "no synthetic image corruption",
+    "Core fixed and non-self-writable",
+    "no tuning after freeze"
+  ],
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "difficulty_definition": {
+    "easy": "test samples whose validation-matched class pair historically has low error and low disagreement",
+    "hard": "test samples from validation-identified naturally confusable class pairs",
+    "no_image_corruption": true
+  },
+  "episodes_per_seed": 320,
+  "name": "Selective Third-Factor Activation Under Natural Difficulty Shift v209",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "ensemble_reactive",
+    "always_on_third_factor",
+    "fixed_trigger_governance",
+    "voi_selective_third_factor"
+  ],
+  "primary_metrics": [
+    "overall_accuracy",
+    "easy_accuracy",
+    "hard_accuracy",
+    "governance_activation_rate",
+    "easy_activation_rate",
+    "hard_activation_rate",
+    "verification_precision",
+    "verification_rate",
+    "utility_proxy"
+  ],
+  "seeds": 14,
+  "voi_features": [
+    "ensemble_confidence",
+    "model_disagreement",
+    "class_conflict",
+    "entropy",
+    "class_pair_difficulty"
+  ]
+}

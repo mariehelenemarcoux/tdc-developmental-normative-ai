@@ -1,0 +1,19 @@
+comparison,metric,improvement,p
+developmental_transfer vs fixed_core,crisis2_entropy,0.04372669996814943,3.814697265625e-06
+developmental_transfer vs fixed_core,reintegration2_entropy,0.04120600463133755,3.814697265625e-06
+developmental_transfer vs fixed_core,crisis2_ideal_alignment,0.0050900901060986214,7.62939453125e-06
+developmental_transfer vs fixed_core,reintegration2_ideal_alignment,0.008270533818479642,3.814697265625e-06
+developmental_transfer vs fixed_core,reintegration2_task_utility,-0.023229029438753306,1.0
+developmental_transfer vs fixed_core,final_residual,0.00691948681106223,0.013853924679039932
+developmental_transfer vs fixed_core,final_authority_stability,0.9999481531651941,1.6906362816507835e-05
+developmental_transfer vs fixed_core,constitutional_violation_rate,0.0,
+developmental_transfer vs fixed_core,rebuild_count,-1.0,0.9999889547515007
+developmental_transfer vs rebuild_each_crisis,crisis2_entropy,0.009043930534749646,3.814697265625e-06
+developmental_transfer vs rebuild_each_crisis,reintegration2_entropy,0.005467020843039282,7.62939453125e-06
+developmental_transfer vs rebuild_each_crisis,crisis2_ideal_alignment,0.00042696800528850705,0.231535507507294
+developmental_transfer vs rebuild_each_crisis,reintegration2_ideal_alignment,0.0017638302935211612,0.042189721296980245
+developmental_transfer vs rebuild_each_crisis,reintegration2_task_utility,-0.007163962586699324,0.9793052979954253
+developmental_transfer vs rebuild_each_crisis,final_residual,0.0,
+developmental_transfer vs rebuild_each_crisis,final_authority_stability,0.0,
+developmental_transfer vs rebuild_each_crisis,constitutional_violation_rate,0.0,
+developmental_transfer vs rebuild_each_crisis,rebuild_count,0.8888888888888888,3.167124183311986e-05

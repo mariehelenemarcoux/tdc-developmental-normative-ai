@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+risk_sensitive_stop vs uniform_stop,decision_accuracy,-0.004382716049382714,0.9790144715926068
+risk_sensitive_stop vs uniform_stop,irreversible_error_rate,0.0005555555555555557,0.30208795845489633
+risk_sensitive_stop vs uniform_stop,mean_probe_count,-0.19685185185185183,0.9999991338918834
+risk_sensitive_stop vs uniform_stop,overprobe_rate,-0.0371604938271605,0.9999990431297393
+risk_sensitive_stop vs uniform_stop,cascade_rate,-0.020493827160493836,0.9999949126268989
+risk_sensitive_stop vs uniform_stop,utility_proxy,-0.022115123456790134,0.9989061122760177
+cascade_risk_stop vs uniform_stop,decision_accuracy,-0.012654320987654314,0.9999941106482869
+cascade_risk_stop vs uniform_stop,irreversible_error_rate,0.0011728395061728401,0.10479451276720769
+cascade_risk_stop vs uniform_stop,mean_probe_count,0.6204320987654321,8.666533220995528e-07
+cascade_risk_stop vs uniform_stop,overprobe_rate,0.1437037037037037,8.644742180097877e-07
+cascade_risk_stop vs uniform_stop,cascade_rate,0.03771604938271605,8.644742180097877e-07
+cascade_risk_stop vs uniform_stop,utility_proxy,0.02491759259259259,0.0002527441829442978
+cascade_risk_stop vs risk_sensitive_stop,decision_accuracy,-0.0082716049382716,0.99998480679105
+cascade_risk_stop vs risk_sensitive_stop,irreversible_error_rate,0.0006172839506172839,0.20185783455732492
+cascade_risk_stop vs risk_sensitive_stop,mean_probe_count,0.817283950617284,8.66108116572057e-07
+cascade_risk_stop vs risk_sensitive_stop,overprobe_rate,0.18086419753086422,8.644742180097877e-07
+cascade_risk_stop vs risk_sensitive_stop,cascade_rate,0.05820987654320988,8.650185646450623e-07
+cascade_risk_stop vs risk_sensitive_stop,utility_proxy,0.04703271604938272,1.862645149230957e-09
+cascade_risk_stop vs always_probe_high_risk,decision_accuracy,0.0004320987654321059,0.3400859762210073
+cascade_risk_stop vs always_probe_high_risk,irreversible_error_rate,0.01037037037037037,2.9097507794495135e-06
+cascade_risk_stop vs always_probe_high_risk,mean_probe_count,0.43487654320987656,9.313225746154785e-10
+cascade_risk_stop vs always_probe_high_risk,overprobe_rate,0.1817283950617284,8.666533220995528e-07
+cascade_risk_stop vs always_probe_high_risk,cascade_rate,0.0254320987654321,1.1659205679384673e-06
+cascade_risk_stop vs always_probe_high_risk,utility_proxy,0.06152746913580249,9.313225746154785e-09

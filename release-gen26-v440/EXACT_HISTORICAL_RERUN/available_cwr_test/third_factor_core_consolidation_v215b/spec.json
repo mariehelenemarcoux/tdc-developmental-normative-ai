@@ -1,0 +1,31 @@
+{
+  "constitutional": [
+    "dignity",
+    "autonomy",
+    "responsibility",
+    "non_domination"
+  ],
+  "date_frozen": "2026-09-03",
+  "developmental": [
+    "empathy",
+    "authenticity",
+    "correctability",
+    "moral_creativity"
+  ],
+  "episodes_per_seed": 240,
+  "name": "Third-Factor Developmental Core Consolidation v215b compact",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "fixed_core",
+    "fast_self_rewrite",
+    "propose_only",
+    "validated_consolidation"
+  ],
+  "rules": [
+    "constitutional coordinates cannot decrease under validated consolidation",
+    "candidate must improve frozen validation ideal score",
+    "candidate must not worsen adversarial violations",
+    "two consecutive validations before consolidation"
+  ],
+  "seeds": 16
+}

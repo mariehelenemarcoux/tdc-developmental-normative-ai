@@ -1,0 +1,33 @@
+{
+  "date_frozen": "2026-09-02",
+  "horizon": 4,
+  "name": "Shadow-Certified Threshold Recalibration v151",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "realized outcomes are only used post-action for drift/shadow evaluation; no future outcome leakage into current action choice",
+  "policies": {
+    "direct_predictive_recalibration": "predictive drift detection then immediate threshold update",
+    "fixed_062": "fixed conservative threshold 0.62",
+    "frozen_floor": "source learned threshold frozen",
+    "shadow_certified_recalibration": "predictive drift detection -> candidate threshold -> shadow replay -> temporary authority if certified"
+  },
+  "primary_metrics": [
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "floor_binding_rate",
+    "candidate_rate",
+    "shadow_accept_rate",
+    "revoke_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 18,
+  "shadow_certification": {
+    "accept_if": "shadow candidate reduces realized lock-in score without reducing utility score by >0.01",
+    "authority": "temporary; revoke if later rolling score deteriorates",
+    "candidate_source": "relearn threshold on recent outcomes",
+    "window": 80
+  },
+  "status": "synthetic held-out distribution-shift test",
+  "test_episodes_per_seed": 170,
+  "train_episodes_per_seed": 150
+}

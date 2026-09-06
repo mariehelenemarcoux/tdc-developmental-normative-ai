@@ -1,0 +1,21 @@
+comparison,metric,improvement,p
+apply_inverse vs use_observed,prediction_accuracy,0.006428571428571435,0.002183193780387643
+apply_inverse vs use_observed,accuracy_when_identified,0.007023974616984037,0.005822621950809377
+apply_inverse vs use_observed,utilization_selection_accuracy,0.006428571428571421,0.0027892254779276807
+apply_inverse vs use_observed,false_utilization_rate,0.006428571428571428,0.0024464303320881455
+apply_inverse vs use_observed,utility_proxy,0.011121428571428563,0.002188060592562319
+apply_inverse vs apply_T_again,prediction_accuracy,0.028095238095238097,1.0043692674938419e-06
+apply_inverse vs apply_T_again,accuracy_when_identified,0.03277764250415951,1.8934412557255595e-06
+apply_inverse vs apply_T_again,utilization_selection_accuracy,0.028095238095238097,1.0574098203077445e-06
+apply_inverse vs apply_T_again,false_utilization_rate,0.028095238095238093,1.0081236487184664e-06
+apply_inverse vs apply_T_again,utility_proxy,0.048604761904761894,1.0093777038425171e-06
+learned_utilization vs use_observed,prediction_accuracy,-0.008968253968253962,0.9999778138498356
+learned_utilization vs use_observed,accuracy_when_identified,-0.010880989508200885,0.9999683990835447
+learned_utilization vs use_observed,utilization_selection_accuracy,-0.008968253968253969,0.9999761867739934
+learned_utilization vs use_observed,false_utilization_rate,-0.008968253968253967,0.9999795761121063
+learned_utilization vs use_observed,utility_proxy,-0.015515079365079376,0.9999812987091147
+learned_utilization vs apply_inverse,prediction_accuracy,-0.015396825396825398,0.9999956159609574
+learned_utilization vs apply_inverse,accuracy_when_identified,-0.017904964125184924,0.9999974007104194
+learned_utilization vs apply_inverse,utilization_selection_accuracy,-0.01539682539682539,0.9999954066111225
+learned_utilization vs apply_inverse,false_utilization_rate,-0.015396825396825398,0.9999953899827341
+learned_utilization vs apply_inverse,utility_proxy,-0.02663650793650794,0.9999953649487946

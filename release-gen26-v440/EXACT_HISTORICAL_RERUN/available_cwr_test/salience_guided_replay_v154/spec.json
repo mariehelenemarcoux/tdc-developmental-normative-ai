@@ -1,0 +1,33 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 480,
+  "hard_constraints": [
+    "salience affects memory priority, not evidence sign",
+    "salience cannot write SoulCore",
+    "credibility gates persistent replay updates"
+  ],
+  "misleading_salient_rate": 0.045,
+  "name": "Salience-Guided Replay / Memory Priority v154",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "no_replay": "online analytic learning only",
+    "random_replay": "limited replay sampled uniformly",
+    "salience_credibility_replay": "salience prioritizes replay; replay consolidation strength gated by local credibility",
+    "salience_replay": "limited replay prioritized by affective/normative salience"
+  },
+  "primary_metrics": [
+    "true_rare_error",
+    "misleading_event_overfit",
+    "common_error",
+    "false_alarm_rate",
+    "catastrophic_repeat_rate",
+    "false_persistent_update_rate",
+    "replay_precision_true_rare",
+    "replay_fraction_misleading",
+    "utility_proxy"
+  ],
+  "replay_budget_per_20_steps": 4,
+  "seeds": 24,
+  "status": "synthetic limited-replay memory test",
+  "true_rare_harm_rate": 0.08
+}

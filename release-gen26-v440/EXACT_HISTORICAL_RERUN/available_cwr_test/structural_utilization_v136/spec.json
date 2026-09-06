@@ -1,0 +1,35 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 420,
+  "laws": [
+    "couple_A",
+    "couple_B",
+    "threshold_A",
+    "threshold_B",
+    "stabilize_A",
+    "stabilize_B"
+  ],
+  "name": "Structural Utilization v136",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true law/labels only for final audit; learned utilization mode updated from observed prediction outcomes, not hidden law identity",
+  "policies": {
+    "apply_T_again": "apply identified T to observed state again",
+    "apply_inverse": "apply approximate inverse of identified T before scoring",
+    "learned_utilization": "learn per-law utilization mode from prior episodes, then apply mode to future episodes",
+    "use_observed": "after identifying T, predict from observed state directly"
+  },
+  "primary_metrics": [
+    "prediction_accuracy",
+    "accuracy_when_identified",
+    "utilization_selection_accuracy",
+    "false_utilization_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic oracle-free post-identification utilization test",
+  "utilization_modes": [
+    "observed",
+    "forward",
+    "inverse"
+  ]
+}

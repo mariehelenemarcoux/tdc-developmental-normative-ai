@@ -1,0 +1,49 @@
+{
+  "constraints": [
+    "same generated episodes across policies",
+    "no test outcome labels in action selection",
+    "constitutional core fixed",
+    "TDC developmental rules may consolidate only from frozen validation windows",
+    "no utility proxy",
+    "no tuning after freeze"
+  ],
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 70,
+  "metrics": {
+    "development": [
+      "return_A_entropy",
+      "crisis_B_entropy",
+      "integrated_rule_reuse"
+    ],
+    "normativity": [
+      "ideal_alignment",
+      "constitutional_violation",
+      "reward_capture"
+    ],
+    "performance": [
+      "task_value"
+    ],
+    "resilience": [
+      "entropy",
+      "residual",
+      "rebuild_count"
+    ]
+  },
+  "name": "TDC Gen2 Integrated Falsification Benchmark v227",
+  "phases": [
+    "stable",
+    "crisis_A",
+    "reintegration_A",
+    "novel",
+    "crisis_B",
+    "adversarial",
+    "return_A"
+  ],
+  "policies": [
+    "reactive",
+    "fixed_normative",
+    "rebuild_each_crisis",
+    "tdc_gen2"
+  ],
+  "seeds": 16
+}

@@ -1,0 +1,30 @@
+{
+  "constraints": [
+    "same regime sequence across policies",
+    "train labels only for specialist construction",
+    "no test labels in routing/recall decisions",
+    "test labels audit-only",
+    "same specialist family across policies",
+    "no tuning after freeze"
+  ],
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_regime": 60,
+  "name": "Sequential Regime Recurrence Benchmark v212b compact",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "always_global",
+    "always_rebuild_specialist",
+    "memory_recall",
+    "onion_recurrence"
+  ],
+  "seeds": 10,
+  "sequence": [
+    "clean",
+    "blur",
+    "clean",
+    "shift",
+    "blur",
+    "shift"
+  ]
+}

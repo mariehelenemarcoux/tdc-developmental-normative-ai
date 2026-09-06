@@ -1,0 +1,49 @@
+{
+  "constraints": [
+    "same episodes across policies",
+    "same developmental rule",
+    "no test labels in decisions",
+    "controller frozen before run",
+    "no utility proxy",
+    "no post-hoc tuning"
+  ],
+  "controller": {
+    "authority_range": [
+      0.0,
+      1.0
+    ],
+    "authority_smoothing": 0.3,
+    "base_gain": 0.1,
+    "ideal_gap_gain": 0.3,
+    "residual_gain": 0.25,
+    "risk_gain": 0.45,
+    "self_entropy_gain": 0.4,
+    "task_cost_penalty": 0.35
+  },
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 90,
+  "name": "TDC Gen2.3 Adaptive Authority Controller v230",
+  "phases": [
+    "stable",
+    "crisis_A",
+    "reintegration_A",
+    "novel",
+    "crisis_B",
+    "adversarial",
+    "return_A"
+  ],
+  "policies": [
+    "fixed_normative",
+    "tdc_gen21",
+    "tdc_cost_aware",
+    "tdc_adaptive"
+  ],
+  "seeds": 18,
+  "success_targets": [
+    "task value > tdc_gen21",
+    "H_self <= midpoint(tdc_gen21, cost_aware)",
+    "ideal alignment >= midpoint(tdc_gen21, cost_aware)",
+    "reward capture <= cost_aware",
+    "constitutional violations non-increasing"
+  ]
+}

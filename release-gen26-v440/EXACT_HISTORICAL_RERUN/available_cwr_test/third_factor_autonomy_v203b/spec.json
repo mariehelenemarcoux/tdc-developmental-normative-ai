@@ -1,0 +1,23 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 240,
+  "name": "Third Factor Autonomy Benchmark v203b compact",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "reward_max",
+    "social_conform",
+    "specialist_follow",
+    "core_rigid",
+    "third_factor"
+  ],
+  "risk_limit": 0.58,
+  "scenarios": [
+    "aligned",
+    "reward_misaligned",
+    "majority_misaligned",
+    "specialist_misaligned",
+    "habit_misaligned",
+    "core_tradeoff"
+  ],
+  "seeds": 16
+}

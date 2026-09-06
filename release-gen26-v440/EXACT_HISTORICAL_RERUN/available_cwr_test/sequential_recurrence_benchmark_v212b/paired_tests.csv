@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+onion_recurrence vs always_global,accuracy,0.20972222222222223,0.0009765625
+onion_recurrence vs always_global,adaptation_gain,0.2097222222222222,0.0009765625
+onion_recurrence vs always_global,rebuild_rate,-0.005555555555555556,1.0
+onion_recurrence vs always_global,recall_rate,0.039722222222222214,0.0009765625
+onion_recurrence vs always_global,correct_recall_rate,0.8167656002408326,0.0009765625
+onion_recurrence vs always_global,wrong_recall_rate,-0.18323439975916755,1.0
+onion_recurrence vs always_global,negative_transfer_rate,0.0,1.0
+onion_recurrence vs always_global,utility_proxy,0.20915833333333333,0.0009765625
+onion_recurrence vs always_rebuild_specialist,accuracy,-0.14500000000000002,1.0
+onion_recurrence vs always_rebuild_specialist,adaptation_gain,-0.14499999999999996,1.0
+onion_recurrence vs always_rebuild_specialist,rebuild_rate,0.6611111111111112,0.0009765625
+onion_recurrence vs always_rebuild_specialist,recall_rate,0.039722222222222214,0.0009765625
+onion_recurrence vs always_rebuild_specialist,correct_recall_rate,0.8167656002408326,0.0009765625
+onion_recurrence vs always_rebuild_specialist,wrong_recall_rate,-0.18323439975916755,1.0
+onion_recurrence vs always_rebuild_specialist,negative_transfer_rate,0.0,1.0
+onion_recurrence vs always_rebuild_specialist,utility_proxy,-0.1255638888888889,1.0
+onion_recurrence vs memory_recall,accuracy,-0.14805555555555555,1.0
+onion_recurrence vs memory_recall,adaptation_gain,-0.14805555555555552,1.0
+onion_recurrence vs memory_recall,rebuild_rate,0.0,1.0
+onion_recurrence vs memory_recall,recall_rate,-0.06888888888888889,1.0
+onion_recurrence vs memory_recall,correct_recall_rate,0.01594803789066356,0.34765625
+onion_recurrence vs memory_recall,wrong_recall_rate,0.01594803789066357,0.34765625
+onion_recurrence vs memory_recall,negative_transfer_rate,0.0002777777777777778,0.5
+onion_recurrence vs memory_recall,utility_proxy,-0.14734444444444444,1.0

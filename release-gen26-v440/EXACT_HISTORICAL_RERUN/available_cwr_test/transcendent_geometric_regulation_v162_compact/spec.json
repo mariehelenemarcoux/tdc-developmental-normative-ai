@@ -1,0 +1,30 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 260,
+  "hard_constraints": [
+    "geometric coherence is not moral truth",
+    "geometric regulator cannot rewrite SoulCore",
+    "transcendent regulation is a computational analogue, not literal meditation or consciousness"
+  ],
+  "horizon": 10,
+  "name": "Transcendent + Geometric Regulation v162 compact",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "no_regulation",
+    "receptive_only",
+    "transcendent_only",
+    "transcendent_geometric"
+  ],
+  "primary_metrics": [
+    "rumination_rate",
+    "overload_rate",
+    "false_reorganization_rate",
+    "structural_recovery_rate",
+    "task_success_rate",
+    "adaptability_rate",
+    "rigidity_rate",
+    "utility_proxy"
+  ],
+  "seeds": 18,
+  "status": "valid compact synthetic overload/rumination/structural benchmark"
+}

@@ -1,0 +1,7 @@
+{
+  "beats_gen21_task": true,
+  "beats_fixed_ideal": true,
+  "beats_fixed_Hself": true,
+  "beats_fixed_capture": true,
+  "no_constitutional_regression_vs_fixed": true
+}

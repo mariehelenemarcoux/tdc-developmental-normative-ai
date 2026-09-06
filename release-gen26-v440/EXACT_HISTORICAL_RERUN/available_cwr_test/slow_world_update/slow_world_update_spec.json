@@ -1,0 +1,37 @@
+{
+  "conditions": [
+    "plain_v01",
+    "global_recon_naive",
+    "fast_view_slow_world"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_mix": {
+    "INVISIBLE": 0.02,
+    "STABLE": 0.76,
+    "VIEW": 0.12,
+    "WORLD": 0.1
+  },
+  "fast_view": {
+    "action": "immediate local encoder repair",
+    "detector_threshold_ratio": 1.65
+  },
+  "invisible_negative_control": "latent orthogonal rotation on isotropic Gaussian",
+  "name": "CWR fast-VIEW / slow-WORLD architecture test",
+  "no_tuning_after_freeze": true,
+  "same_streams_across_conditions": true,
+  "seeds": 16,
+  "slow_world": {
+    "candidate": "weak global reconsolidation alpha=0.05",
+    "eligibility": [
+      "no local suspect",
+      "shared distribution shift score > frozen calibration 95th percentile",
+      "condition persists for 3 consecutive blocks"
+    ],
+    "labels_used": false,
+    "memory": "calibration mean/covariance used as evidence baseline, not hard veto",
+    "prospective_validation": "on next block candidate median multiview residual < current AND shared-shift score moves toward calibration baseline"
+  },
+  "status": "development test",
+  "steps": 220,
+  "world_change": "persistent latent mean or covariance shift shared by all views"
+}

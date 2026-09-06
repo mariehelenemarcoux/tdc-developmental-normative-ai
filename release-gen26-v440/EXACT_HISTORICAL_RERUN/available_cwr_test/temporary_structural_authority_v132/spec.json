@@ -1,0 +1,28 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 360,
+  "heldout_laws": [
+    "couple",
+    "threshold",
+    "stabilize"
+  ],
+  "name": "Temporary Structural Authority v132",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "hidden true law and labels used only for final audit metrics",
+  "policies": {
+    "immediate_commit": "new structural candidate immediately becomes persistent model",
+    "prospective_validation": "temporary authority + prospective validation before consolidation",
+    "temporary_authority": "candidate may control prediction reversibly but is not consolidated"
+  },
+  "primary_metrics": [
+    "novel_prediction_accuracy",
+    "true_candidate_authority_rate",
+    "false_candidate_authority_rate",
+    "false_consolidation_rate",
+    "true_consolidation_rate",
+    "revoke_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic oracle-free structural authority/consolidation separation test"
+}

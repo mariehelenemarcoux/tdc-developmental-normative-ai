@@ -1,0 +1,28 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 540,
+  "name": "Stopping Under Irreversibility v141",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true error source and realized harm used only for audit; policy observes risk class, uncertainties, sensitivities and spillover priors",
+  "policies": {
+    "always_probe_high_risk": "uniform policy except probe all layers for irreversible cases",
+    "cascade_risk_stop": "risk-sensitive stopping + cascade-aware spillover penalty",
+    "risk_sensitive_stop": "stricter stopping threshold as irreversibility rises",
+    "uniform_stop": "same stopping threshold for all risk classes"
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "irreversible_error_rate",
+    "mean_probe_count",
+    "overprobe_rate",
+    "cascade_rate",
+    "utility_proxy"
+  ],
+  "risk_classes": [
+    "REVERSIBLE",
+    "COSTLY",
+    "IRREVERSIBLE"
+  ],
+  "seeds": 30,
+  "status": "synthetic red-team of probe stopping under variable irreversibility"
+}

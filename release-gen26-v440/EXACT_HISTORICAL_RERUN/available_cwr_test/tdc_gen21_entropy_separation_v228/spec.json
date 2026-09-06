@@ -1,0 +1,34 @@
+{
+  "constraints": [
+    "same episode generation across policies",
+    "same frozen validation windows",
+    "constitutional core fixed",
+    "no test-outcome labels in action selection",
+    "no utility proxy",
+    "no tuning after freeze"
+  ],
+  "date_frozen": "2026-09-03",
+  "entropy": {
+    "positive_disintegration_trigger": "H_self only",
+    "self": "unresolved value conflict + unresolved authority conflict + moral residual + structural instability",
+    "world": "prediction_mismatch + environmental complexity"
+  },
+  "episodes_per_phase": 70,
+  "name": "TDC Gen2.1 Entropy Separation Benchmark v228",
+  "phases": [
+    "stable",
+    "crisis_A",
+    "reintegration_A",
+    "novel",
+    "crisis_B",
+    "adversarial",
+    "return_A"
+  ],
+  "policies": [
+    "reactive",
+    "fixed_normative",
+    "rebuild_each_crisis",
+    "tdc_gen21"
+  ],
+  "seeds": 16
+}

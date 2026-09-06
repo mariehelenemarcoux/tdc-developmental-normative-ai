@@ -1,0 +1,45 @@
+{
+  "constraints": [
+    "no parameter changes after v230",
+    "same episodes across policies",
+    "no test labels in action selection",
+    "constitutional invariants fixed",
+    "no utility proxy",
+    "report failures even if TDC loses"
+  ],
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 100,
+  "frozen_controller": {
+    "authority_smoothing": 0.3,
+    "base_gain": 0.1,
+    "ideal_gap_gain": 0.3,
+    "residual_gain": 0.25,
+    "risk_gain": 0.45,
+    "self_entropy_gain": 0.4,
+    "task_cost_penalty": 0.35
+  },
+  "holdout_changes": [
+    "new random seeds",
+    "crisis_B emphasizes correctability/capture instead of delayed harm",
+    "novel_shift changes task-value distribution",
+    "adversarial phase increases authority conflict",
+    "return_A partially changes surface statistics"
+  ],
+  "name": "TDC Gen2.3 Frozen Holdout Falsification v231",
+  "phases": [
+    "stable",
+    "crisis_A",
+    "reintegration_A",
+    "novel_shift",
+    "crisis_B",
+    "adversarial",
+    "return_A"
+  ],
+  "policies": [
+    "reactive",
+    "fixed_normative",
+    "tdc_gen21",
+    "tdc_gen23"
+  ],
+  "seeds": 24
+}

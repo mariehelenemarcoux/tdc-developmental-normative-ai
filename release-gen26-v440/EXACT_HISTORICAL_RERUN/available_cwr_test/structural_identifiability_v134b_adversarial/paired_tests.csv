@@ -1,0 +1,22 @@
+comparison,metric,improvement,p
+random_probe vs passive_repeat,identification_accuracy,0.47452380952380946,8.644742180097877e-07
+random_probe vs passive_repeat,false_consolidation_rate,0.47452380952380946,8.639301574362052e-07
+random_probe vs passive_repeat,true_consolidation_rate,0.47452380952380946,8.644742180097877e-07
+random_probe vs passive_repeat,no_consolidation_rate,0.0,
+random_probe vs passive_repeat,accuracy_on_hard_pairs,0.46253968253968253,8.622996909076779e-07
+random_probe vs passive_repeat,false_commit_on_hard_pairs,0.46253968253968253,8.568833480366938e-07
+random_probe vs passive_repeat,utility_proxy,0.9640595238095239,9.313225746154785e-10
+max_separation_probe vs random_probe,identification_accuracy,0.01595238095238095,8.365596359260393e-07
+max_separation_probe vs random_probe,false_consolidation_rate,0.015952380952380954,8.33387749978962e-07
+max_separation_probe vs random_probe,true_consolidation_rate,0.01595238095238095,8.365596359260393e-07
+max_separation_probe vs random_probe,no_consolidation_rate,0.0,
+max_separation_probe vs random_probe,accuracy_on_hard_pairs,0.02380952380952383,1.1789767169390464e-06
+max_separation_probe vs random_probe,false_commit_on_hard_pairs,0.023809523809523815,1.2189863342895583e-06
+max_separation_probe vs random_probe,utility_proxy,0.04989285714285726,9.313225746154785e-10
+identifiability_gate vs max_separation_probe,identification_accuracy,7.936507936507908e-05,0.3821410118616468
+identifiability_gate vs max_separation_probe,false_consolidation_rate,0.000634920634920635,0.054616027478106864
+identifiability_gate vs max_separation_probe,true_consolidation_rate,-0.007301587301587286,0.9999959736818445
+identifiability_gate vs max_separation_probe,no_consolidation_rate,-0.007936507936507938,0.9999983214749705
+identifiability_gate vs max_separation_probe,accuracy_on_hard_pairs,0.00015873015873015816,0.3821410118616468
+identifiability_gate vs max_separation_probe,false_commit_on_hard_pairs,0.00126984126984127,0.054616027478106864
+identifiability_gate vs max_separation_probe,utility_proxy,-5.952380952383522e-05,0.5491165482169101

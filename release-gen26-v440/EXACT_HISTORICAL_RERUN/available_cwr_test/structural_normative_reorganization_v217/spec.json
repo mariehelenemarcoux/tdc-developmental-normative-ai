@@ -1,0 +1,43 @@
+{
+  "candidate_rules": [
+    "delayed_harm_priority",
+    "asymmetric_stakeholder_protection",
+    "correctability_over_immediate_reward",
+    "anti_capture_authority"
+  ],
+  "consolidation_requirements": [
+    "positive ideal-alignment gain on two validation windows",
+    "zero constitutional violation increase",
+    "no adversarial regression",
+    "rule must alter behavior on at least 3 validation cases",
+    "two prospective confirmations"
+  ],
+  "constitutional_invariants": [
+    "dignity",
+    "autonomy",
+    "responsibility",
+    "non_domination"
+  ],
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 300,
+  "metrics": [
+    "ideal_alignment",
+    "constitutional_violation_rate",
+    "reward_capture_rate",
+    "structural_rule_count",
+    "good_consolidation_rate",
+    "bad_consolidation_rate",
+    "behavior_change_rate",
+    "task_utility",
+    "utility_proxy"
+  ],
+  "name": "Structural Normative Reorganization v217",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "fixed_core",
+    "weight_drift",
+    "rule_propose_only",
+    "rule_validated_consolidation"
+  ],
+  "seeds": 18
+}

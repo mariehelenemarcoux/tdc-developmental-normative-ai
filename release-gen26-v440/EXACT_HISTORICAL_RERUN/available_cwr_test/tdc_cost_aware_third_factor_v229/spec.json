@@ -1,0 +1,37 @@
+{
+  "activation": {
+    "governance_cost": 0.035,
+    "maximum_rule_authority": 1.0,
+    "minimum_rule_authority": 0.35,
+    "risk_threshold": 0.52,
+    "self_entropy_threshold": 0.46
+  },
+  "constraints": [
+    "same episodes across policies",
+    "same frozen rule",
+    "no test labels in decisions",
+    "constitutional invariants fixed",
+    "no post-hoc threshold tuning",
+    "no utility proxy"
+  ],
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 80,
+  "name": "TDC Gen2.2 Cost-Aware Third Factor v229",
+  "objective": "Reduce unnecessary task-value cost without regressing normativity or H_self",
+  "phases": [
+    "stable",
+    "crisis_A",
+    "reintegration_A",
+    "novel",
+    "crisis_B",
+    "adversarial",
+    "return_A"
+  ],
+  "policies": [
+    "reactive",
+    "fixed_normative",
+    "tdc_gen21",
+    "tdc_cost_aware"
+  ],
+  "seeds": 18
+}

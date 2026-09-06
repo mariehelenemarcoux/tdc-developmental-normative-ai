@@ -1,0 +1,3 @@
+comparison,mean_diff,median_diff,wins,losses,ties
+fast_view_slow_world-plain_v01,0.035708716150870415,0.0049854932301741095,11,5,0
+fast_view_slow_world-global_recon_naive,-0.014389808994197287,-0.012533849129593821,1,15,0
