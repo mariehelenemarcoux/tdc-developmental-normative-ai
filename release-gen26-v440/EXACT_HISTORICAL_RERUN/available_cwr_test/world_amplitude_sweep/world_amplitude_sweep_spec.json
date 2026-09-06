@@ -1,0 +1,40 @@
+{
+  "conditions": [
+    "plain_v01",
+    "global_recon_naive",
+    "fast_view_slow_world"
+  ],
+  "date_frozen": "2026-09-01",
+  "fast_view_slow_world_params": {
+    "global_candidate_alpha": 0.05,
+    "locality_ratio_max": 1.8,
+    "persistence": "3/3 consecutive eligible blocks",
+    "prospective_commit": "candidate residual lower AND shared latent mean norm no larger",
+    "shared_shift_threshold": "95th percentile clean calibration",
+    "view_threshold_ratio": 1.65
+  },
+  "invisible_rate": 0.02,
+  "name": "WORLD amplitude sweep at fixed WORLD rate",
+  "no_parameter_changes_across_levels": true,
+  "primary": "mean accuracy",
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "final accuracy",
+    "view detection",
+    "paired wins"
+  ],
+  "seeds_per_level": 12,
+  "status": "development sweep; architecture frozen from prior test",
+  "steps": 220,
+  "view_rate": 0.12,
+  "world_amplitude_levels": [
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.5
+  ],
+  "world_cov_logscale_range": "level * Uniform(-0.18,0.18)",
+  "world_mean_shift_range": "level * Uniform(0.35,0.75)",
+  "world_rate": 0.1
+}

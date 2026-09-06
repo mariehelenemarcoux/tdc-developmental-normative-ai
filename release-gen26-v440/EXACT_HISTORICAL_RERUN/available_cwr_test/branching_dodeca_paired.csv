@@ -1,0 +1,4 @@
+comparison,mean_diff,wins,losses,ties
+branch - simple20,0.026408730158730145,2,6,0
+branch - random100,-0.0003968253968253954,0,1,7
+branch - clustered100,0.0,0,0,8

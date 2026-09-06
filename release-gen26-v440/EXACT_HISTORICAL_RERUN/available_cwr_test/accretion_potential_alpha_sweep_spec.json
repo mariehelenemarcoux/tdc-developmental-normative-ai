@@ -1,0 +1,21 @@
+{
+  "alpha_values": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    1.5,
+    2.0
+  ],
+  "base_radius_R0": 10.0,
+  "date_frozen": "2026-08-31",
+  "epochs": 100,
+  "goal": "Find whether a finite potential strength improves view-drift robustness without excessive loss of world-drift sensitivity.",
+  "name": "CWR accretion-potential strength sweep",
+  "no_tuning_after_freeze": true,
+  "potential_shape": "same asymmetric effective-potential-like profile as prior accretion-inspired test",
+  "protocol": "same learned shared-world/local-view factorization and clean/view/world drift evaluation",
+  "radius": "R(theta)=R0 + alpha * U(theta)",
+  "seeds": 10,
+  "tube_radius_r": 1.0
+}

@@ -1,0 +1,2 @@
+n,mean_slow_error,mean_detector_reset_error,mean_oracle_reset_error,detector_gain_vs_slow,oracle_gain_vs_slow,detector_gain_when_pred_WORLD,detector_gain_true_WORLD,detector_gain_true_VIEW,detector_gain_true_STABLE
+1728,0.35763038282452786,0.357578294064329,0.3576186820398876,5.208876019881052e-05,1.1700784640149625e-05,0.004286160839216409,0.0001402895878653922,-3.0265127911154276e-05,4.624182064219363e-05

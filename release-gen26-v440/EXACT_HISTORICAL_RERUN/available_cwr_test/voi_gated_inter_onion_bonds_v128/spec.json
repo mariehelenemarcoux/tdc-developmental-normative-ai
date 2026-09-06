@@ -1,0 +1,23 @@
+{
+  "architectures": {
+    "evidence_scoped_bond": "credibility + applicability + scope gating",
+    "no_bond": "local autonomy only",
+    "voi_fast_revoke": "VOI-gated + rapid revoke after contradiction",
+    "voi_gated_bond": "evidence-scoped + estimated incremental VOI > 0"
+  },
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 360,
+  "name": "VOI-Gated Inter-Onion Bonds v128",
+  "no_tuning_after_freeze": true,
+  "primary_metrics": [
+    "joint_task_accuracy",
+    "helpful_transfer_rate",
+    "harmful_transfer_rate",
+    "bond_activation_rate",
+    "bond_precision",
+    "cross_domain_interference",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic conditional inter-onion information transfer test"
+}

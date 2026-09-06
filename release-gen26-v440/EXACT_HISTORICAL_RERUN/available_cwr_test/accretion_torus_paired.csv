@@ -1,0 +1,4 @@
+best_condition,against,mean_diff,wins,losses,ties
+accretion_potential_torus,euclidean,0.003166666666666665,4,4,0
+accretion_potential_torus,fixed_torus_R10,0.007333333333333331,4,4,0
+accretion_potential_torus,variable_torus_unstructured,0.0052777777777777354,3,5,0

@@ -1,0 +1,22 @@
+comparison,metric,improvement,p
+prediction_plus_impossibility vs prediction_only,accuracy,-0.0024088541666666685,1.0
+prediction_plus_impossibility vs prediction_only,mechanism_identification_rate,-0.02083333333333333,1.0
+prediction_plus_impossibility vs prediction_only,wrong_identification_rate,-0.020833333333333336,1.0
+prediction_plus_impossibility vs prediction_only,mechanism_commit_rate,0.0,1.0
+prediction_plus_impossibility vs prediction_only,false_mechanism_commit_rate,-0.020833333333333336,1.0
+prediction_plus_impossibility vs prediction_only,impossibility_violation_rate,0.0,1.0
+prediction_plus_impossibility vs prediction_only,utility_proxy,-0.006575520833333362,1.0
+impossibility_gated_commit vs prediction_plus_impossibility,accuracy,-0.33203125000000006,1.0
+impossibility_gated_commit vs prediction_plus_impossibility,mechanism_identification_rate,-0.13020833333333334,1.0
+impossibility_gated_commit vs prediction_plus_impossibility,wrong_identification_rate,0.4427083333333333,0.00390625
+impossibility_gated_commit vs prediction_plus_impossibility,mechanism_commit_rate,-0.5729166666666667,1.0
+impossibility_gated_commit vs prediction_plus_impossibility,false_mechanism_commit_rate,0.4427083333333333,0.00390625
+impossibility_gated_commit vs prediction_plus_impossibility,impossibility_violation_rate,0.0,1.0
+impossibility_gated_commit vs prediction_plus_impossibility,utility_proxy,-0.26067708333333334,1.0
+impossibility_gated_commit vs prediction_only,accuracy,-0.3344401041666667,1.0
+impossibility_gated_commit vs prediction_only,mechanism_identification_rate,-0.15104166666666666,1.0
+impossibility_gated_commit vs prediction_only,wrong_identification_rate,0.421875,0.00390625
+impossibility_gated_commit vs prediction_only,mechanism_commit_rate,-0.5729166666666667,1.0
+impossibility_gated_commit vs prediction_only,false_mechanism_commit_rate,0.421875,0.00390625
+impossibility_gated_commit vs prediction_only,impossibility_violation_rate,0.0,1.0
+impossibility_gated_commit vs prediction_only,utility_proxy,-0.2672526041666667,1.0

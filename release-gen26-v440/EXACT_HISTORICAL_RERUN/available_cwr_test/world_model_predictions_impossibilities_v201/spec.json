@@ -1,0 +1,36 @@
+{
+  "batch_size": 80,
+  "constraints": [
+    "impossibility bands learned from validation only",
+    "no test labels in identification or commitment",
+    "test labels audit-only",
+    "no tuning after freeze"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 24,
+  "hard_violation_margin": 0.015,
+  "hypotheses": [
+    "gaussian_blur",
+    "motion_blur_proxy"
+  ],
+  "impossibility_quantile_high": 0.98,
+  "impossibility_quantile_low": 0.02,
+  "name": "World-Model Identity by Predictions + Impossibilities v201",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "impossibility_gated_commit": "same as above, but abstain from mechanism authority if any hard impossibility is violated",
+    "prediction_only": "identify world model from expected positive response pattern",
+    "prediction_plus_impossibility": "add penalties when observations violate predicted forbidden/near-impossible response regions"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "mechanism_identification_rate",
+    "wrong_identification_rate",
+    "mechanism_commit_rate",
+    "false_mechanism_commit_rate",
+    "impossibility_violation_rate",
+    "utility_proxy"
+  ],
+  "seeds": 8
+}

@@ -1,0 +1,32 @@
+{
+  "belief_updates": {
+    "detector_gated_reset": "same slow filter, but if frozen historical detector says WORLD, beta=1.0 once",
+    "oracle_reset": "analysis-only upper bound; beta=1.0 once on true WORLD",
+    "slow_filter": "b_t=(1-beta)*F(b_{t-1})+beta*y_t, beta=.10"
+  },
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "WORLD"
+  ],
+  "date_frozen": "2026-09-01",
+  "detector": {
+    "view_if_shared_ratio_below": 0.98,
+    "world_if": "shared_ratio>=0.98 AND world_score>per-seed 99th percentile null stable calibration"
+  },
+  "episode_length_blocks": 18,
+  "episodes_per_seed": 72,
+  "fixed_world_law": "F learned on calibration shared latent block means and never changed",
+  "future_blocks": 6,
+  "history_blocks": 8,
+  "labels_used_for_actions": false,
+  "name": "WORLD changes state, not underlying laws",
+  "no_tuning_after_freeze": true,
+  "oracle_condition": "analysis only",
+  "primary": "future one-step latent prediction MSE",
+  "recent_blocks": 4,
+  "seeds": 24,
+  "status": "development correction after conceptual clarification",
+  "view_definition": "one persistent local observation-frame rotation",
+  "world_definition": "one-time latent state shock; same transition law before and after"
+}

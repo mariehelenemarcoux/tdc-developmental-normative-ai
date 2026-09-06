@@ -1,0 +1,26 @@
+{
+  "architecture": "same learned shared-world / local-view factorization as prior torus tests",
+  "conditions": {
+    "accretion_potential_torus": "R(theta) shaped by a central effective-potential-like well, producing an asymmetric inner/outer geometry",
+    "euclidean": "shared world + local view factors in Euclidean latent",
+    "fixed_torus_R10": "standard torus with fixed R/r=10",
+    "variable_torus_unstructured": "R(theta) varies smoothly with theta using a generic sinusoidal modulation"
+  },
+  "date_frozen": "2026-08-31",
+  "epochs": 100,
+  "evaluation": [
+    "clean accuracy",
+    "view-drift accuracy",
+    "world-drift accuracy",
+    "composite mean"
+  ],
+  "name": "CWR accretion-inspired variable torus test",
+  "no_tuning_after_freeze": true,
+  "parameterization": {
+    "accretion_like": "R(theta)=10 + 3*(1-exp(-((wrap(theta)-0.8)^2)/(2*0.7^2))) - 1.5*exp(-((wrap(theta)+1.0)^2)/(2*0.45^2))",
+    "fixed": "R(theta)=10",
+    "r": 1.0,
+    "variable_unstructured": "R(theta)=10 + 2*sin(2*theta+0.4)"
+  },
+  "seeds": 8
+}

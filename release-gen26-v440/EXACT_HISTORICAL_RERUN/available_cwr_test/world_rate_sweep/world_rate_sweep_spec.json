@@ -1,0 +1,35 @@
+{
+  "conditions": [
+    "plain_v01",
+    "global_recon_naive",
+    "fast_view_slow_world"
+  ],
+  "date_frozen": "2026-09-01",
+  "fast_view": {
+    "action": "immediate local repair",
+    "threshold_ratio": 1.65
+  },
+  "invisible_rate": 0.02,
+  "name": "WORLD-rate sweep for fast-VIEW / slow-WORLD CWR",
+  "no_parameter_changes_across_rates": true,
+  "same_streams_across_conditions": true,
+  "seeds_per_rate": 12,
+  "slow_world": {
+    "candidate_alpha": 0.05,
+    "locality_ratio_max": 1.8,
+    "persistence": "3 of 3 consecutive eligible blocks",
+    "prospective_commit": "candidate residual improves AND latent mean norm moves toward calibration baseline",
+    "shared_shift_threshold": "95th percentile of clean calibration blocks"
+  },
+  "stable_rate": "1 - view_rate - invisible_rate - world_rate",
+  "status": "development sweep with frozen architecture",
+  "steps": 220,
+  "view_rate": 0.12,
+  "world_rates": [
+    0.0,
+    0.02,
+    0.05,
+    0.1,
+    0.2
+  ]
+}
