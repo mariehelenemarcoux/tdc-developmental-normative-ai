@@ -1,0 +1,47 @@
+{
+  "constraints": [
+    "corruption labels hidden from policy",
+    "no test labels used in diagnosis or specialist construction",
+    "diagnosis uses only predictive coherence restoration under counterfactual input interventions",
+    "specialist training uses only training labels plus generated augmentations",
+    "shadow uses held-out validation labels only",
+    "authority local and revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "name": "Active Structural Diagnosis v185",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "active_diagnosis": "counterfactual interventions -> coherence restoration fingerprint -> augmentation recipe -> specialist",
+    "active_shadow": "active diagnosis + shadow certification + local reversible blend",
+    "passive_composed": "passive structural signatures -> augmentation recipe -> specialist",
+    "simple_ensemble": "SGD-log + RF + GaussianNB soft vote"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "error_rate",
+    "diagnosis_match_rate",
+    "specialist_activation_rate",
+    "shadow_rejection_rate",
+    "out_of_scope_damage_rate",
+    "utility_proxy"
+  ],
+  "probe_interventions": [
+    "undo_rotation_pos",
+    "undo_rotation_neg",
+    "undo_shift_x",
+    "undo_shift_y",
+    "contrast_inverse_low",
+    "contrast_inverse_high",
+    "local_inpaint_proxy"
+  ],
+  "seeds": 8,
+  "shadow_gain_threshold": 0.01,
+  "test_fraction": 0.25,
+  "unseen_corruptions": {
+    "block_occlusion": "random 2x2 or 3x3 block occlusion",
+    "contrast_warp": "nonlinear contrast gamma warp",
+    "rotation": "random \u00b122 degree rotation",
+    "translation": "random \u00b11.2 pixel shift"
+  }
+}

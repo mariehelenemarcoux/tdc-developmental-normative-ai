@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+always_probe_frame vs act_best_guess,prediction_accuracy,0.06430555555555555,8.606717946953196e-07
+always_probe_frame vs act_best_guess,frame_accuracy,0.1520138888888889,8.590464656228369e-07
+always_probe_frame vs act_best_guess,probe_rate,-1.0,0.9999999783976847
+always_probe_frame vs act_best_guess,hold_rate,0.0,
+always_probe_frame vs act_best_guess,wrong_frame_action_rate,0.15201388888888887,8.617567734031107e-07
+always_probe_frame vs act_best_guess,utility_proxy,0.06630555555555567,1.862645149230957e-09
+voi_probe_frame vs act_best_guess,prediction_accuracy,0.05861111111111113,9.574678645004208e-07
+voi_probe_frame vs act_best_guess,frame_accuracy,0.14444444444444446,8.590464656228369e-07
+voi_probe_frame vs act_best_guess,probe_rate,-0.6023611111111111,0.9999991441965038
+voi_probe_frame vs act_best_guess,hold_rate,0.0,
+voi_probe_frame vs act_best_guess,wrong_frame_action_rate,0.14444444444444443,8.612141413715367e-07
+voi_probe_frame vs act_best_guess,utility_proxy,0.07802291666666673,2.7939677238464355e-09
+voi_probe_frame vs always_probe_frame,prediction_accuracy,-0.005694444444444428,0.9322248484487352
+voi_probe_frame vs always_probe_frame,frame_accuracy,-0.007569444444444444,0.9999992104789062
+voi_probe_frame vs always_probe_frame,probe_rate,0.3976388888888888,8.55803496205727e-07
+voi_probe_frame vs always_probe_frame,hold_rate,0.0,
+voi_probe_frame vs always_probe_frame,wrong_frame_action_rate,-0.007569444444444444,0.9999991781566693
+voi_probe_frame vs always_probe_frame,utility_proxy,0.011717361111111024,0.08859635517001152
+voi_probe_frame vs hold_on_ambiguity,prediction_accuracy,0.16506944444444446,8.639301574362052e-07
+voi_probe_frame vs hold_on_ambiguity,frame_accuracy,0.22659722222222223,8.650185646450623e-07
+voi_probe_frame vs hold_on_ambiguity,probe_rate,-0.6023611111111111,0.9999991441965038
+voi_probe_frame vs hold_on_ambiguity,hold_rate,0.14993055555555557,8.628428940029018e-07
+voi_probe_frame vs hold_on_ambiguity,wrong_frame_action_rate,0.07666666666666665,8.568833480366938e-07
+voi_probe_frame vs hold_on_ambiguity,utility_proxy,0.11946041666666672,9.313225746154785e-10

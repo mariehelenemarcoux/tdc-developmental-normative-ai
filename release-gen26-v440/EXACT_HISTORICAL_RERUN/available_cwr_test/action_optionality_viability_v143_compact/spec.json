@@ -1,0 +1,25 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 220,
+  "horizon": 4,
+  "name": "Action Optionality / Viability Preservation v143 compact",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "hidden future outcomes audit-only; choices use noisy estimated risk/transition models",
+  "policies": [
+    "immediate_utility",
+    "option_count",
+    "correctability",
+    "viability_kernel"
+  ],
+  "primary_metrics": [
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "future_empty_rate",
+    "mean_future_options",
+    "repair_success_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 20,
+  "status": "valid compact synthetic sequential decision test; prior full attempt invalid due timeout"
+}

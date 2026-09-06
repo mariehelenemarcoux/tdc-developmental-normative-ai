@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+best_single_probe vs fixed_probe_set,accuracy,0.009876543209876484,0.03125
+best_single_probe vs fixed_probe_set,mechanism_identification_rate,0.09722222222222222,0.03125
+best_single_probe vs fixed_probe_set,wrong_identification_rate,0.09722222222222221,0.03125
+best_single_probe vs fixed_probe_set,mean_probe_count,4.0,0.015625
+best_single_probe vs fixed_probe_set,identifiability_margin,-5966.516767579514,1.0
+best_single_probe vs fixed_probe_set,utility_proxy,0.06954320987654311,0.015625
+active_top3 vs fixed_probe_set,accuracy,0.002006172839506178,0.375
+active_top3 vs fixed_probe_set,mechanism_identification_rate,0.020833333333333332,0.375
+active_top3 vs fixed_probe_set,wrong_identification_rate,0.020833333333333332,0.375
+active_top3 vs fixed_probe_set,mean_probe_count,2.0,0.015625
+active_top3 vs fixed_probe_set,identifiability_margin,-1032.8767327780274,0.65625
+active_top3 vs fixed_probe_set,utility_proxy,0.028506172839506183,0.015625
+active_sequential vs fixed_probe_set,accuracy,0.009876543209876484,0.03125
+active_sequential vs fixed_probe_set,mechanism_identification_rate,0.09722222222222222,0.03125
+active_sequential vs fixed_probe_set,wrong_identification_rate,0.09722222222222221,0.03125
+active_sequential vs fixed_probe_set,mean_probe_count,4.0,0.015625
+active_sequential vs fixed_probe_set,identifiability_margin,-5966.516767579514,1.0
+active_sequential vs fixed_probe_set,utility_proxy,0.06954320987654311,0.015625
+active_sequential vs active_top3,accuracy,0.007870370370370305,0.03125
+active_sequential vs active_top3,mechanism_identification_rate,0.0763888888888889,0.0625
+active_sequential vs active_top3,wrong_identification_rate,0.07638888888888888,0.0625
+active_sequential vs active_top3,mean_probe_count,2.0,0.015625
+active_sequential vs active_top3,identifiability_margin,-4933.640034801486,1.0
+active_sequential vs active_top3,utility_proxy,0.04103703703703693,0.015625

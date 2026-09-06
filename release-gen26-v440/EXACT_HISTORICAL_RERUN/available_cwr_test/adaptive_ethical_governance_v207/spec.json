@@ -1,0 +1,39 @@
+{
+  "constraints": [
+    "same external test sequence across policies per seed",
+    "no test labels in governance activation or verification decisions",
+    "test labels audit-only after action",
+    "no synthetic image corruption",
+    "Ideal/Core always present and non-self-writable",
+    "no tuning after freeze"
+  ],
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 260,
+  "governance_triggers": {
+    "authority_conflict": "logistic and RF disagree on class",
+    "low_confidence": "ensemble confidence < 0.72",
+    "model_disagreement": "TV disagreement > 0.20",
+    "persistent_residual": "residual > 0.12 for responsibility variant"
+  },
+  "name": "Adaptive Ethical Governance v207",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "ensemble_reactive",
+    "always_on_third_factor",
+    "adaptive_governance",
+    "adaptive_governance_responsibility"
+  ],
+  "primary_metrics": [
+    "classification_accuracy",
+    "governance_activation_rate",
+    "verification_rate",
+    "mean_trust",
+    "mean_capacity",
+    "high_confidence_error_rate",
+    "joint_viability",
+    "long_horizon_return",
+    "utility_proxy"
+  ],
+  "seeds": 12
+}

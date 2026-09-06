@@ -1,0 +1,33 @@
+{
+  "candidates_per_episode": 10,
+  "date_frozen": "2026-09-03",
+  "decoy_rate": 0.3,
+  "episodes_per_seed": 360,
+  "hard_constraints": [
+    "geometry never authorizes structure",
+    "only causal probe evidence authorizes",
+    "decoy labels are audit-only",
+    "no oracle leakage into policy ranking"
+  ],
+  "name": "Adversarial Geometry Attention Hijack v167",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "causal_uncertainty_priority": "rank by expected causal information gain proxy",
+    "gated_geometry_priority": "geometry may prioritize only when credibility/discriminability gate is adequate",
+    "geometry_priority": "rank by geometric invariants only",
+    "random_probe": "random probe allocation",
+    "voi_arbitrated": "rank by net expected decision improvement minus decoy risk and probe cost"
+  },
+  "primary_metrics": [
+    "true_structure_identification_rate",
+    "decoy_probe_fraction",
+    "false_structure_authorization_rate",
+    "probe_efficiency",
+    "missed_true_structure_rate",
+    "causal_information_gain",
+    "utility_proxy"
+  ],
+  "probe_budget": 3,
+  "seeds": 24,
+  "status": "synthetic bounded-probe adversarial attention benchmark"
+}

@@ -1,0 +1,28 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 480,
+  "frames": [
+    "PRE",
+    "POST",
+    "RELATIONAL"
+  ],
+  "name": "Ambiguous Reference Frames v138",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true frame and labels used only for audit; probe returns noisy frame evidence, not true frame label",
+  "policies": {
+    "act_best_guess": "infer most likely frame from ambiguous descriptor and act",
+    "always_probe_frame": "always acquire extra frame evidence before acting",
+    "hold_on_ambiguity": "abstain when frame confidence is low",
+    "voi_probe_frame": "probe only when expected value of frame information is positive"
+  },
+  "primary_metrics": [
+    "prediction_accuracy",
+    "frame_accuracy",
+    "probe_rate",
+    "hold_rate",
+    "wrong_frame_action_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic oracle-free frame ambiguity + probe-vs-act test"
+}

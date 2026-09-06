@@ -1,0 +1,36 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 500,
+  "hard_constraints": [
+    "salience never changes evidence sign",
+    "salience never writes SoulCore",
+    "replay selection and consolidation authority are separate",
+    "diversity prevents one salient cluster monopolizing replay"
+  ],
+  "misleading_salient_rate": 0.045,
+  "name": "Balanced Emotional Replay v155",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "balanced_credibility_gate": "balanced replay + credibility-gated replay consolidation",
+    "balanced_replay": "priority = salience + credibility + representativeness + novelty + unresolved residual, with diversity",
+    "random_replay": "uniform limited replay",
+    "salience_replay": "top salience only"
+  },
+  "primary_metrics": [
+    "true_rare_error",
+    "misleading_event_overfit",
+    "common_error",
+    "false_alarm_rate",
+    "catastrophic_repeat_rate",
+    "false_persistent_update_rate",
+    "replay_true_rare_fraction",
+    "replay_misleading_fraction",
+    "replay_diversity",
+    "utility_proxy"
+  ],
+  "priority_formula": "0.24*salience + 0.24*credibility + 0.22*representativeness + 0.18*novelty + 0.12*residual",
+  "replay_budget_per_20_steps": 4,
+  "seeds": 24,
+  "status": "synthetic limited-replay adversarial memory test",
+  "true_rare_harm_rate": 0.08
+}

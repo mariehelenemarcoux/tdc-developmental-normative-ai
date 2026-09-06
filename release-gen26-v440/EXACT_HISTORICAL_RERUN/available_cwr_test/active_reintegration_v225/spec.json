@@ -1,0 +1,58 @@
+{
+  "active_reintegration": {
+    "authority_stabilization_rate": 0.12,
+    "outcome_feedback_rate": 0.1,
+    "residual_decay": 0.18,
+    "rule_strength_floor": 0.55
+  },
+  "candidate_rules": [
+    [
+      "protect_asymmetric_stakeholders"
+    ],
+    [
+      "increase_non_domination_authority"
+    ],
+    [
+      "protect_asymmetric_stakeholders",
+      "increase_non_domination_authority"
+    ],
+    [
+      "penalize_high_delayed_harm",
+      "increase_responsibility_authority"
+    ],
+    [
+      "penalize_high_capture_pressure",
+      "increase_non_domination_authority"
+    ]
+  ],
+  "critical_entropy": 0.62,
+  "date_frozen": "2026-09-03",
+  "entropy_components": [
+    "prediction_mismatch",
+    "value_conflict",
+    "authority_conflict",
+    "behavioral_instability",
+    "unresolved_residual"
+  ],
+  "episodes_per_phase": 100,
+  "name": "Active Reintegration v225",
+  "no_hand_coded_entropy_bonus": true,
+  "no_tuning_after_freeze": true,
+  "phases": [
+    "baseline",
+    "disintegration",
+    "reorganization",
+    "reintegration"
+  ],
+  "policies": [
+    "fixed_core",
+    "instant_reorg",
+    "active_reintegration"
+  ],
+  "seeds": 18,
+  "success_criteria": [
+    "reintegration entropy below disintegration",
+    "reintegration ideal alignment above baseline",
+    "constitutional violation non-increasing"
+  ]
+}

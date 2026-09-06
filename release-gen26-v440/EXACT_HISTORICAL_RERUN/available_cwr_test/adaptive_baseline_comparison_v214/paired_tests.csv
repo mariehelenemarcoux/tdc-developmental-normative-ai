@@ -1,0 +1,19 @@
+comparison,metric,improvement,p
+onion vs global,accuracy,0.2127777777777778,0.0009765625
+onion vs global,hard_regime_accuracy,0.3183333333333333,0.0009765625
+onion vs global,rebuild_rate,-0.005555555555555556,1.0
+onion vs global,recall_rate,0.04055555555555555,0.0009765625
+onion vs global,negative_transfer_rate,-0.0002777777777777778,1.0
+onion vs global,utility_proxy,0.21218333333333333,0.0009765625
+onion vs memory_recall,accuracy,-0.14499999999999996,1.0
+onion vs memory_recall,hard_regime_accuracy,-0.21583333333333338,1.0
+onion vs memory_recall,rebuild_rate,0.0,1.0
+onion vs memory_recall,recall_rate,-0.06222222222222222,1.0
+onion vs memory_recall,negative_transfer_rate,0.0016666666666666666,0.125
+onion vs memory_recall,utility_proxy,-0.14424444444444443,1.0
+onion vs adaptive_expert,accuracy,-0.0861111111111111,1.0
+onion vs adaptive_expert,hard_regime_accuracy,-0.12916666666666668,1.0
+onion vs adaptive_expert,rebuild_rate,-0.005555555555555556,1.0
+onion vs adaptive_expert,recall_rate,0.04055555555555555,0.0009765625
+onion vs adaptive_expert,negative_transfer_rate,0.0008333333333333333,0.25
+onion vs adaptive_expert,utility_proxy,-0.08661666666666662,1.0

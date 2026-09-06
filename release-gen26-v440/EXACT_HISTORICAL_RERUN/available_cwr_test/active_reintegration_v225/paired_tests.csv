@@ -1,0 +1,19 @@
+comparison,metric,improvement,p
+active_reintegration vs fixed_core,trajectory_success,0.0,
+active_reintegration vs fixed_core,reintegration_entropy,0.039649963841796164,3.814697265625e-06
+active_reintegration vs fixed_core,entropy_drop_from_crisis,0.039649963841796164,3.814697265625e-06
+active_reintegration vs fixed_core,reintegration_ideal_alignment,0.005300011503741437,1.9073486328125e-05
+active_reintegration vs fixed_core,ideal_gain_vs_baseline,0.005300011503741437,1.9073486328125e-05
+active_reintegration vs fixed_core,reintegration_task_utility,-0.02063937954878626,1.0
+active_reintegration vs fixed_core,constitutional_violation_rate,0.0,
+active_reintegration vs fixed_core,final_residual,0.01063826215915967,0.05440471502027284
+active_reintegration vs fixed_core,final_authority_stability,1.0,1.104524849929268e-05
+active_reintegration vs instant_reorg,trajectory_success,0.0,
+active_reintegration vs instant_reorg,reintegration_entropy,0.033329392009509996,3.814697265625e-06
+active_reintegration vs instant_reorg,entropy_drop_from_crisis,0.033329392009509996,3.814697265625e-06
+active_reintegration vs instant_reorg,reintegration_ideal_alignment,0.0009036093523356633,0.0011827885266989379
+active_reintegration vs instant_reorg,ideal_gain_vs_baseline,0.0009036093523356633,0.0011827885266989379
+active_reintegration vs instant_reorg,reintegration_task_utility,-0.0011570868281776114,0.9803783619248366
+active_reintegration vs instant_reorg,constitutional_violation_rate,0.0,
+active_reintegration vs instant_reorg,final_residual,0.0024172000016255382,0.08985624743949988
+active_reintegration vs instant_reorg,final_authority_stability,1.0,1.104524849929268e-05

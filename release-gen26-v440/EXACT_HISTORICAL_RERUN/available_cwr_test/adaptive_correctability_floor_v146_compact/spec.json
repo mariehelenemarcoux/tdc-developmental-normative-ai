@@ -1,0 +1,26 @@
+{
+  "adaptive_floor_formula": "ECmin = clip(0.48 + 0.16*U + 0.18*A + 0.20*I, 0.50, 0.78)",
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 180,
+  "horizon": 4,
+  "name": "Adaptive Correctability Floor v146 compact",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "realized future harm/recovery audit-only; policy sees noisy U/A/I estimates and estimated EC",
+  "policies": {
+    "adaptive_ec_floor": "EC floor varies with uncertainty, harm asymmetry and irreversibility",
+    "fixed_ec_floor": "require EC>=0.62 when possible, then maximize utility",
+    "immediate_utility": "maximize immediate utility over admissible actions",
+    "max_effective_correctability": "maximize EC directly"
+  },
+  "primary_metrics": [
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "mean_effective_correctability",
+    "mean_floor",
+    "floor_binding_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 18,
+  "status": "valid compact synthetic sequential decision test; full attempt invalid due timeout"
+}

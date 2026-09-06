@@ -1,0 +1,36 @@
+{
+  "date_frozen": "2026-09-03",
+  "hard_constraints": [
+    "compassion does not weaken action boundaries",
+    "causal explanation != exoneration",
+    "source type labels are audit-only",
+    "single interaction cannot create persistent person-level distrust"
+  ],
+  "interactions_per_source": 8,
+  "name": "Benevolent Lucidity Prior v160",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "benevolent_bounded": "charitable causal interpretation + longitudinal evidence + firm autonomy boundary",
+    "charitable_no_boundary": "high benevolent prior but weak protection",
+    "longitudinal_neutral": "no charitable interpretation, but longitudinal evidence + firm boundary",
+    "suspicion_first": "strong manipulation defense, low charitable prior"
+  },
+  "primary_metrics": [
+    "autonomy_violation_rate",
+    "stakeholder_harm_rate",
+    "false_suspicion_rate",
+    "benign_cooperation_rate",
+    "dehumanizing_attribution_rate",
+    "correct_causal_attribution_rate",
+    "manipulator_detection_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "source_types": [
+    "benign",
+    "confused_low_lucidity",
+    "strategic_manipulator"
+  ],
+  "sources_per_seed": 80,
+  "status": "synthetic adversarial social-defense test"
+}

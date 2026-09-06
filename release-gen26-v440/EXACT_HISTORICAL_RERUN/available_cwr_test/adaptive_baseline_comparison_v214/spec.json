@@ -1,0 +1,40 @@
+{
+  "budget": {
+    "same_specialist_families": true,
+    "same_test_sequence": true,
+    "same_train_data": true
+  },
+  "constraints": [
+    "no test labels in routing",
+    "test labels audit-only",
+    "train labels allowed for specialist construction",
+    "no tuning after freeze"
+  ],
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_regime": 60,
+  "metrics": [
+    "accuracy",
+    "hard_regime_accuracy",
+    "rebuild_rate",
+    "recall_rate",
+    "negative_transfer_rate",
+    "utility_proxy"
+  ],
+  "name": "Adaptive Baseline Comparison v214",
+  "policies": [
+    "global",
+    "memory_recall",
+    "adaptive_expert",
+    "onion"
+  ],
+  "seeds": 10,
+  "sequence": [
+    "clean",
+    "blur",
+    "clean",
+    "shift",
+    "blur",
+    "shift"
+  ]
+}

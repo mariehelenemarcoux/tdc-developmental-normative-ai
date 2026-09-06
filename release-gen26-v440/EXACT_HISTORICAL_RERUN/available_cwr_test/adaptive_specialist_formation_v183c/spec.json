@@ -1,0 +1,35 @@
+{
+  "constraints": [
+    "no test labels used for regime inference or specialist selection",
+    "specialist training uses labeled training split only plus synthetic augmentation",
+    "shadow validation uses held-out validation labels only",
+    "corruption identity hidden from policy",
+    "specialist authority local and revocable"
+  ],
+  "corruptions": {
+    "clean": "none",
+    "feature_mask": "hidden 25% pixel masking",
+    "gaussian_noise": "hidden sigma=3.0",
+    "mixed": "hidden gaussian sigma=2.0 + 15% masking"
+  },
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "name": "Adaptive Specialist Formation v183c",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "adaptive_specialist": "infer regime from unlabeled batch; train matched SGD specialist on augmented train; shadow validate on held-out validation; local blend only if gain >= .01",
+    "contextual_selection": "choose existing expert using unlabeled predictive entropy",
+    "simple_ensemble": "SGD-log + RF + GaussianNB soft vote"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "error_rate",
+    "specialist_activation_rate",
+    "shadow_rejection_rate",
+    "out_of_scope_damage_rate",
+    "utility_proxy"
+  ],
+  "seeds": 8,
+  "shadow_gain_threshold": 0.01,
+  "test_fraction": 0.25
+}

@@ -1,0 +1,29 @@
+{
+  "blocks_per_seed": 45,
+  "contexts_per_block": 10,
+  "date_frozen": "2026-09-02",
+  "heldout_laws": [
+    "couple",
+    "threshold",
+    "stabilize"
+  ],
+  "name": "Accumulated Prospective Evidence v133b",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true law and decision labels only for audit; candidate choice and validation use observations only",
+  "policies": {
+    "immediate_commit": "commit candidate on first context",
+    "k3_independent": "3 independent same-regime contexts before commit",
+    "k5_independent": "5 independent same-regime contexts before commit",
+    "one_shot_validation": "one future same-regime context before commit"
+  },
+  "primary_metrics": [
+    "prediction_accuracy",
+    "true_consolidation_rate_per_block",
+    "false_consolidation_rate_per_block",
+    "no_consolidation_rate_per_block",
+    "mean_contexts_to_consolidation",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "corrected synthetic oracle-free delayed consolidation with persistent law blocks"
+}
