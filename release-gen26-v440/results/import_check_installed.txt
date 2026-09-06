@@ -1,0 +1,8 @@
+{
+  "installed_import_ok": true,
+  "version": "2.6.0.post440",
+  "reference": "v440",
+  "canonical": "CanonicalTDCGen26V440",
+  "third_factor": "ThirdFactorArbiter",
+  "zoom": "RecursiveZoomController"
+}

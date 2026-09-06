@@ -1,0 +1,10 @@
+{
+  "device": "cpu",
+  "samples": 512,
+  "loss": 0.8909113109111786,
+  "action_accuracy": 0.818359375,
+  "scale_accuracy": 0.8046875,
+  "probe_accuracy": 0.884765625,
+  "separability_accuracy": 0.8359375,
+  "reference_version": "v440"
+}

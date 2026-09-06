@@ -1,0 +1,214 @@
+{
+  "stable": {
+    "action": "ACT",
+    "scale": "MESO18",
+    "probe": false,
+    "directional_review": false,
+    "authority_status": "provisional",
+    "core_protection_active": false,
+    "diagnostics": {
+      "reference_version": "v440",
+      "implementation_class": "CURRENT_CANONICAL_IMPLEMENTATION",
+      "core_risk": 0.042,
+      "normative_readiness": 0.735,
+      "decision_flip_probability": 0.2,
+      "corrective_harmful_separability": 0.6,
+      "observation_inference_separated": true,
+      "epistemic_authority": 0.5,
+      "normative_authority": 0.475,
+      "authority": {
+        "epistemic": 0.5,
+        "instrumental": 0.5,
+        "normative": 0.5,
+        "developmental": 0.5,
+        "operational": 0.5212,
+        "reflective": 0.51166,
+        "consolidated": 0.503392,
+        "confidence": 0.5256,
+        "status": "provisional"
+      },
+      "third_factor": {
+        "authorization": "CONFIRM",
+        "legitimacy_score": 0.675,
+        "objections_weight": 0.1,
+        "core_block": false,
+        "reason": "reasons_support_authority"
+      },
+      "meta_confidence": {
+        "conflict_detection": 0.6,
+        "admissibility": 0.6,
+        "resolution": 0.6,
+        "minimum_channel": 0.6
+      },
+      "recursive_zoom": {
+        "depth": 0,
+        "direction": "NONE",
+        "cost": 0.0,
+        "reason": "stable_meso_default"
+      },
+      "scale": "MESO18",
+      "scale_reason": "stable_default",
+      "probe": false,
+      "directional_review": false
+    }
+  },
+  "high_core_risk": {
+    "action": "TRANSFORM",
+    "scale": "MESO18",
+    "probe": false,
+    "directional_review": false,
+    "authority_status": "provisional",
+    "core_protection_active": true,
+    "diagnostics": {
+      "reference_version": "v440",
+      "implementation_class": "CURRENT_CANONICAL_IMPLEMENTATION",
+      "core_risk": 0.855,
+      "normative_readiness": 0.735,
+      "decision_flip_probability": 0.2,
+      "corrective_harmful_separability": 0.6,
+      "observation_inference_separated": true,
+      "epistemic_authority": 0.5,
+      "normative_authority": 0.475,
+      "authority": {
+        "epistemic": 0.5,
+        "instrumental": 0.5,
+        "normative": 0.5,
+        "developmental": 0.5,
+        "operational": 0.5319,
+        "reflective": 0.517545,
+        "consolidated": 0.505104,
+        "confidence": 0.5511999999999999,
+        "status": "provisional"
+      },
+      "third_factor": {
+        "authorization": "REJECT_OR_TRANSFORM",
+        "legitimacy_score": 0.675,
+        "objections_weight": 0.1,
+        "core_block": true,
+        "reason": "constitutional_constraint"
+      },
+      "meta_confidence": {
+        "conflict_detection": 0.6,
+        "admissibility": 0.6,
+        "resolution": 0.6,
+        "minimum_channel": 0.6
+      },
+      "recursive_zoom": {
+        "depth": 0,
+        "direction": "NONE",
+        "cost": 0.0,
+        "reason": "stable_meso_default"
+      },
+      "scale": "MESO18",
+      "scale_reason": "stable_default",
+      "probe": false,
+      "directional_review": false
+    }
+  },
+  "fragile_separable": {
+    "action": "PROBE",
+    "scale": "LOCAL8",
+    "probe": true,
+    "directional_review": true,
+    "authority_status": "provisional",
+    "core_protection_active": false,
+    "diagnostics": {
+      "reference_version": "v440",
+      "implementation_class": "CURRENT_CANONICAL_IMPLEMENTATION",
+      "core_risk": 0.042,
+      "normative_readiness": 0.735,
+      "decision_flip_probability": 0.85,
+      "corrective_harmful_separability": 0.9,
+      "observation_inference_separated": true,
+      "epistemic_authority": 0.5,
+      "normative_authority": 0.475,
+      "authority": {
+        "epistemic": 0.5,
+        "instrumental": 0.5,
+        "normative": 0.5,
+        "developmental": 0.5,
+        "operational": 0.5531,
+        "reflective": 0.529205,
+        "consolidated": 0.508496,
+        "confidence": 0.5767999999999999,
+        "status": "provisional"
+      },
+      "third_factor": {
+        "authorization": "CONFIRM",
+        "legitimacy_score": 0.675,
+        "objections_weight": 0.1,
+        "core_block": false,
+        "reason": "reasons_support_authority"
+      },
+      "meta_confidence": {
+        "conflict_detection": 0.6,
+        "admissibility": 0.6,
+        "resolution": 0.6,
+        "minimum_channel": 0.6
+      },
+      "recursive_zoom": {
+        "depth": 3,
+        "direction": "IN",
+        "cost": 0.24,
+        "reason": "decision_relevant_recursive_zoom"
+      },
+      "scale": "LOCAL8",
+      "scale_reason": "decision_fragility_zoom_in",
+      "probe": true,
+      "directional_review": true
+    }
+  },
+  "fragile_inseparable": {
+    "action": "PROBE",
+    "scale": "MESO18",
+    "probe": true,
+    "directional_review": false,
+    "authority_status": "provisional",
+    "core_protection_active": false,
+    "diagnostics": {
+      "reference_version": "v440",
+      "implementation_class": "CURRENT_CANONICAL_IMPLEMENTATION",
+      "core_risk": 0.042,
+      "normative_readiness": 0.735,
+      "decision_flip_probability": 0.85,
+      "corrective_harmful_separability": 0.2,
+      "observation_inference_separated": true,
+      "epistemic_authority": 0.5,
+      "normative_authority": 0.475,
+      "authority": {
+        "epistemic": 0.5,
+        "instrumental": 0.5,
+        "normative": 0.5,
+        "developmental": 0.5,
+        "operational": 0.5743,
+        "reflective": 0.540865,
+        "consolidated": 0.5118879999999999,
+        "confidence": 0.6023999999999998,
+        "status": "provisional"
+      },
+      "third_factor": {
+        "authorization": "CONFIRM",
+        "legitimacy_score": 0.675,
+        "objections_weight": 0.1,
+        "core_block": false,
+        "reason": "reasons_support_authority"
+      },
+      "meta_confidence": {
+        "conflict_detection": 0.6,
+        "admissibility": 0.6,
+        "resolution": 0.6,
+        "minimum_channel": 0.6
+      },
+      "recursive_zoom": {
+        "depth": 2,
+        "direction": "IN",
+        "cost": 0.16,
+        "reason": "decision_relevant_recursive_zoom"
+      },
+      "scale": "MESO18",
+      "scale_reason": "stable_default",
+      "probe": true,
+      "directional_review": false
+    }
+  }
+}

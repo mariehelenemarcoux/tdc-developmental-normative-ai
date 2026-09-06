@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research package, please cite it."
+title: "TDC Gen2.6 — Théorie de densification de la conscience"
+version: "2.6.0-stage1-v440-reference"
+authors:
+  - family-names: "Marcoux"
+    given-names: "Marie-Hélène"
+year: 2026
+license: MIT

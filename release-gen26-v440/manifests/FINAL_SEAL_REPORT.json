@@ -1,0 +1,57 @@
+{
+  "release_artifact": "TDC_Gen2_6_Release_Final.zip",
+  "source_archive": "TDC_Gen2_6_Executable_Package_STAGE1 24d88d39b6bf5dd21996b18d82f8e88fca8949c30f4ba292a10a86fa3b4888b8.zip",
+  "source_archive_sha256": "24d88d39b6bf5dd21996b18d82f8e88fca8949c30f4ba292a10a86fa3b4888b8",
+  "source_archive_integrity": "PASS (ZIP CRC test and original SHA-256 matched)",
+  "base_constraint": "Only the supplied STAGE1 ZIP was used as the model/package base.",
+  "architecture_changes": "NONE",
+  "technical_corrections": "NONE required",
+  "cleanup": {
+    "removed_categories": [
+      "__pycache__",
+      ".pytest_cache",
+      ".mypy_cache",
+      ".ruff_cache",
+      "*.egg-info",
+      "build",
+      "dist",
+      "*.pyc",
+      "*.pyo",
+      "*.tmp",
+      "*.temp",
+      "editor backups",
+      ".DS_Store",
+      "Thumbs.db"
+    ],
+    "removed_count": 0
+  },
+  "verification": {
+    "source_checksum_manifest": "PASS: scripts/verify_package.py checked 1127 entries, failed 0 before resealing",
+    "python_syntax": "PASS: 39 Python files compiled in memory",
+    "imports": "PASS: tdc_gen26 2.6.0.post440, reference v440, canonical/PyTorch/loss/ThirdFactor/RecursiveZoom imports",
+    "pytest": "PASS: 13 passed",
+    "smoke_checkpoint_evaluation": {
+      "rerun_training": false,
+      "reason": "Final sealing required only necessary reruns; existing checkpoint was evaluated without retraining.",
+      "device": "cpu",
+      "samples": 512,
+      "loss": 0.8909113109111786,
+      "action_accuracy": 0.818359375,
+      "scale_accuracy": 0.8046875,
+      "probe_accuracy": 0.884765625,
+      "separability_accuracy": 0.8359375,
+      "reference_version": "v440"
+    }
+  },
+  "scientific_provenance_guardrail": "CLEAN_ROOM_RECONSTRUCTION and CURRENT_CANONICAL_IMPLEMENTATION remain explicitly distinct from EXACT_HISTORICAL_RERUN. No clean-room reconstruction is requalified as a byte-for-byte historical rerun.",
+  "historical_reruns_performed_during_final_seal": false,
+  "manifest_policy": "MANIFEST.json enumerates all final package files except MANIFEST.json and SHA256SUMS.txt themselves.",
+  "sha256sums_policy": "SHA256SUMS.txt hashes every final package file except SHA256SUMS.txt itself; it includes MANIFEST.json.",
+  "deterministic_zip_policy": {
+    "entry_order": "lexicographic UTF-8 path order",
+    "entry_timestamp": "1980-01-01 00:00:00",
+    "compression": "DEFLATE level 9",
+    "file_mode": "0644 (0755 for .sh)",
+    "top_level_directory": "TDC_Gen2_6_Executable_Package_STAGE1"
+  }
+}

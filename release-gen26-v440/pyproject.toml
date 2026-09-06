@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tdc-gen26"
+version = "2.6.0.post440"
+description = "TDC Gen2.6 current canonical clean-room implementation and trainable PyTorch scaffold"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Marie-Hélène Marcoux"}]
+dependencies = ["numpy>=1.24", "torch>=2.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+tdc-gen26-train = "tdc_gen26.cli:train_main"
+tdc-gen26-evaluate = "tdc_gen26.cli:evaluate_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

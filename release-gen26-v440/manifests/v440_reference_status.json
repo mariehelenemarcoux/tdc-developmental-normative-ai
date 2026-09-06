@@ -1,0 +1,15 @@
+{
+  "integrated_reference_version": "v440",
+  "v440_is_latest_integrated_reference": true,
+  "historical_v440_source_bytes_present_in_active_runtime": false,
+  "historical_v440_zip_present_in_active_runtime": false,
+  "current_package_source_status": "CLEAN_ROOM_RECONSTRUCTION",
+  "current_package_runtime_status": "CURRENT_CANONICAL_IMPLEMENTATION",
+  "historical_project_status_known_from_state_reports": {
+    "v441_integrated_checks": "55/55",
+    "v441_fresh_seed_wrapper_checks": "7/7 supported",
+    "v435": "not supported against simpler confidence-review rule",
+    "v436": "practical equivalence supported; complexity only when necessary",
+    "v421_platonic_geometry_architecture": "not supported"
+  }
+}

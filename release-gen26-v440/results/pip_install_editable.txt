@@ -1,0 +1,14 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///mnt/data/TDC_Gen2_6_Executable_Package_STAGE1
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: tdc-gen26
+  Building editable for tdc-gen26 (pyproject.toml): started
+  Building editable for tdc-gen26 (pyproject.toml): finished with status 'done'
+  Created wheel for tdc-gen26: filename=tdc_gen26-2.6.0.post440-0.editable-py3-none-any.whl size=4114 sha256=ac89ef95e6fc3b0c85498c113f1b1d8a90a78f39d6d674d3521efaf1777b580d
+  Stored in directory: /tmp/pip-ephem-wheel-cache-gg8xda0h/wheels/70/8f/7c/2115fb90e69da68db466fabcf8fd9092b3a5655d315083e5e3
+Successfully built tdc-gen26
+Installing collected packages: tdc-gen26
+Successfully installed tdc-gen26-2.6.0.post440

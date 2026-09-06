@@ -1,0 +1,10 @@
+{
+  "import_ok": true,
+  "tdc_version": "2.6.0.post440",
+  "reference_version": "v440",
+  "torch_version": "2.10.0+cpu",
+  "numpy_version": "2.3.5",
+  "canonical_class": "CanonicalTDCGen26V440",
+  "torch_class": "TDCGen26Torch",
+  "loss_class": "TDCCompositeLoss"
+}

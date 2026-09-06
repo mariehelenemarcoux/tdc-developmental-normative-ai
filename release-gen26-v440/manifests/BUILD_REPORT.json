@@ -1,0 +1,61 @@
+{
+  "integrated_reference": "v440",
+  "provenance_classes": [
+    "EXACT_HISTORICAL_RERUN",
+    "CLEAN_ROOM_RECONSTRUCTION",
+    "CURRENT_CANONICAL_IMPLEMENTATION",
+    "PYTORCH_SCAFFOLD"
+  ],
+  "pytest": ".............                                                            [100%]\n13 passed in 1.35s",
+  "smoke_training": {
+    "checkpoint": "checkpoints/smoke_model.pt",
+    "device": "cpu",
+    "history": [
+      {
+        "epoch": 1,
+        "loss": 2.1563453525304794
+      },
+      {
+        "epoch": 2,
+        "loss": 1.647585466504097
+      },
+      {
+        "epoch": 3,
+        "loss": 1.1901848018169403
+      },
+      {
+        "epoch": 4,
+        "loss": 1.0079131498932838
+      },
+      {
+        "epoch": 5,
+        "loss": 0.8916149437427521
+      },
+      {
+        "epoch": 6,
+        "loss": 0.8203883618116379
+      }
+    ],
+    "final_loss": 0.8203883618116379
+  },
+  "evaluation": {
+    "device": "cpu",
+    "samples": 512,
+    "loss": 0.8909113109111786,
+    "action_accuracy": 0.818359375,
+    "scale_accuracy": 0.8046875,
+    "probe_accuracy": 0.884765625,
+    "separability_accuracy": 0.8359375,
+    "reference_version": "v440"
+  },
+  "imports": {
+    "installed_import_ok": true,
+    "version": "2.6.0.post440",
+    "reference": "v440",
+    "canonical": "CanonicalTDCGen26V440",
+    "third_factor": "ThirdFactorArbiter",
+    "zoom": "RecursiveZoomController"
+  },
+  "checkpoint_sha256": "22e7522f2dc59fc7609cc1470ff422bbd72fa34837e171889e486bb60a6a7c63",
+  "status": "PASS"
+}
