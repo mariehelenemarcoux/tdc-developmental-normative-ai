@@ -1,0 +1,13 @@
+label,method,future_pred_mse
+CONTEXT,context_inference_detector_gated,0.34994566135204097
+CONTEXT,context_inference_oracle_viewfree,0.23141181109280165
+CONTEXT,oracle_context,0.20928836208806642
+CONTEXT,state_filter_only,0.5229842182337242
+STABLE,context_inference_detector_gated,0.211907105241729
+STABLE,context_inference_oracle_viewfree,0.23035411666007213
+STABLE,oracle_context,0.2118186584786137
+STABLE,state_filter_only,0.2118186584786137
+VIEW,context_inference_detector_gated,0.1594816751778179
+VIEW,context_inference_oracle_viewfree,0.15933210133465373
+VIEW,oracle_context,0.15933210133465373
+VIEW,state_filter_only,0.15933210133465373

@@ -1,0 +1,38 @@
+{
+  "adapt_blocks": 6,
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "CONTEXT"
+  ],
+  "conditions": [
+    "state_filter_only",
+    "frozen_regime_detector_context",
+    "trajectory_context_detector",
+    "oracle_context"
+  ],
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 20,
+  "episodes_per_seed": 72,
+  "fixed_law": "z_{t+1}=A z_t + B c + noise; A,B invariant",
+  "frozen_regime_detector": "shared_ratio<.98=>VIEW; else world_score>null99=>CONTEXT; else STABLE",
+  "future_blocks": 6,
+  "history_blocks": 8,
+  "name": "Context trajectory as detector",
+  "no_tuning_after_freeze": true,
+  "primary": "future latent prediction MSE",
+  "seeds": 24,
+  "status": "development test",
+  "trajectory_detector": {
+    "activation_if": [
+      "mean ||c_hat|| > calibration 99th percentile",
+      "coefficient of variation of ||c_hat|| across last 3 <= 0.35",
+      "mean cosine similarity among last 3 c_hat >= 0.80",
+      "shared_ratio >= 0.98"
+    ],
+    "commit": "use mean of last 3 c_hat",
+    "estimate": "rolling c_hat from transition residuals using fixed A_lat,B_lat",
+    "labels_used": false,
+    "window": 3
+  }
+}

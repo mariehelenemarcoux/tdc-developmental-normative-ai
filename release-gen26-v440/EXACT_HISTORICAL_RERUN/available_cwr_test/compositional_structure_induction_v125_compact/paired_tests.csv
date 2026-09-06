@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+enumerate_passive vs atomic_best_fit,exact_program_identification,0.5,3.872108215522035e-06
+enumerate_passive vs atomic_best_fit,behavioral_equivalence_rate,0.5,3.872108215522035e-06
+enumerate_passive vs atomic_best_fit,false_consolidation_rate,0.5,3.872108215522035e-06
+enumerate_passive vs atomic_best_fit,mean_probes_used,-4.0,0.9999961278917845
+enumerate_passive vs atomic_best_fit,probe_efficiency,0.10000000000000002,3.872108215522035e-06
+enumerate_passive vs atomic_best_fit,utility_proxy,0.8,3.872108215522035e-06
+popper_compositional vs enumerate_passive,exact_program_identification,0.25,3.872108215522035e-06
+popper_compositional vs enumerate_passive,behavioral_equivalence_rate,0.5,3.872108215522035e-06
+popper_compositional vs enumerate_passive,false_consolidation_rate,0.5,3.872108215522035e-06
+popper_compositional vs enumerate_passive,mean_probes_used,1.5835000000000001,4.129291218692964e-05
+popper_compositional vs enumerate_passive,probe_efficiency,0.1927080043134886,4.129291218692964e-05
+popper_compositional vs enumerate_passive,utility_proxy,0.9395875000000002,4.286188796909697e-05
+popper_compositional vs atomic_best_fit,exact_program_identification,0.75,3.872108215522035e-06
+popper_compositional vs atomic_best_fit,behavioral_equivalence_rate,1.0,3.872108215522035e-06
+popper_compositional vs atomic_best_fit,false_consolidation_rate,1.0,3.872108215522035e-06
+popper_compositional vs atomic_best_fit,mean_probes_used,-2.4164999999999996,0.9999587070878131
+popper_compositional vs atomic_best_fit,probe_efficiency,0.29270800431348853,4.129291218692964e-05
+popper_compositional vs atomic_best_fit,utility_proxy,1.7395875000000003,4.2253158159320584e-05
+popper_with_abstain vs popper_compositional,exact_program_identification,0.0,
+popper_with_abstain vs popper_compositional,behavioral_equivalence_rate,-0.25,0.9999961278917845
+popper_with_abstain vs popper_compositional,false_consolidation_rate,0.0,
+popper_with_abstain vs popper_compositional,mean_probes_used,-0.004499999999999971,0.6303807438919475
+popper_with_abstain vs popper_compositional,probe_efficiency,-0.0734639746964342,0.9999559631598236
+popper_with_abstain vs popper_compositional,utility_proxy,-0.31261250000000007,0.999955900648979

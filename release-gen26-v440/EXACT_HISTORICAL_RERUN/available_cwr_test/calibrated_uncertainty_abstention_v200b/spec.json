@@ -1,0 +1,15 @@
+{
+  "abstain_threshold": 0.8,
+  "batch_size": 80,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 20,
+  "name": "Calibrated Uncertainty and Abstention v200b compact",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "raw_commit",
+    "calibrated_commit",
+    "calibrated_abstain",
+    "calibrated_probe_again"
+  ],
+  "seeds": 6
+}

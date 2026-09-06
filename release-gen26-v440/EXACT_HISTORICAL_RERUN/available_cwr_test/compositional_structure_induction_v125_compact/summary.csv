@@ -1,0 +1,5 @@
+policy,exact_program_identification,behavioral_equivalence_rate,false_consolidation_rate,mean_probes_used,probe_efficiency,utility_proxy
+atomic_best_fit,0.0,0.0,1.0,1.0,0.0,-0.825
+enumerate_passive,0.5,0.5,0.5,5.0,0.1,-0.025000000000000057
+popper_compositional,0.75,1.0,0.0,3.4165,0.2927080043134886,0.9145875
+popper_with_abstain,0.75,0.75,0.0,3.4210000000000003,0.21924402961705441,0.601975

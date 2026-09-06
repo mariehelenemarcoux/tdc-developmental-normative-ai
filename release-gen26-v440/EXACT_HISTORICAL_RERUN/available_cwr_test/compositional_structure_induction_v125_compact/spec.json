@@ -1,0 +1,50 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 100,
+  "heldout_compositions": [
+    [
+      "couple",
+      "threshold"
+    ],
+    [
+      "permute",
+      "scale_x"
+    ],
+    [
+      "stabilize",
+      "saturate"
+    ],
+    [
+      "scale_y",
+      "couple"
+    ]
+  ],
+  "name": "Compositional Structure Induction v125 compact",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "atomic_best_fit": "atomic primitives only",
+    "enumerate_passive": "length<=2 compositions + fixed probes",
+    "popper_compositional": "length<=2 compositions + active falsification",
+    "popper_with_abstain": "active falsification + abstain on weak margin"
+  },
+  "primary_metrics": [
+    "exact_program_identification",
+    "behavioral_equivalence_rate",
+    "false_consolidation_rate",
+    "mean_probes_used",
+    "probe_efficiency",
+    "utility_proxy"
+  ],
+  "primitive_library": [
+    "scale_x",
+    "scale_y",
+    "permute",
+    "couple",
+    "threshold",
+    "saturate",
+    "stabilize"
+  ],
+  "probe_budget": 5,
+  "seeds": 20,
+  "status": "synthetic candidate-generation outside complete-library test"
+}

@@ -1,0 +1,41 @@
+{
+  "batch_size": 100,
+  "competence_threshold": 0.62,
+  "constraints": [
+    "no regime labels used by policy",
+    "no test labels in recall/reuse decisions",
+    "competence estimator trained only from train/validation-derived episodes",
+    "test labels audit-only",
+    "reuse authority temporary and revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 20,
+  "hidden_regimes": [
+    "clean",
+    "rotation",
+    "translation",
+    "block_occlusion",
+    "contrast_warp"
+  ],
+  "name": "Predictive Recall with Contextual Competence Estimation v192",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "always_rebuild": "diagnose and use fresh specialist each episode",
+    "contextual_competence": "estimate recall competence from unlabeled contextual features + historical validation success; use only above threshold",
+    "predictive_recall": "similarity candidate + silent applicability gate",
+    "similarity_reuse": "reuse nearest remembered specialist by fingerprint distance"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "specialist_reuse_rate",
+    "specialist_build_rate",
+    "correct_recurrence_reuse_rate",
+    "wrong_reuse_rate",
+    "competence_accept_precision",
+    "competence_accept_recall",
+    "catastrophic_reuse_damage_rate",
+    "utility_proxy"
+  ],
+  "seeds": 4
+}

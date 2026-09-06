@@ -1,0 +1,6 @@
+method,action,rate
+aggregate_mean,BALANCED,1.0
+minimax_harm,BALANCED,1.0
+minimax_regret,BALANCED,0.6338636363636364
+minimax_regret,SPLIT,0.36613636363636365
+proportionality,BALANCED,1.0

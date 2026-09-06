@@ -1,0 +1,34 @@
+{
+  "actions_per_episode": 5,
+  "attack_duration": 100,
+  "attack_rate": 0.42,
+  "attack_start_fraction": 0.4,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 460,
+  "hard_constraints": [
+    "SoulCore invariants remain fixed",
+    "mechanism count is not treated as independence count",
+    "provenance is evidence metadata, not moral authority",
+    "temporary calibration authority must be revocable"
+  ],
+  "name": "Coordinated Multi-Mechanism Corruption v177",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "dependency_aware": "discount mechanisms with inferred common-mode residual dependence",
+    "mechanism_diversity": "trust 3-of-4 diverse mechanisms",
+    "provenance_weighted": "dependency-aware + source/provenance reliability weights",
+    "revocable_provenance_authority": "provenance-weighted + temporary authority + fast revoke on provenance inconsistency"
+  },
+  "primary_metrics": [
+    "coordinated_corruption_accept_rate",
+    "false_recalibration_rate",
+    "effective_independent_mechanism_count",
+    "post_attack_proxy_bias",
+    "latent_harm_rate",
+    "task_success_rate",
+    "recovery_after_attack_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic coordinated causal-channel corruption benchmark"
+}

@@ -1,0 +1,48 @@
+{
+  "batch_size": 90,
+  "candidate_probes": [
+    "sharpen_x",
+    "sharpen_y",
+    "isotropic_sharpen",
+    "horizontal_smooth",
+    "vertical_smooth",
+    "laplacian",
+    "rotate_plus10",
+    "rotate_minus10",
+    "unsharp_mild",
+    "unsharp_strong"
+  ],
+  "constraints": [
+    "hypothesis labels hidden at test time",
+    "probe statistics learned from validation only",
+    "test labels audit-only",
+    "no tuning after freeze"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 24,
+  "hypotheses": [
+    "gaussian_blur",
+    "motion_blur_proxy"
+  ],
+  "max_probes": 4,
+  "name": "Calibrated Sequential Experimental Design v199",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "best_single": "single best validation-discriminative probe",
+    "fixed_top3": "top-3 probes by validation discrimination",
+    "sequential_eig": "after each response, select remaining probe with maximum expected information gain",
+    "sequential_ranked": "sequential probes in fixed discriminability order with calibrated posterior stopping"
+  },
+  "posterior_stop_threshold": 0.9,
+  "primary_metrics": [
+    "accuracy",
+    "mechanism_identification_rate",
+    "wrong_identification_rate",
+    "mean_probe_count",
+    "posterior_confidence",
+    "overconfidence_error_rate",
+    "utility_proxy"
+  ],
+  "seeds": 8
+}

@@ -1,0 +1,5 @@
+method,mean_future_mse
+context_inference_detector_gated,0.24044481392386263
+context_inference_oracle_viewfree,0.2070326763625092
+oracle_context,0.19347970730044461
+state_filter_only,0.29804499268233053

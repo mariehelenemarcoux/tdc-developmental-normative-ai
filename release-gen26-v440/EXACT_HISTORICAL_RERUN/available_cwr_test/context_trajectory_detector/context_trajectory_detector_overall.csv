@@ -1,0 +1,5 @@
+method,mean_future_mse
+frozen_regime_detector_context,0.2396470695258689
+oracle_context,0.19618937493279956
+state_filter_only,0.3019298378037745
+trajectory_context_detector,0.2703814536112965

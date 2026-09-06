@@ -1,0 +1,4 @@
+comparison,mean_diff,median_diff,wins,losses,ties
+competitive-plain_v01,0.015675117924528293,0.0019339622641509346,14,6,0
+competitive-fast_view_slow_world,-0.02065172955974843,-0.008500393081760982,3,17,0
+competitive-global_recon_naive,-0.03445636792452832,-0.017641509433962255,5,15,0

@@ -1,0 +1,5 @@
+condition,mean_accuracy,final_accuracy,mean_world_revisions,mean_candidate_trials,mean_candidate_wins
+competitive_world_revision,0.5039538128930817,0.3802358490566038,19.45,19.55,19.45
+fast_view_slow_world,0.5246055424528302,0.41944339622641513,36.75,0.0,0.0
+global_recon_naive,0.53841018081761,0.4219056603773585,0.0,0.0,0.0
+plain_v01,0.4882786949685534,0.35719811320754713,0.0,0.0,0.0

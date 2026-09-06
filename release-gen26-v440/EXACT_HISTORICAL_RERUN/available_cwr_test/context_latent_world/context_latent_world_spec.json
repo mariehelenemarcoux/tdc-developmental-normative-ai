@@ -1,0 +1,35 @@
+{
+  "adapt_blocks": 6,
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "CONTEXT"
+  ],
+  "conditions": [
+    "state_filter_only",
+    "context_inference_oracle_viewfree",
+    "context_inference_detector_gated",
+    "oracle_context"
+  ],
+  "context_change": "persistent c0->c1 at transition; A and B unchanged",
+  "context_estimation": {
+    "B": "learned from calibration contexts",
+    "c_hat": "ridge fit from recent latent transition residuals z_{t+1}-A z_t",
+    "detector_gate": "frozen historical regime-memory rule; infer context only when detector says WORLD/CONTEXT",
+    "labels_used_for_actions": false
+  },
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 20,
+  "episodes_per_seed": 72,
+  "future_blocks": 6,
+  "history_blocks": 8,
+  "name": "Persistent latent-context inference under fixed world laws",
+  "no_tuning_after_freeze": true,
+  "oracle_conditions": "analysis-only upper bounds",
+  "primary": "future latent prediction MSE",
+  "secondary": "context estimation error",
+  "seeds": 24,
+  "status": "development test",
+  "view_change": "persistent local observation rotation only",
+  "world_law": "z_{t+1}=A z_t + B c + noise, with fixed A,B across all episodes"
+}

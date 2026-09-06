@@ -1,0 +1,10 @@
+method,action,rate
+bifurcation_certified,EFFICIENCY,0.2833333333333333
+bifurcation_certified,HOLD,0.7107142857142857
+bifurcation_certified,TRANSITION,0.005952380952380952
+bifurcation_uncertified,EFFICIENCY,0.3107142857142857
+bifurcation_uncertified,HOLD,0.6196428571428572
+bifurcation_uncertified,TRANSITION,0.06964285714285715
+probe_only,EFFICIENCY,0.15535714285714286
+probe_only,HOLD,0.8375
+probe_only,TRANSITION,0.007142857142857143

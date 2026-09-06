@@ -1,0 +1,43 @@
+{
+  "candidate": {
+    "competition_horizon": 4,
+    "construction": "weak global reconsolidation alpha=0.05",
+    "labels_used": false,
+    "score_each_future_block": "median multiview residual",
+    "winner_rule": "candidate cumulative residual < incumbent cumulative residual on at least 3 of 4 future blocks"
+  },
+  "conditions": [
+    "plain_v01",
+    "global_recon_naive",
+    "fast_view_slow_world",
+    "competitive_world_revision"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_mix": {
+    "INVISIBLE": 0.02,
+    "STABLE": 0.76,
+    "VIEW": 0.12,
+    "WORLD": 0.1
+  },
+  "fast_view": {
+    "action": "immediate local repair",
+    "threshold_ratio": 1.65
+  },
+  "name": "Competitive old-vs-candidate world revision",
+  "no_tuning_after_freeze": true,
+  "revision_pressure": {
+    "candidate_threshold": 3.0,
+    "decay_otherwise": 0.5,
+    "floor": 0.0,
+    "increment": 1.0,
+    "increment_if": [
+      "no local suspect",
+      "shared shift above clean 95th percentile",
+      "shared locality ratio < 1.8"
+    ]
+  },
+  "same_streams_across_conditions": true,
+  "seeds": 20,
+  "status": "development test",
+  "steps": 240
+}
