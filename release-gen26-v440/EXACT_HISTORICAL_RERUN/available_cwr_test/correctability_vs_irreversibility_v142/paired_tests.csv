@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+correctability_aware vs severity_only,decision_accuracy,-0.0016049382716049239,0.7624716346832789
+correctability_aware vs severity_only,future_recovery_rate,0.0021604938271604884,0.15310577284942112
+correctability_aware vs severity_only,catastrophic_lockin_rate,0.0035802469135802475,0.009055371272445045
+correctability_aware vs severity_only,mean_probe_count,0.05314814814814816,4.230719161336785e-06
+correctability_aware vs severity_only,overprobe_rate,-0.029320987654320986,0.9999981626263534
+correctability_aware vs severity_only,utility_proxy,0.001972839506172834,0.39607954677194357
+correctability_aware vs irreversibility_only,decision_accuracy,-6.172839506172201e-05,0.45950123068151316
+correctability_aware vs irreversibility_only,future_recovery_rate,-0.0002469135802469139,0.6274940587642794
+correctability_aware vs irreversibility_only,catastrophic_lockin_rate,0.0003086419753086427,0.34578950549031373
+correctability_aware vs irreversibility_only,mean_probe_count,-0.06160493827160499,0.999999137157106
+correctability_aware vs irreversibility_only,overprobe_rate,-0.03901234567901234,0.9999991660843013
+correctability_aware vs irreversibility_only,utility_proxy,-0.005648148148148191,0.7219433626160026
+joint_criticality vs severity_only,decision_accuracy,-0.0003086419753086433,0.5045493735899538
+joint_criticality vs severity_only,future_recovery_rate,0.0028395061728394935,0.09898049425642597
+joint_criticality vs severity_only,catastrophic_lockin_rate,0.004135802469135803,0.007084692812132398
+joint_criticality vs severity_only,mean_probe_count,-0.2457407407407407,0.9999991360698426
+joint_criticality vs severity_only,overprobe_rate,-0.09290123456790125,0.9999991344368026
+joint_criticality vs severity_only,utility_proxy,-0.014414506172839507,0.9725391855463386
+joint_criticality vs correctability_aware,decision_accuracy,0.0012962962962962806,0.302531029524768
+joint_criticality vs correctability_aware,future_recovery_rate,0.000679012345679005,0.3965956082592579
+joint_criticality vs correctability_aware,catastrophic_lockin_rate,0.000555555555555555,0.4654920424881738
+joint_criticality vs correctability_aware,mean_probe_count,-0.29888888888888887,0.9999991366136172
+joint_criticality vs correctability_aware,overprobe_rate,-0.06358024691358025,0.9999991349814353
+joint_criticality vs correctability_aware,utility_proxy,-0.01638734567901234,0.991784393787384

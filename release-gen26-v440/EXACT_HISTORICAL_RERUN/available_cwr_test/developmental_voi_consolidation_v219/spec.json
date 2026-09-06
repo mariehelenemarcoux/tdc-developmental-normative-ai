@@ -1,0 +1,32 @@
+{
+  "candidate_rules": [
+    "delayed_harm_priority",
+    "asymmetric_stakeholder_protection",
+    "correctability_over_immediate_reward",
+    "anti_capture_authority"
+  ],
+  "date_frozen": "2026-09-03",
+  "developmental_voi": {
+    "complexity_cost_per_rule": 0.003,
+    "future_risk_weight": 0.8,
+    "future_windows_required": 3,
+    "ideal_weight": 1.0,
+    "immediate_task_cost_weight": 0.7,
+    "min_voi": 0.001
+  },
+  "episodes_per_seed": 320,
+  "hard_constraints": [
+    "no constitutional violation increase",
+    "no adversarial violation increase",
+    "candidate must change behavior on validation"
+  ],
+  "name": "Developmental VOI Consolidation v219",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "fixed_core",
+    "rule_validated",
+    "pareto_rule_validated",
+    "developmental_voi"
+  ],
+  "seeds": 18
+}

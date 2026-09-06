@@ -1,0 +1,50 @@
+{
+  "candidate_rules": [
+    [
+      "protect_asymmetric_stakeholders"
+    ],
+    [
+      "increase_non_domination_authority"
+    ],
+    [
+      "protect_asymmetric_stakeholders",
+      "increase_non_domination_authority"
+    ],
+    [
+      "penalize_high_delayed_harm",
+      "increase_responsibility_authority"
+    ],
+    [
+      "penalize_high_capture_pressure",
+      "increase_non_domination_authority"
+    ]
+  ],
+  "critical_entropy": 0.62,
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 90,
+  "name": "Disintegration Reorganization Reintegration v223",
+  "no_tuning_after_freeze": true,
+  "phases": [
+    "baseline",
+    "disintegration",
+    "reorganization",
+    "reintegration"
+  ],
+  "policies": [
+    "fixed_core",
+    "instant_reorg",
+    "staged_reintegration"
+  ],
+  "seeds": 16,
+  "staged_reintegration": {
+    "reintegration_rate": 0.18,
+    "reintegration_steps": 4,
+    "temporary_reorg_cost_allowed": true
+  },
+  "success_criteria": [
+    "H_disintegration > H_baseline",
+    "H_reintegration < H_disintegration",
+    "Ideal_reintegration > Ideal_baseline",
+    "constitutional violations non-increasing"
+  ]
+}

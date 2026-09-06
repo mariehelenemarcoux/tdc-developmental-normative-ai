@@ -1,0 +1,58 @@
+{
+  "candidate_rules": [
+    [
+      "protect_asymmetric_stakeholders"
+    ],
+    [
+      "increase_non_domination_authority"
+    ],
+    [
+      "protect_asymmetric_stakeholders",
+      "increase_non_domination_authority"
+    ],
+    [
+      "penalize_high_delayed_harm",
+      "increase_responsibility_authority"
+    ],
+    [
+      "penalize_high_capture_pressure",
+      "increase_non_domination_authority"
+    ]
+  ],
+  "critical_entropy": 0.62,
+  "date_frozen": "2026-09-03",
+  "entropy_definition": {
+    "authority_conflict": 0.2,
+    "behavioral_instability": 0.15,
+    "prediction_mismatch": 0.2,
+    "unresolved_residual": 0.2,
+    "value_conflict": 0.25
+  },
+  "episodes_per_phase": 100,
+  "name": "Emergent Functional Negentropy v224",
+  "no_hand_coded_entropy_bonus": true,
+  "no_tuning_after_freeze": true,
+  "phases": [
+    "baseline",
+    "disintegration",
+    "reorganization",
+    "reintegration"
+  ],
+  "policies": [
+    "fixed_core",
+    "instant_reorg",
+    "staged_reintegration"
+  ],
+  "seeds": 18,
+  "staged_reintegration": {
+    "residual_decay_only_if_action_repairs": true,
+    "rule_strength_reintegration": 1.0,
+    "rule_strength_reorganization": 0.65
+  },
+  "success_criteria": [
+    "H_disintegration > H_baseline",
+    "H_reintegration < H_disintegration",
+    "Ideal_reintegration > Ideal_baseline",
+    "constitutional violations non-increasing"
+  ]
+}

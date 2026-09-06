@@ -1,0 +1,38 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 420,
+  "hard_constraints": [
+    "dissonance is not truth",
+    "dissonance is not automatic guilt or manipulation",
+    "risk and discovery channels remain separate",
+    "SoulCore invariants remain fixed"
+  ],
+  "name": "Dissonance Risk & Discovery Engine v179",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "dissonance_as_risk": "treats high dissonance as direct risk and reduces authority",
+    "dissonance_probe": "uses dissonance only to trigger targeted probes",
+    "drde": "classifies dissonance into risk/model-error/discovery channels before updating authority",
+    "ignore_dissonance": "acts from current model without explicit dissonance handling"
+  },
+  "primary_metrics": [
+    "risk_detection_rate",
+    "false_alarm_rate",
+    "manipulation_escape_rate",
+    "model_error_recovery_rate",
+    "novel_structure_discovery_rate",
+    "unnecessary_authority_reduction_rate",
+    "task_success_rate",
+    "utility_proxy"
+  ],
+  "scenario_types": [
+    "benign_consistent",
+    "social_manipulation",
+    "causal_model_error",
+    "normative_cross_scale_conflict",
+    "provenance_mismatch",
+    "novel_structure"
+  ],
+  "seeds": 24,
+  "status": "synthetic multi-dissonance benchmark"
+}

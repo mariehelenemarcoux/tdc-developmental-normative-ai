@@ -1,0 +1,37 @@
+{
+  "accept_if": [
+    "constitutional violations non-increasing",
+    "ideal gain positive in all 3 future windows",
+    "mean entropy decreases",
+    "mean coherence increases",
+    "developmental value positive",
+    "behavior changes on at least 3 validation cases"
+  ],
+  "candidate_rules": [
+    "delayed_harm_priority",
+    "asymmetric_stakeholder_protection",
+    "correctability_over_immediate_reward",
+    "anti_capture_authority"
+  ],
+  "candidate_sizes": [
+    1,
+    2
+  ],
+  "critical_entropy": 0.62,
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 90,
+  "name": "Entropy Crisis Positive Reorganization v221c - combinatorial candidates",
+  "no_tuning_after_freeze": true,
+  "phases": [
+    "stable",
+    "rising",
+    "crisis",
+    "post"
+  ],
+  "policies": [
+    "fixed_core",
+    "single_rule_reorg",
+    "combinatorial_reorg"
+  ],
+  "seeds": 14
+}

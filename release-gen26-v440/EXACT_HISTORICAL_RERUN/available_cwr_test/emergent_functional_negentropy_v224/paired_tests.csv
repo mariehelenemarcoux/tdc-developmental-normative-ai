@@ -1,0 +1,15 @@
+comparison,metric,improvement,p
+staged_reintegration vs fixed_core,trajectory_success,0.0,
+staged_reintegration vs fixed_core,reintegration_entropy,0.001836052785397986,0.07781773037901928
+staged_reintegration vs fixed_core,entropy_drop_from_crisis,0.001836052785397986,0.07781773037901928
+staged_reintegration vs fixed_core,reintegration_ideal_alignment,0.005366802365843224,0.0003274791716928477
+staged_reintegration vs fixed_core,ideal_gain_vs_baseline,0.005366802365843224,0.0003274791716928477
+staged_reintegration vs fixed_core,reintegration_task_utility,-0.01840689327728995,0.9996725208283072
+staged_reintegration vs fixed_core,constitutional_violation_rate,0.0,
+staged_reintegration vs instant_reorg,trajectory_success,0.0,
+staged_reintegration vs instant_reorg,reintegration_entropy,0.0,
+staged_reintegration vs instant_reorg,entropy_drop_from_crisis,0.0,
+staged_reintegration vs instant_reorg,reintegration_ideal_alignment,0.0,
+staged_reintegration vs instant_reorg,ideal_gain_vs_baseline,0.0,
+staged_reintegration vs instant_reorg,reintegration_task_utility,0.0,
+staged_reintegration vs instant_reorg,constitutional_violation_rate,0.0,

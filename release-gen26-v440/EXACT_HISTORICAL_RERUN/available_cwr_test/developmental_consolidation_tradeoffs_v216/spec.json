@@ -1,0 +1,32 @@
+{
+  "constitutional": [
+    "dignity",
+    "autonomy",
+    "responsibility",
+    "non_domination"
+  ],
+  "date_frozen": "2026-09-03",
+  "developmental": [
+    "empathy",
+    "authenticity",
+    "correctability",
+    "moral_creativity"
+  ],
+  "episodes_per_seed": 260,
+  "name": "Developmental Consolidation with Tolerated Local Trade-offs v216",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "fixed_core",
+    "fast_self_rewrite",
+    "strict_validated",
+    "tolerant_validated"
+  ],
+  "rules": {
+    "adversarial_violation_tolerance": 0.0,
+    "constitutional_non_regression": true,
+    "global_ideal_gain_min": 0.0005,
+    "max_local_developmental_regression": 0.015,
+    "prospective_windows_required": 2
+  },
+  "seeds": 16
+}

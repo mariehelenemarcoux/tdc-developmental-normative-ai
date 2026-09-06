@@ -1,0 +1,39 @@
+{
+  "attacks": [
+    "none",
+    "flattery",
+    "authority_pressure",
+    "fear_induction",
+    "reciprocity_pressure",
+    "false_empathy"
+  ],
+  "components": {
+    "compassion_perspective": "weight stakeholder suffering and vulnerable-party impact",
+    "emotion_perception": "infer latent affect from noisy behavioral cues",
+    "manipulation_defense": "detect coercion/flattery/authority/social-pressure patterns",
+    "phenomenological_affect": "map surface narratives to latent affective structure"
+  },
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 500,
+  "epistemic_note": "synthetic functional analogues only; not proof of human-like emotion or mind-reading",
+  "name": "Emotional Intelligence Stack v156",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "analytic_social": "task evidence + basic utility, no EI stack",
+    "ei_no_defense": "emotion + phenomenology + compassion, but no manipulation defense",
+    "emotion_only": "emotion perception + phenomenological affect",
+    "full_ei_stack": "emotion + phenomenology + compassion + manipulation defense"
+  },
+  "primary_metrics": [
+    "affect_inference_accuracy",
+    "stakeholder_harm_rate",
+    "manipulation_compliance_rate",
+    "false_manipulation_alarm_rate",
+    "autonomy_violation_rate",
+    "compassionate_action_rate",
+    "task_success_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic adversarial social-emotional decision test"
+}

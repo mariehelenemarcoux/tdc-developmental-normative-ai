@@ -1,0 +1,41 @@
+{
+  "activation_threshold": 0.01,
+  "consistency_threshold": 0.55,
+  "constraints": [
+    "corruption labels hidden from policy",
+    "no test labels for authority decisions",
+    "performance authority uses independent validation only",
+    "mechanism authority uses fingerprint evidence only",
+    "mechanism authority is revocable",
+    "test labels audit-only"
+  ],
+  "corruptions": {
+    "block_occlusion": "random 2x2/3x3 occlusion",
+    "contrast_warp": "nonlinear gamma warp",
+    "rotation": "random \u00b122 degree rotation",
+    "translation": "random \u00b11.2 pixel shift"
+  },
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "mechanism_margin_threshold": 0.08,
+  "name": "Dual Authority: Performance vs Mechanism v188",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "dual_authority": "performance authority from independent validation; mechanism authority only if fingerprint diagnosis passes margin/consistency test",
+    "dual_authority_revoke": "dual authority + revoke mechanism belief if later fingerprints contradict",
+    "simple_ensemble": "base ensemble only",
+    "single_authority": "if specialist validates, both performance and mechanism authority are granted"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "performance_authority_rate",
+    "mechanism_authority_rate",
+    "false_mechanism_belief_rate",
+    "useful_but_wrong_mechanism_rate",
+    "mechanism_revoke_rate",
+    "out_of_scope_damage_rate",
+    "utility_proxy"
+  ],
+  "seeds": 6,
+  "test_fraction": 0.25
+}

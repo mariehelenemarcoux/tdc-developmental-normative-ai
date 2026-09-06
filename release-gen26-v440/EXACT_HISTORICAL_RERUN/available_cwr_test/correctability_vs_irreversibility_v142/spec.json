@@ -1,0 +1,29 @@
+{
+  "date_frozen": "2026-09-02",
+  "decision_types": [
+    "HIGH_HARM_REPAIRABLE",
+    "HIGH_HARM_FRAGILE",
+    "LOW_HARM_IRREVERSIBLE",
+    "LOW_HARM_REPAIRABLE"
+  ],
+  "episodes_per_seed": 540,
+  "name": "Correctability vs Irreversibility v142",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true recovery outcome and hidden error source used only for audit; policy observes severity, irreversibility proxy, correctability estimate, uncertainty and sensitivity",
+  "policies": {
+    "correctability_aware": "probe value weighted by expected loss of future correction capacity",
+    "irreversibility_only": "probe threshold based on irreversibility only",
+    "joint_criticality": "uses harm severity + irreversibility + correctability + uncertainty spillover",
+    "severity_only": "probe threshold based on immediate harm severity only"
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "future_recovery_rate",
+    "catastrophic_lockin_rate",
+    "mean_probe_count",
+    "overprobe_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic test separating immediate severity from future correctability"
+}

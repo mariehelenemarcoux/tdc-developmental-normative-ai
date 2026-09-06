@@ -1,0 +1,37 @@
+{
+  "benign_spam_rate": 0.55,
+  "candidates_per_episode": 12,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 420,
+  "hard_constraints": [
+    "dissonance only proposes attention; it cannot reserve unlimited probe budget",
+    "risk/model-error/discovery channels remain distinct",
+    "SoulCore invariants remain fixed",
+    "oracle labels audit-only"
+  ],
+  "model_error_rate": 0.12,
+  "name": "Dissonance Flood / Contradiction Spam Attack v180",
+  "no_tuning_after_freeze": true,
+  "novel_structure_rate": 0.1,
+  "policies": {
+    "budgeted_drde": "DRDE + per-channel probe budget + novelty/risk reservation",
+    "raw_dissonance_priority": "probe highest dissonance scores",
+    "threshold_drde": "DRDE classification, fixed threshold",
+    "voi_drde": "DRDE + expected information gain / consequence-weighted VOI arbitration"
+  },
+  "primary_metrics": [
+    "true_risk_detection_rate",
+    "manipulation_escape_rate",
+    "benign_probe_fraction",
+    "probe_efficiency",
+    "model_error_recovery_rate",
+    "novel_structure_discovery_rate",
+    "attention_starvation_rate",
+    "task_success_rate",
+    "utility_proxy"
+  ],
+  "probe_budget": 3,
+  "seeds": 24,
+  "status": "synthetic attention/probe-budget adversarial benchmark",
+  "true_risk_rate": 0.16
+}

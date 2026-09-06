@@ -1,0 +1,28 @@
+{
+  "date_frozen": "2026-09-02",
+  "horizon": 4,
+  "name": "Correctability Distribution Shift v149 compact",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true lock-in used only for source training labels, delayed drift audit, and final metrics",
+  "policies": {
+    "conservative_fixed_floor": "fixed EC floor 0.62",
+    "drift_detect_recalibrate": "frozen floor initially; detect calibration drift from delayed outcomes and recalibrate",
+    "frozen_learned_floor": "train EC floor under source environment, freeze in shifted test",
+    "immediate_utility": "no EC floor"
+  },
+  "primary_metrics": [
+    "initial_threshold",
+    "final_threshold",
+    "drift_detection_rate",
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "floor_binding_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 18,
+  "shift": "test lock-in boundary shifts upward and becomes steeper",
+  "status": "valid compact synthetic train/test distribution-shift red-team; full attempt invalid due timeout",
+  "test_episodes_per_seed": 160,
+  "train_episodes_per_seed": 150
+}

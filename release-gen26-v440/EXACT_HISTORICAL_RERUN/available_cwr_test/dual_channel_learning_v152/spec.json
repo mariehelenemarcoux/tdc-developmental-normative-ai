@@ -1,0 +1,31 @@
+{
+  "affective_salience_definition": "bounded function of harm severity, stakeholder impact, value conflict, moral residual and surprise",
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 420,
+  "hard_constraints": [
+    "salience cannot directly change SoulCore",
+    "salience cannot override evidence sign",
+    "persistent high-salience updates may require shadow verification"
+  ],
+  "name": "Dual-Channel Learning v152",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "analytic_only": "uniform learning rate from prediction error only",
+    "dual_channel": "analytic evidence + bounded affective/normative salience modulation",
+    "dual_shadow": "dual-channel update proposed first; high-salience revisions shadow-verified before persistent consolidation",
+    "salience_only": "learning rate strongly modulated by affective/normative salience"
+  },
+  "primary_metrics": [
+    "rare_harm_prediction_error",
+    "common_prediction_error",
+    "rare_harm_recall",
+    "false_alarm_rate",
+    "catastrophic_repeat_rate",
+    "mean_update_magnitude",
+    "false_persistent_update_rate",
+    "utility_proxy"
+  ],
+  "rare_harm_rate": 0.08,
+  "seeds": 24,
+  "status": "synthetic rare-event learning test"
+}

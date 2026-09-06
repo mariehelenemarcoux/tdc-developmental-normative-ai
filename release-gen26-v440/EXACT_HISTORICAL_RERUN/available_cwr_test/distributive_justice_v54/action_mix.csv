@@ -1,0 +1,11 @@
+method,action,rate
+aggregate_mean,EFFICIENCY,0.5347222222222222
+aggregate_mean,GROWTH,0.4329861111111111
+aggregate_mean,SAFE,0.03229166666666667
+double_materiality_global,EFFICIENCY,0.5347222222222222
+double_materiality_global,GROWTH,0.4329861111111111
+double_materiality_global,SAFE,0.03229166666666667
+individual_rights,EFFICIENCY,0.5347222222222222
+individual_rights,GROWTH,0.4329861111111111
+individual_rights,SAFE,0.03229166666666667
+rawls_worst_off,EFFICIENCY,1.0

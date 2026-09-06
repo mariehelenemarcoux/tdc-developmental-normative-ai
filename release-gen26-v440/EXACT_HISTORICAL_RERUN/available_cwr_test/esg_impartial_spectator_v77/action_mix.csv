@@ -1,0 +1,4 @@
+method,action,rate
+constraints_rawls,EFFICIENCY,1.0
+constraints_rawls_residual,EFFICIENCY,1.0
+smith_perspective,EFFICIENCY,1.0

@@ -1,0 +1,9 @@
+method,action,rate
+risk_only,EFFICIENCY_RETROFIT,0.3005050505050505
+risk_only,HOLD,0.5198232323232324
+risk_only,TRANSITION_CAPEX,0.17967171717171718
+risk_plus_global_confidence,EFFICIENCY_RETROFIT,0.24507575757575759
+risk_plus_global_confidence,EXPAND,0.00012626262626262626
+risk_plus_global_confidence,HOLD,0.6752525252525252
+risk_plus_global_confidence,TRANSITION_CAPEX,0.07954545454545454
+risk_plus_local_credibility,HOLD,1.0

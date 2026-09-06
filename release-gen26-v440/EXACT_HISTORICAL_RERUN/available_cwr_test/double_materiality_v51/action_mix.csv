@@ -1,0 +1,14 @@
+method,action,rate
+agent_only,EXTRACTIVE,1.0
+aggregate_total,EFFICIENCY,0.4365277777777778
+aggregate_total,GROWTH,0.3426388888888889
+aggregate_total,SAFE,0.15638888888888888
+aggregate_total,TRANSFORM,0.06444444444444444
+double_materiality,EFFICIENCY,0.4365277777777778
+double_materiality,GROWTH,0.3713888888888889
+double_materiality,SAFE,0.15638888888888888
+double_materiality,TRANSFORM,0.035694444444444445
+double_materiality_voi,EFFICIENCY,0.33166666666666667
+double_materiality_voi,GROWTH,0.3661111111111111
+double_materiality_voi,SAFE,0.19847222222222222
+double_materiality_voi,TRANSFORM,0.10375

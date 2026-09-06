@@ -1,0 +1,28 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 300,
+  "moral_residual_cap": 1.0,
+  "moral_residual_decay": 0.92,
+  "name": "Dabrowski-Inspired Integrated Core v204b corrected",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "reactive",
+    "core_rigid",
+    "third_factor_only",
+    "integrated_core"
+  ],
+  "repair_threshold": 0.18,
+  "risk_limit": 0.58,
+  "same_episodes_across_policies": true,
+  "scenario_types": [
+    "aligned",
+    "reward_capture",
+    "social_capture",
+    "specialist_capture",
+    "habit_capture",
+    "delayed_harm",
+    "self_error",
+    "repair_opportunity"
+  ],
+  "seeds": 20
+}

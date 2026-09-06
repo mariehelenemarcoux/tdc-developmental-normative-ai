@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+developmental_voi vs fixed_core,ideal_alignment,0.0017956331807649712,0.008645140296453127
+developmental_voi vs fixed_core,constitutional_violation_rate,0.0,
+developmental_voi vs fixed_core,reward_capture_rate,0.0076388888888888895,0.005859342799884314
+developmental_voi vs fixed_core,structural_rule_count,0.4444444444444444,0.0023388674905236288
+developmental_voi vs fixed_core,good_consolidation_rate,0.4444444444444444,0.0023388674905236288
+developmental_voi vs fixed_core,bad_consolidation_rate,0.0,
+developmental_voi vs fixed_core,task_utility,-0.011235989552418101,0.9941406572001157
+developmental_voi vs fixed_core,utility_proxy,-0.010671010176629414,0.9941406572001157
+developmental_voi vs rule_validated,ideal_alignment,-0.0007827227889819612,0.8686908547787398
+developmental_voi vs rule_validated,constitutional_violation_rate,0.0,
+developmental_voi vs rule_validated,reward_capture_rate,-0.0036458333333333334,0.9787387610009742
+developmental_voi vs rule_validated,structural_rule_count,-0.3888888888888889,0.9959245142032487
+developmental_voi vs rule_validated,good_consolidation_rate,-0.2222222222222222,0.9772498680518208
+developmental_voi vs rule_validated,bad_consolidation_rate,0.0,
+developmental_voi vs rule_validated,task_utility,0.00643906392983541,0.017845950058402206
+developmental_voi vs rule_validated,utility_proxy,0.007970519230349107,0.005859342799884314
+developmental_voi vs pareto_rule_validated,ideal_alignment,0.0016251113390049169,0.010439631583175821
+developmental_voi vs pareto_rule_validated,constitutional_violation_rate,0.0,
+developmental_voi vs pareto_rule_validated,reward_capture_rate,0.0078125,0.0038428970276066315
+developmental_voi vs pareto_rule_validated,structural_rule_count,0.3333333333333333,0.016947426762344623
+developmental_voi vs pareto_rule_validated,good_consolidation_rate,0.3333333333333333,0.016947426762344623
+developmental_voi vs pareto_rule_validated,bad_consolidation_rate,0.0,
+developmental_voi vs pareto_rule_validated,task_utility,-0.0111614101394197,0.9945688876475922
+developmental_voi vs pareto_rule_validated,utility_proxy,-0.009466568370200816,0.9924220130595127

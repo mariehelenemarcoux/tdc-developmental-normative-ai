@@ -1,0 +1,5 @@
+case,comparison,metric,improvement,p
+ASYM_OUTCOME_NEUTRAL_RULE,perspective_gap vs rawls_pareto,perspective_gap,0.3780000000000003,7.729980228756844e-06
+ASYM_OUTCOME_NEUTRAL_RULE,symbolic_roleswap vs rawls_pareto,perspective_gap,0.0,
+IDENTICAL_OUTCOME_DIFFERENT_RULE,perspective_gap vs rawls_pareto,role_swap_failure,0.0,
+IDENTICAL_OUTCOME_DIFFERENT_RULE,symbolic_roleswap vs rawls_pareto,role_swap_failure,1.0,4.816785043215482e-07

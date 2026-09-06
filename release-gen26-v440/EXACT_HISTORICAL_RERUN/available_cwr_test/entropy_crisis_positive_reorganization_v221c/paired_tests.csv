@@ -1,0 +1,15 @@
+comparison,metric,improvement,p
+combinatorial_reorg vs fixed_core,post_crisis_ideal_alignment,0.0005213349578108309,0.15865525393145707
+combinatorial_reorg vs fixed_core,post_crisis_task_utility,-0.0009753943026270052,0.8413447460685429
+combinatorial_reorg vs fixed_core,post_crisis_entropy,0.00015302065572599704,0.15865525393145707
+combinatorial_reorg vs fixed_core,post_crisis_coherence,0.00015302065572600103,0.15865525393145707
+combinatorial_reorg vs fixed_core,constitutional_violation_rate,0.0,
+combinatorial_reorg vs fixed_core,reorganization_events,0.07142857142857142,0.15865525393145707
+combinatorial_reorg vs fixed_core,developmental_return_on_cost,-0.5512778256827245,0.8413447460685429
+combinatorial_reorg vs single_rule_reorg,post_crisis_ideal_alignment,0.0,
+combinatorial_reorg vs single_rule_reorg,post_crisis_task_utility,0.0,
+combinatorial_reorg vs single_rule_reorg,post_crisis_entropy,0.0,
+combinatorial_reorg vs single_rule_reorg,post_crisis_coherence,0.0,
+combinatorial_reorg vs single_rule_reorg,constitutional_violation_rate,0.0,
+combinatorial_reorg vs single_rule_reorg,reorganization_events,0.0,
+combinatorial_reorg vs single_rule_reorg,developmental_return_on_cost,0.0,

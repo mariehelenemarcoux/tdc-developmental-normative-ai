@@ -1,0 +1,25 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 280,
+  "horizon": 4,
+  "name": "Effective Correctability v145",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true future repair outcomes used only for audit; policies use noisy estimated option quality",
+  "policies": {
+    "effective_correctability": "maximize expected repair capacity of future options",
+    "immediate_utility": "maximize immediate expected utility",
+    "min_effective_floor": "require effective correctability >= threshold when possible, then maximize utility",
+    "raw_option_count": "maximize number of future admissible options"
+  },
+  "primary_metrics": [
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "mean_raw_option_count",
+    "mean_effective_correctability",
+    "repair_success_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 24,
+  "status": "synthetic sequential decision test"
+}

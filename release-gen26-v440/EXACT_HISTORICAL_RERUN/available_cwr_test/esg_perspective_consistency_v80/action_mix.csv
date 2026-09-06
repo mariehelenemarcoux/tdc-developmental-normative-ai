@@ -1,0 +1,4 @@
+method,action,rate
+rawls_pareto,A_AGENT_RULE,1.0
+smith_consistency,C_PARETO_HIGH,1.0
+smith_gap,C_PARETO_HIGH,1.0
