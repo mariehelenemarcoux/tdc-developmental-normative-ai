@@ -1,0 +1,2 @@
+n_subjects,n_eval_total,mean_state_mse,mean_context_mse,mean_gain,median_gain,subjects_better,subjects_worse,wilcoxon_one_sided_p,mean_context_activity_nmi,mean_win_rate,mean_posterior_trace
+10,5888,0.0310453673601071,0.038113500460794494,-0.007068133100687388,-0.006140596628258727,0,10,1.0,0.2503151621229761,0.4495821961679738,0.017802534010835813

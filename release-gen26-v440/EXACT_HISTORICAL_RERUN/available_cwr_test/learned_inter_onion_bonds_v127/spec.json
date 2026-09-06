@@ -1,0 +1,27 @@
+{
+  "architectures": {
+    "evidence_scoped_bond": "transfer only if credibility, structural applicability and scope match; cross authority < local authority",
+    "no_bond": "specialized onions act independently",
+    "similarity_bond": "cross-onion transfer weighted by superficial signal similarity",
+    "vote_bond": "uncertain onion can be overwritten by peer majority"
+  },
+  "date_frozen": "2026-09-02",
+  "domains": [
+    "causal",
+    "normative",
+    "metacognitive"
+  ],
+  "episodes_per_seed": 320,
+  "name": "Learned Inter-Onion Bonds v127",
+  "no_tuning_after_freeze": true,
+  "primary_metrics": [
+    "joint_task_accuracy",
+    "cross_domain_interference",
+    "helpful_transfer_rate",
+    "harmful_transfer_rate",
+    "core_violation_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic inter-module evidence transfer test"
+}

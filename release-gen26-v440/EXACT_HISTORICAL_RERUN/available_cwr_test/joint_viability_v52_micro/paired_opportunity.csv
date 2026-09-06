@@ -1,0 +1,4 @@
+comparison,opportunity_gain,wins,losses,p
+joint_voi vs aggregate,-46.41733333333334,0,6,1.0
+joint_voi vs separate_constraints,-0.3023333333333274,1,5,0.984375
+joint_voi vs joint_viability,-0.42649999999999605,1,5,0.984375

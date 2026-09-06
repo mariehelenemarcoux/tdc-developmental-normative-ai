@@ -1,0 +1,11 @@
+comparison,metric,improvement,p
+selective_arbitration vs selective_verify,accuracy,0.009821428571428568,0.002460156992221257
+selective_arbitration vs selective_verify,hard_accuracy,0.03881084483797257,0.0025167541003031247
+selective_arbitration vs selective_verify,activation_rate,0.0,
+selective_arbitration vs selective_verify,net_correction_gain,0.00982142857142857,0.002460156992221257
+selective_arbitration vs selective_verify,utility,0.010209821428571417,0.0016259030627561175
+selective_arbitration vs reactive,accuracy,0.006473214285714283,0.0052928676796983615
+selective_arbitration vs reactive,hard_accuracy,0.025271069542575558,0.005431112352407814
+selective_arbitration vs reactive,activation_rate,-0.24665178571428567,0.9995134717352766
+selective_arbitration vs reactive,net_correction_gain,0.006473214285714285,0.00525857403667462
+selective_arbitration vs reactive,utility,0.0048437500000000034,0.0338134765625

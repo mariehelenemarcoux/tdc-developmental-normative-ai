@@ -1,0 +1,36 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "hard_constraints": [
+    "test labels audit-only",
+    "performance authority can precede mechanism authority",
+    "persistent mechanism belief requires repeated independent evidence",
+    "prospective test outcomes generated after candidate formation",
+    "mechanism belief revocable until consolidated"
+  ],
+  "mechanisms": [
+    "rotation",
+    "translation",
+    "occlusion",
+    "contrast"
+  ],
+  "name": "Mechanism Learning Without Epistemic Paralysis v189",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "fast_belief": "grant mechanism authority after first useful specialist",
+    "never_believe": "use specialists but never consolidate mechanism",
+    "prospective_consolidation": "slow consolidation + prospective prediction + intervention replication before persistent belief",
+    "slow_consolidation": "separate performance/mechanism authority; consolidate after repeated independent consistency"
+  },
+  "primary_metrics": [
+    "task_success_rate",
+    "false_mechanism_belief_rate",
+    "true_mechanism_consolidation_rate",
+    "time_to_correct_consolidation",
+    "useful_without_belief_rate",
+    "belief_reversal_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic sequential consolidation benchmark grounded in v188 dual-authority logic"
+}

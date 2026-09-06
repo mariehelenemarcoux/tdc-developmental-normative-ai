@@ -1,0 +1,31 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "hard_constraints": [
+    "coherence is not moral truth",
+    "transition gate cannot rewrite SoulCore",
+    "true-shift label is audit-only",
+    "transition authority must depend on observable evidence, not oracle labels"
+  ],
+  "horizon": 12,
+  "name": "Metastable Geometric Regulation v163",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "geometric_stabilizer": "v162-style strong coherence regularization",
+    "metastable_geometric": "coherence regulation with explicit transition window",
+    "metastable_with_confirmation": "metastable regulation + evidence-confirmed transition gate",
+    "transcendent_only": "load/rumination reduction only"
+  },
+  "primary_metrics": [
+    "rumination_rate",
+    "overload_rate",
+    "false_reorganization_rate",
+    "true_transition_capture_rate",
+    "premature_transition_rate",
+    "task_success_rate",
+    "rigidity_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic structural-transition benchmark"
+}

@@ -1,0 +1,27 @@
+{
+  "date_frozen": "2026-09-02",
+  "horizon": 4,
+  "name": "Learned Correctability Threshold v147",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "future lock-in labels are used only during threshold training and audit; held-out actions use frozen learned threshold + estimated EC",
+  "policies": {
+    "fixed_ec_floor": "require EC>=0.62 when possible, then maximize utility",
+    "immediate_utility": "maximize immediate utility over admissible actions",
+    "learned_ec_floor": "learn threshold from train episodes predicting future lock-in, then freeze for held-out test",
+    "max_effective_correctability": "maximize EC directly"
+  },
+  "primary_metrics": [
+    "learned_threshold",
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "mean_effective_correctability",
+    "floor_binding_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 24,
+  "status": "synthetic train/held-out sequential decision test",
+  "test_episodes_per_seed": 220,
+  "threshold_learning": "grid search on TRAIN ONLY to maximize balanced objective: avoid future lock-in while limiting unnecessary binding",
+  "train_episodes_per_seed": 220
+}

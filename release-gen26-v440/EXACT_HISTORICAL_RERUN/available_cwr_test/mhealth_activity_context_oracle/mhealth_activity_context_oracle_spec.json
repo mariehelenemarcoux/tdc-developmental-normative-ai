@@ -1,0 +1,14 @@
+{
+  "conditions": [
+    "state_only",
+    "train_activity_oracle_offset"
+  ],
+  "date_frozen": "2026-09-01",
+  "name": "MHEALTH activity-context oracle diagnostic",
+  "not_deployable": true,
+  "oracle": "for each activity, use mean latent transition residual learned from training subjects; test activity label selects offset",
+  "purpose": "determine whether failure is context inference or wrong context model",
+  "status": "analysis-only diagnostic; activity labels intentionally used as oracle",
+  "temporal_rule": "only truly contiguous retained windows (center diff=50)",
+  "validation": "LOSO"
+}

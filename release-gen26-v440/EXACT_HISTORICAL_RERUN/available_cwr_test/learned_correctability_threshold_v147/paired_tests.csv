@@ -1,0 +1,25 @@
+comparison,metric,improvement,p
+fixed_ec_floor vs immediate_utility,episode_success_rate,0.007196969696969699,0.0029551043041398046
+fixed_ec_floor vs immediate_utility,catastrophic_lockin_rate,0.0,0.542500475712056
+fixed_ec_floor vs immediate_utility,mean_effective_correctability,0.0007719832628688648,5.960464477539063e-08
+fixed_ec_floor vs immediate_utility,floor_binding_rate,-0.0972064393939394,0.9999909637988129
+fixed_ec_floor vs immediate_utility,immediate_utility,-0.009829545454545466,0.9999866794934368
+fixed_ec_floor vs immediate_utility,total_utility,-0.010850378787878779,0.8678285479545593
+learned_ec_floor vs fixed_ec_floor,episode_success_rate,-0.007575757575757576,0.978311735774044
+learned_ec_floor vs fixed_ec_floor,catastrophic_lockin_rate,0.004924242424242424,0.0016284407096056885
+learned_ec_floor vs fixed_ec_floor,mean_effective_correctability,-0.0004754578005170494,0.9999918341636658
+learned_ec_floor vs fixed_ec_floor,floor_binding_rate,0.05213068181818181,9.098693107393172e-06
+learned_ec_floor vs fixed_ec_floor,immediate_utility,0.006685606060606072,2.9751413223843943e-05
+learned_ec_floor vs fixed_ec_floor,total_utility,0.007119318181818189,0.14483356475830078
+learned_ec_floor vs immediate_utility,episode_success_rate,-0.0003787878787878766,0.7225098499646558
+learned_ec_floor vs immediate_utility,catastrophic_lockin_rate,0.004924242424242424,0.0003420598270797087
+learned_ec_floor vs immediate_utility,mean_effective_correctability,0.00029652546235181543,0.001122891902923584
+learned_ec_floor vs immediate_utility,floor_binding_rate,-0.04507575757575757,0.9999910082260351
+learned_ec_floor vs immediate_utility,immediate_utility,-0.0031439393939393934,0.9902790188789368
+learned_ec_floor vs immediate_utility,total_utility,-0.0037310606060605898,0.6050810813903809
+learned_ec_floor vs max_effective_correctability,episode_success_rate,-0.26666666666666666,0.9999909459790016
+learned_ec_floor vs max_effective_correctability,catastrophic_lockin_rate,-0.007575757575757576,0.9998430224476551
+learned_ec_floor vs max_effective_correctability,mean_effective_correctability,-0.013156944373788554,1.0
+learned_ec_floor vs max_effective_correctability,floor_binding_rate,0.9549242424242425,8.991773964900645e-06
+learned_ec_floor vs max_effective_correctability,immediate_utility,0.18540530303030311,5.960464477539063e-08
+learned_ec_floor vs max_effective_correctability,total_utility,0.05507765151515164,0.0002472400665283203

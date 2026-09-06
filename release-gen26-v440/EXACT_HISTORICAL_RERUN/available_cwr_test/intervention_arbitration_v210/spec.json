@@ -1,0 +1,29 @@
+{
+  "activation": "validation-only difficulty + uncertainty score",
+  "constraints": [
+    "same test sequence across policies",
+    "validation-only routing",
+    "test labels audit-only",
+    "no synthetic corruption",
+    "no tuning after freeze"
+  ],
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 320,
+  "interventions": [
+    "baseline",
+    "logistic",
+    "random_forest",
+    "extra_trees",
+    "soft_mixture"
+  ],
+  "name": "Intervention Arbitration Under Third-Factor Activation v210",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "reactive",
+    "selective_verify",
+    "selective_arbitration"
+  ],
+  "seeds": 14,
+  "selection": "choose intervention with best validation accuracy for matched difficulty bin; no test labels"
+}

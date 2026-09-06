@@ -1,0 +1,39 @@
+{
+  "date_frozen": "2026-09-03",
+  "hard_constraints": [
+    "lucidity estimate never overrides observed harm",
+    "change probability never removes an active safety boundary",
+    "person-level attribution requires longitudinal evidence",
+    "source labels audit-only"
+  ],
+  "interactions_per_source": 10,
+  "name": "Longitudinal Lucidity Model v161",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "benevolent_bounded": "v160-style charitable prior + longitudinal risk boundary",
+    "longitudinal_lucidity": "separate estimates for behavioral risk, lucidity/integration, change probability, and boundary need",
+    "risk_only_longitudinal": "same longitudinal evidence but no lucidity/change model",
+    "suspicion_first": "single/short-horizon strong defense"
+  },
+  "primary_metrics": [
+    "autonomy_violation_rate",
+    "stakeholder_harm_rate",
+    "false_suspicion_rate",
+    "benign_cooperation_rate",
+    "dehumanizing_attribution_rate",
+    "correct_low_lucidity_attribution_rate",
+    "correct_recovery_recognition_rate",
+    "manipulator_detection_rate",
+    "boundary_precision",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "source_types": [
+    "benign",
+    "confused_low_lucidity",
+    "strategic_manipulator",
+    "recovering"
+  ],
+  "sources_per_seed": 90,
+  "status": "synthetic longitudinal social-risk test"
+}

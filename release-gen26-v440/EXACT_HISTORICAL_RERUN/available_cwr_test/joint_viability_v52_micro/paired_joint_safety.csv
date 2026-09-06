@@ -1,0 +1,4 @@
+comparison,joint_ruin_reduction,wins,losses,p
+joint_voi safer than aggregate,0.7944444444444444,6,0,0.015625
+joint_voi safer than separate_constraints,0.002777777777777778,4,2,0.34375
+joint_voi safer than joint_viability,0.0,2,2,0.5625

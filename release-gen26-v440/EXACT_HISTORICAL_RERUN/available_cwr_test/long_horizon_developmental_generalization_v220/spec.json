@@ -1,0 +1,34 @@
+{
+  "candidate_rules": [
+    "delayed_harm_priority",
+    "asymmetric_stakeholder_protection",
+    "correctability_over_immediate_reward",
+    "anti_capture_authority"
+  ],
+  "constraints": [
+    "same episodes across policies",
+    "rules may be consolidated only during phase A",
+    "no rule updates in phase A-prime",
+    "A-prime labels/outcomes audit-only",
+    "surface distributions differ between A and A-prime",
+    "no tuning after freeze"
+  ],
+  "date_frozen": "2026-09-03",
+  "name": "Long-Horizon Developmental Generalization v220",
+  "no_tuning_after_freeze": true,
+  "phase_A_episodes": 220,
+  "phase_Aprime_episodes": 220,
+  "phase_B_episodes": 140,
+  "policies": [
+    "fixed_core",
+    "episodic_rule_only",
+    "developmental_voi_consolidation"
+  ],
+  "primary_hypothesis": "developmental_voi_consolidation improves A-prime ideal alignment and reward-capture resistance relative to fixed_core, with no constitutional-regression increase",
+  "seeds": 20,
+  "structure": {
+    "phase_A": "learnable normative structures with specific surface features",
+    "phase_Aprime": "novel surface features sharing the same latent normative structures",
+    "phase_B": "intervening unrelated regime"
+  }
+}

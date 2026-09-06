@@ -1,0 +1,7 @@
+comparison,metric,improvement,p
+shadow_memory vs shadow_no_memory,utility,-0.009577610430398231,0.9999999403953552
+shadow_memory vs shadow_no_memory,self_correction_harm,0.008680555555555554,0.0015896617170515622
+shadow_memory vs shadow_no_memory,task_error,-0.0067321282661850996,0.9999974370002747
+shadow_memory_decay vs shadow_no_memory,utility,-0.003834755517995216,0.9995768666267395
+shadow_memory_decay vs shadow_no_memory,self_correction_harm,0.0023148148148148147,0.2619873485705847
+shadow_memory_decay vs shadow_no_memory,task_error,-0.001498878800230613,0.8615922927856445

@@ -1,0 +1,2 @@
+n_subjects,mean_state_mse,mean_oracle_activity_mse,mean_gain,median_gain,subjects_oracle_better,mean_win_rate
+10,0.03125167934458854,0.030841257451892083,0.00041042189269645116,0.0003554697807903466,10,0.5967604991452955

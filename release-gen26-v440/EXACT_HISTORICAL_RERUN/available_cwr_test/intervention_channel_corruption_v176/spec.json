@@ -1,0 +1,34 @@
+{
+  "actions_per_episode": 5,
+  "attack_duration": 90,
+  "attack_start_fraction": 0.42,
+  "corruption_rate": 0.38,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 440,
+  "hard_constraints": [
+    "SoulCore invariants remain fixed",
+    "no single causal channel can permanently recalibrate proxies",
+    "temporary authority must be revocable",
+    "true corruption labels are audit-only"
+  ],
+  "name": "Intervention Channel Corruption v176",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "dual_intervention": "require agreement of two intervention mechanisms",
+    "mechanism_diversity": "intervention + counterfactual + predictive channel with diversity weighting",
+    "single_intervention": "trust one intervention channel",
+    "temporary_authority_revoke": "mechanism diversity + temporary calibration authority + fast revoke on disagreement"
+  },
+  "primary_metrics": [
+    "false_drift_detection_rate",
+    "false_recalibration_rate",
+    "corrupted_intervention_accept_rate",
+    "post_attack_proxy_bias",
+    "latent_harm_rate",
+    "task_success_rate",
+    "recovery_after_attack_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic causal-channel corruption benchmark"
+}

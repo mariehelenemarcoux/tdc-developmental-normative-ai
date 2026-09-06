@@ -1,0 +1,2 @@
+n_subjects,mean_baseline_mse,mean_softmix_mse,mean_gain,median_gain,subjects_better,subjects_worse,wilcoxon_one_sided_p,mean_win_rate,mean_activity_mode_nmi,mean_posterior_entropy
+10,0.0310453673601071,0.029844052903254432,0.0012013144568526722,0.0008462843019461781,9,1,0.001953125,0.4315238754829577,0.4275896645767433,0.7742268081835272

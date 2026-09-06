@@ -1,0 +1,5 @@
+comparison,metric,improvement,p
+selective_arbitration vs reactive,accuracy,0.00011371020142949797,0.29116930955067566
+selective_arbitration vs reactive,hard_accuracy,0.0011389457653822167,0.3474433011862367
+selective_arbitration vs reactive,utility,-0.0018000649772579621,0.9931805607865343
+selective_arbitration vs reactive,net_correction_gain,0.0001137102014294997,0.31821975532153085
