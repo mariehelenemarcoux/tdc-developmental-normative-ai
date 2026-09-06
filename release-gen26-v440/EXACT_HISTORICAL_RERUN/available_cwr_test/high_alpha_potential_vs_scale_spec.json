@@ -1,0 +1,24 @@
+{
+  "alpha_values": [
+    2.0,
+    3.0,
+    4.0,
+    5.0,
+    7.5,
+    10.0
+  ],
+  "base_radius_R0": 10.0,
+  "conditions": {
+    "potential": "R(theta)=10 + alpha*U(theta)",
+    "uniform_scale_control": "R(theta)=10 + alpha*mean_positive_scale, no theta dependence"
+  },
+  "control_definition": "uniform radius increase matched to the mean radius shift induced by each alpha under U(theta)",
+  "date_frozen": "2026-08-31",
+  "epochs": 100,
+  "goal": "Separate structured curvature effects from simple radial scaling effects.",
+  "name": "CWR high-alpha potential vs radial-scale control",
+  "no_tuning_after_freeze": true,
+  "protocol": "same learned shared-world/local-view factorization and clean/view/world drift evaluation",
+  "seeds": 10,
+  "tube_radius_r": 1.0
+}

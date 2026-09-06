@@ -1,0 +1,48 @@
+{
+  "conditions": [
+    "v01_no_recon",
+    "manual_meta",
+    "evolved_meta"
+  ],
+  "critical_secondary": [
+    "false_local_repair_rate_on_world_change",
+    "accuracy_delta_immediately_after_world_change",
+    "local_drift_detection"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_process": {
+    "approx_fractions": {
+      "coherent_world_change": 0.08,
+      "local_view_drift": 0.12,
+      "stable": 0.8
+    },
+    "random_order": "Markov-like persistence for stable periods; event types sampled independently when leaving stability",
+    "states": [
+      "stable",
+      "local_view_drift",
+      "coherent_world_change"
+    ]
+  },
+  "evolved_meta": "alpha=clip(0.12+0.046417*C+0.150494*D+0.198513*C*D,0.01,0.30)",
+  "local_drift": [
+    "rotation",
+    "bias",
+    "scale"
+  ],
+  "manual_meta": "alpha=clip(0.02+0.16*C+0.10*D,0.02,0.28)",
+  "name": "CWR coherent world-change vs local-view-drift critical test",
+  "no_tuning_after_freeze": true,
+  "primary": [
+    "mean_accuracy",
+    "final_accuracy"
+  ],
+  "same_streams_across_conditions": true,
+  "seeds": 12,
+  "steps": 260,
+  "world_change": {
+    "persistent_until_next world change": true,
+    "rotation_strength": "uniform [0.15,0.45]",
+    "scale": "uniform [0.9,1.1]",
+    "type": "coherent latent linear transform applied before all views"
+  }
+}

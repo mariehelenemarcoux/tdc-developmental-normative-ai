@@ -1,0 +1,24 @@
+{
+  "date_frozen": "2026-08-31",
+  "epochs": 120,
+  "fixed_r": 1.0,
+  "name": "CWR dense thin-torus optimum test",
+  "no_tuning_after_freeze": true,
+  "primary_metrics": [
+    "clean_acc",
+    "view_drift_acc",
+    "world_drift_acc",
+    "mean_accuracy_3tests"
+  ],
+  "protocol": "same learned world/view factorization and drift tests as prior torus sweeps",
+  "ratios_R_over_r": [
+    12.0,
+    15.0,
+    18.0,
+    20.0,
+    22.0,
+    25.0,
+    30.0
+  ],
+  "seeds": 10
+}

@@ -1,0 +1,25 @@
+{
+  "added_step": {
+    "alignment": "orthogonal Procrustes R*=argmin ||G_after R - G_before||_F",
+    "application": "right-multiply every view encoder by R*",
+    "candidate": "fused latent on the same adaptation block immediately after repair",
+    "purpose": "preserve latent gauge continuity without fixing the representation to its initial coordinates",
+    "reference": "fused latent on the same adaptation block immediately before repair",
+    "when": "after each committed local repair"
+  },
+  "core": "CWR v0.1 detector and local ridge repair unchanged",
+  "date_frozen": "2026-08-31",
+  "evaluation": {
+    "comparison": [
+      "CWR v0.1",
+      "CWR v0.6 Procrustes"
+    ],
+    "primary": "500 sequential heterogeneous local changes",
+    "test_seeds": "unseen before freeze"
+  },
+  "extra_plasticity_parameter": null,
+  "name": "CWR v0.6 geometric-continuity / Procrustes",
+  "new_thresholds": false,
+  "no_tuning_after_freeze": true,
+  "slow_reference": false
+}

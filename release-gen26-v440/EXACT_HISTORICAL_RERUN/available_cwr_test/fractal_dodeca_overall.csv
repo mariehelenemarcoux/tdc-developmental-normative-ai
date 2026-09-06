@@ -1,0 +1,5 @@
+condition,mean_accuracy_all_events
+dodeca_fractal60,0.7049771484375
+dodeca_nonfractal60,0.7049771484375
+random_hier60,0.704976953125
+simple20,0.7149673828125

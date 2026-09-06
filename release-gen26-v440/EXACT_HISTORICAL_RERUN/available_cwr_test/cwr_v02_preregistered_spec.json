@@ -1,0 +1,28 @@
+{
+  "changes": {
+    "commit_rollback": {
+      "criterion": "commit only if adaptation-block global latent disagreement decreases by at least 1%",
+      "enabled": true,
+      "min_relative_improvement": 0.01
+    },
+    "detector": {
+      "max_views_per_pass": 1,
+      "threshold_multiplier": 1.65
+    },
+    "historical_anchor": {
+      "description": "ridge penalty toward original calibrated encoder B_ref",
+      "enabled": true,
+      "lambda_anchor": 0.1
+    },
+    "previous_state_penalty": {
+      "description": "penalty toward immediately previous encoder B_prev",
+      "enabled": true,
+      "lambda_prev": 0.05
+    }
+  },
+  "core": "CWR v0.1 frozen detector and local ridge realignment unchanged",
+  "date_frozen": "2026-08-31",
+  "evaluation_rule": "No parameter changes after seeing held-out stress-test results.",
+  "name": "CWR v0.2 preregistered",
+  "no_tuning_after_freeze": true
+}

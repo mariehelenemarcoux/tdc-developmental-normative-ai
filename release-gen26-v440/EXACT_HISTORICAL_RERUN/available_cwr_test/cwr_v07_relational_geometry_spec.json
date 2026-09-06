@@ -1,0 +1,23 @@
+{
+  "core": "CWR v0.1 detector and local ridge repair retained",
+  "date_frozen": "2026-08-31",
+  "evaluation": {
+    "comparison": [
+      "CWR v0.1",
+      "CWR v0.7 relational geometry"
+    ],
+    "primary": "300 sequential heterogeneous local changes",
+    "test_seeds": "unseen before freeze"
+  },
+  "geometric_regularization": {
+    "application": "candidate local repair is blended with previous encoder by line search over alpha in {0.25,0.5,0.75,1.0}; choose candidate minimizing consensus loss + lambda_gram * normalized-Gram drift on the adaptation block",
+    "lambda_gram": 0.05,
+    "target": "normalized Gram matrix of a recent trusted fused latent state",
+    "trusted_reference_update": "if committed candidate lowers consensus loss and its Gram drift from current trusted reference is <= running 60th percentile, set trusted reference to current post-repair latent"
+  },
+  "name": "CWR v0.7 relational-geometry continuity",
+  "no_coordinate_anchor": true,
+  "no_eta": true,
+  "no_procrustes": true,
+  "no_tuning_after_freeze": true
+}

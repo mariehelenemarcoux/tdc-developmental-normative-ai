@@ -1,0 +1,28 @@
+{
+  "changes": {
+    "commit_rollback": {
+      "enabled": true,
+      "min_relative_disagreement_improvement": 0.005
+    },
+    "detector": {
+      "max_views_per_pass": 1,
+      "threshold_multiplier": 1.65
+    },
+    "local_repair": {
+      "description": "weak attraction to the slow reference plus continuity to previous local encoder",
+      "lambda_prev": 0.02,
+      "lambda_slow_anchor": 0.03
+    },
+    "slow_world_reference": {
+      "description": "slow reference follows trusted operational state rather than remaining fixed",
+      "enabled": true,
+      "eta": 0.02,
+      "update_condition": "update slow reference only after a committed local repair and when post-repair mean disagreement is below the 40th percentile of the seed's running post-repair disagreement history"
+    }
+  },
+  "core": "CWR v0.1 detector and local repair retained",
+  "date_frozen": "2026-08-31",
+  "evaluation_rule": "No parameter changes after seeing the new held-out test.",
+  "name": "CWR v0.3 slow-moving world reference",
+  "no_tuning_after_freeze": true
+}

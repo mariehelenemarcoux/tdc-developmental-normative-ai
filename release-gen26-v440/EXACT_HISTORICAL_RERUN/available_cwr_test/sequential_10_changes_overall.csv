@@ -1,0 +1,2 @@
+baseline_acc_mean,final_frozen_acc_mean,final_online_acc_mean,final_online_advantage_vs_frozen,final_drift_from_baseline,mean_correct_detection_all_events,mean_no_detection_all_events,mean_repair_gain_all_events
+0.8476190476190477,0.27266666666666667,0.7913809523809524,0.5187142857142857,0.056238095238095226,0.8566666666666667,0.14,0.09842380952380952

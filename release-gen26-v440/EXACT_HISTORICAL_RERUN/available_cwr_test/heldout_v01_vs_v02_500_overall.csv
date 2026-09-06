@@ -1,0 +1,2 @@
+baseline_acc_mean,final_v01_acc_mean,final_v02_acc_mean,final_v02_advantage_mean,v02_final_wins,v02_final_losses,mean_v01_acc_all_events,mean_v02_acc_all_events,mean_advantage_all_events,mean_v02_commit_rate,min_v01_mean_acc,min_v02_mean_acc,event_min_v01,event_min_v02
+0.8458928571428571,0.5110416666666666,0.40330357142857143,-0.10773809523809524,2,6,0.6860100595238096,0.5683453571428572,-0.11766470238095238,0.63875,0.49389880952380955,0.3743154761904762,499,464

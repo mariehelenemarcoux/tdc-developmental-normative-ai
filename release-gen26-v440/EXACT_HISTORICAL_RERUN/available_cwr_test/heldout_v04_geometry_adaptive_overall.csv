@@ -1,0 +1,2 @@
+baseline_acc_mean,final_v01_acc,final_fixed05_acc,final_adaptive_acc,adaptive_advantage_vs_v01_final,adaptive_advantage_vs_fixed05_final,adaptive_wins_vs_v01,adaptive_wins_vs_fixed05,mean_v01_acc_all,mean_fixed05_acc_all,mean_adaptive_acc_all,mean_eta_adaptive,eta_p10,eta_p50,eta_p90,adaptive_slow_update_rate,adaptive_detection_rate
+0.85298828125,0.4515234375,0.4428125,0.4428125,-0.008710937500000033,0.0,4,0,0.5905777994791667,0.5753462890625,0.5753462890625,0.009461684136506754,0.006212804817906369,0.007859662743877865,0.012537227154246176,0.0,0.5358333333333334

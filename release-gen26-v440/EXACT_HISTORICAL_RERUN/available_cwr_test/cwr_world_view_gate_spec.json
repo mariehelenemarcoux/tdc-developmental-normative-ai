@@ -1,0 +1,36 @@
+{
+  "conditions": [
+    "plain_v01",
+    "world_view_gate"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_process": {
+    "coherent_world_change_fraction_approx": 0.08,
+    "local_view_drift_fraction_approx": 0.12,
+    "stable_fraction_approx": 0.8
+  },
+  "gate": {
+    "VIEW_if": "locality_ratio >= 1.35 and disagreement_ratio >= 1.65",
+    "WORLD_if": "locality_ratio < 1.35 and median(q_i) above calibration variability threshold",
+    "disagreement_ratio": "max(d_i)/(median(d)+eps)",
+    "locality_ratio": "max(q_i)/(median(q)+eps)",
+    "otherwise": "ABSTAIN",
+    "view_change_score": "per-view normalized covariance+mean shift against previous stable reference block"
+  },
+  "name": "CWR World/View Gate critical test",
+  "no_tuning_after_freeze": true,
+  "primary": [
+    "false_world_repair_rate",
+    "local_drift_detection"
+  ],
+  "repair": "same v0.1 local ridge repair, only if gate=VIEW",
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "mean_accuracy",
+    "final_accuracy",
+    "world_classification_rate"
+  ],
+  "seeds": 12,
+  "steps": 260,
+  "world_behavior": "no local repair when gate=WORLD"
+}

@@ -1,0 +1,3 @@
+comparison,mean_diff,wins,losses,ties
+evolved-v01_no_recon,0.0012076095947063843,6,6,0
+evolved-manual_meta,-0.0012029569892473234,5,7,0

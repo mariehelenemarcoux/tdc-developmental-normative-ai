@@ -1,0 +1,4 @@
+comparison,mean_diff,wins,losses,ties
+fractal - simple20,-0.019355468750000018,1,6,1
+fractal - random_hier60,0.0,0,0,8
+fractal - dodeca_nonfractal60,0.0,0,0,8

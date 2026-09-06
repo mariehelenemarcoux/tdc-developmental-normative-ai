@@ -1,0 +1,35 @@
+{
+  "adaptive_eta": {
+    "clip": [
+      0.0,
+      0.8
+    ],
+    "coherence": "exp(- mean inter-view disagreement / calibration disagreement)",
+    "formula": "eta = sigmoid(2.0*(novelty-1.0) + 1.5*(coherence-0.5) + 1.0*(persistence-1.0) - 1.5*uncertainty)",
+    "novelty": "Mahalanobis distance of current fused latent mean from calibration latent distribution, normalized by sqrt(K)",
+    "persistence": "EWMA of novelty with alpha=0.20",
+    "uncertainty": "1 - coherence"
+  },
+  "comparison": [
+    "CWR v0.1",
+    "CWR fixed-eta=0.5",
+    "CWR v0.4 adaptive eta"
+  ],
+  "date_frozen": "2026-08-31",
+  "detector": {
+    "max_views_per_pass": 1,
+    "threshold_multiplier": 1.65
+  },
+  "local_repair": {
+    "commit_min_relative_disagreement_improvement": 0.005,
+    "lambda_prev": 0.02,
+    "lambda_slow_anchor": 0.03
+  },
+  "name": "CWR v0.4 geometry-gated adaptive plasticity",
+  "no_tuning_after_freeze": true,
+  "principle": "Increase slow-world plasticity only when the current fused latent geometry is novel, coherent across views, and persistent over time.",
+  "slow_reference_update": {
+    "condition": "only after committed repair AND coherence >= 0.60 AND persistence >= 0.80",
+    "update": "slow_ref <- (1-eta)*slow_ref + eta*trusted_operational_state"
+  }
+}

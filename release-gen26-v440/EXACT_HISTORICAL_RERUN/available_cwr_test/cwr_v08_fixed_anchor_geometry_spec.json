@@ -1,0 +1,31 @@
+{
+  "core": "CWR v0.1 detector and local ridge repair retained",
+  "date_frozen": "2026-08-31",
+  "difference_from_v0.7": "Gram geometry is evaluated on the exact same fixed anchor observations after every repair.",
+  "evaluation": {
+    "comparison": [
+      "CWR v0.1",
+      "CWR v0.8 fixed-anchor relational geometry"
+    ],
+    "primary": "300 sequential heterogeneous local changes",
+    "test_seeds": "unseen before freeze"
+  },
+  "geometry": {
+    "anchor_set": "fixed calibration subset, never used for adaptation blocks",
+    "candidate_blend_alphas": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "lambda_gram": 0.05,
+    "selection": "minimize adaptation-block consensus loss + lambda_gram * fixed-anchor Gram drift",
+    "target": "normalized Gram matrix of anchor projections under current trusted encoder state",
+    "trusted_update": "if candidate lowers consensus loss, trusted anchor Gram becomes current anchor Gram"
+  },
+  "name": "CWR v0.8 fixed-anchor relational geometry",
+  "no_coordinate_anchor": true,
+  "no_eta": true,
+  "no_procrustes": true,
+  "no_tuning_after_freeze": true
+}
