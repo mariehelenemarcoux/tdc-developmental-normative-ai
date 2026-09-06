@@ -1,0 +1,40 @@
+{
+  "batch_size": 100,
+  "constraints": [
+    "no regime labels used by policy",
+    "no test labels in diagnosis/reuse",
+    "specialist bank trained only from train split",
+    "fingerprint prototypes from validation only",
+    "reused specialists revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 20,
+  "hidden_regimes": [
+    "clean",
+    "rotation",
+    "translation",
+    "block_occlusion",
+    "contrast_warp"
+  ],
+  "name": "External Lifelong Specialist Consolidation v190b compact",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "always_rebuild": "diagnose each episode and incur rebuild cost; specialist instantiated from train-only bank",
+    "lifelong_onion": "reuse + separate performance/mechanism authority + slow consolidation + revoke on contradiction",
+    "reuse_by_similarity": "reuse remembered specialist when fingerprint is close",
+    "simple_ensemble": "base ensemble only"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "specialist_reuse_rate",
+    "specialist_build_rate",
+    "correct_recurrence_reuse_rate",
+    "wrong_reuse_rate",
+    "mechanism_consolidation_rate",
+    "mechanism_revoke_rate",
+    "catastrophic_reuse_damage_rate",
+    "utility_proxy"
+  ],
+  "seeds": 4
+}

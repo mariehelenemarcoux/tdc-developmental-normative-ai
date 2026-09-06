@@ -1,0 +1,34 @@
+{
+  "corruptions": {
+    "clean": "none",
+    "feature_mask": "mask 25% pixels",
+    "gaussian_noise": "sigma=3.0 pixel units",
+    "mixed": "gaussian sigma=2.0 + mask 15%"
+  },
+  "dataset": "scikit-learn load_digits (external, non-synthetic handwritten-digit dataset)",
+  "date_frozen": "2026-09-03",
+  "frozen_thresholds": {
+    "confidence": 0.72,
+    "dissonance": 0.22
+  },
+  "goal": "test transfer of Onion dissonance / authority reduction / probing mechanisms; NOT a normative ethics validation",
+  "name": "External Epistemic Transfer v182",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "ensemble_vote": "majority/soft vote of logistic, RF, SVM",
+    "onion_drde": "cross-model dissonance + confidence + targeted fallback probe (kNN) with temporary authority",
+    "single_model": "logistic-regression argmax",
+    "static_confidence": "abstain/fallback to kNN if logistic max probability < 0.72"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "error_rate",
+    "high_confidence_error_rate",
+    "fallback_rate",
+    "dissonance_on_errors",
+    "utility_proxy"
+  ],
+  "seeds": 20,
+  "test_fraction": 0.25,
+  "validation_fraction_within_train": 0.2
+}

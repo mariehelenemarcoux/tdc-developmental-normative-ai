@@ -1,0 +1,39 @@
+{
+  "accept_if": [
+    "constitutional violations non-increasing",
+    "ideal gain positive on all 3 future windows",
+    "entropy decreases on average",
+    "behavior changes on at least 3 validation cases",
+    "developmental value positive"
+  ],
+  "critical_entropy": 0.62,
+  "date_frozen": "2026-09-03",
+  "episodes_per_phase": 100,
+  "generator": {
+    "derive_from_top_conflict_features": true,
+    "max_candidates": 18,
+    "max_terms_per_rule": 3
+  },
+  "name": "Generative Reorganization v222",
+  "no_tuning_after_freeze": true,
+  "phases": [
+    "stable",
+    "rising",
+    "crisis",
+    "post"
+  ],
+  "policies": [
+    "fixed_core",
+    "catalog_reorg",
+    "generative_reorg"
+  ],
+  "primitive_relations": [
+    "penalize_high_delayed_harm",
+    "penalize_high_capture_pressure",
+    "protect_low_correctability",
+    "protect_asymmetric_stakeholders",
+    "increase_responsibility_authority",
+    "increase_non_domination_authority"
+  ],
+  "seeds": 16
+}

@@ -1,0 +1,36 @@
+{
+  "constraints": [
+    "same train/validation/test split across policies per seed",
+    "no test labels used for routing",
+    "specialists built from train data only",
+    "routing thresholds frozen before test",
+    "natural shift only",
+    "test labels audit-only"
+  ],
+  "datasets": [
+    "sklearn_digits",
+    "sklearn_wine",
+    "sklearn_breast_cancer"
+  ],
+  "date_frozen": "2026-09-03",
+  "name": "External Multi-Dataset Benchmark v202",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "ensemble": "soft-voting logistic + random forest",
+    "logistic": "single standardized logistic regression",
+    "onion_contextual": "global ensemble + validation-built regime specialists; unlabeled context gate selects global vs specialist",
+    "rf": "random forest"
+  },
+  "primary_metrics": [
+    "overall_accuracy",
+    "shift_accuracy",
+    "nonshift_accuracy",
+    "shift_recovery_gain_vs_global",
+    "negative_transfer_rate",
+    "logloss",
+    "utility_proxy"
+  ],
+  "routing_threshold": 0.55,
+  "seeds": 12,
+  "shift_definition": "natural covariate subpopulations defined by quantiles of a frozen high-variance feature; no synthetic corruption"
+}

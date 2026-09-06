@@ -1,0 +1,9 @@
+method,action,rate
+constrained_baseline,EFFICIENCY,0.11055555555555556
+constrained_baseline,HOLD,0.8511111111111112
+constrained_baseline,TRANSITION,0.03833333333333333
+integrated_full,EFFICIENCY,0.08388888888888889
+integrated_full,HOLD,0.9122222222222223
+integrated_full,TRANSITION,0.0038888888888888888
+integrated_no_smith,EFFICIENCY,0.09777777777777778
+integrated_no_smith,HOLD,0.9022222222222223

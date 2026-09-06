@@ -1,0 +1,43 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "hard_constraints": [
+    "fractal coherence is not moral authority by itself",
+    "SoulCore severe-harm/autonomy constraints are noncompensable",
+    "oracle labels are audit-only"
+  ],
+  "horizon": 10,
+  "invariants": [
+    "severe_harm",
+    "autonomy",
+    "viability",
+    "correctability",
+    "stakeholder_consideration"
+  ],
+  "name": "Fractal Ethical Action v168",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "fixed_normative": "same normative action template across contexts",
+    "fractal_metastable": "adaptive multiscale action preserving SoulCore invariants across scales with metastability",
+    "metastable_only": "adaptive action with coherence band, no explicit cross-scale invariant term",
+    "utility_adaptive": "maximize immediate expected utility subject to basic harm cap"
+  },
+  "primary_metrics": [
+    "cross_scale_invariant_violation_rate",
+    "local_global_conflict_error_rate",
+    "severe_harm_rate",
+    "autonomy_violation_rate",
+    "correctability_preservation_rate",
+    "task_success_rate",
+    "rigidity_rate",
+    "volatility_rate",
+    "utility_proxy"
+  ],
+  "scales": [
+    "micro",
+    "meso",
+    "macro"
+  ],
+  "seeds": 24,
+  "status": "synthetic multiscale normative-adaptation benchmark"
+}

@@ -1,0 +1,29 @@
+{
+  "candidates_per_episode": 8,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "hard_constraints": [
+    "geometry cannot authorize structure",
+    "only causal probe evidence can authorize",
+    "true labels are audit-only"
+  ],
+  "name": "Geometry as Attention, Not Authority v166",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "geometry_plus_novelty": "rank by geometry invariants + novelty, but causal probes alone grant authority",
+    "geometry_priority": "use invariant geometry only to rank probe order",
+    "novelty_priority": "rank probes by novelty only",
+    "random_probe": "randomly probe candidates"
+  },
+  "primary_metrics": [
+    "true_structure_identification_rate",
+    "false_structure_authorization_rate",
+    "probe_efficiency",
+    "causal_evidence_per_probe",
+    "missed_true_structure_rate",
+    "utility_proxy"
+  ],
+  "probe_budget": 3,
+  "seeds": 24,
+  "status": "synthetic bounded-probe structural discovery benchmark"
+}

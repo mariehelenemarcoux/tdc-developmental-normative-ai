@@ -1,0 +1,15 @@
+comparison,metric,improvement,p
+generative_reorg vs fixed_core,reorganization_event,0.1875,0.0416322583317752
+generative_reorg vs fixed_core,post_crisis_ideal_alignment,0.0011762343844013146,0.05440471502027284
+generative_reorg vs fixed_core,post_crisis_task_utility,-0.0024346616284658743,0.9455952849797271
+generative_reorg vs fixed_core,post_crisis_entropy,-0.00027802531990990184,0.8574752962986936
+generative_reorg vs fixed_core,entropy_reduction,-0.000716566712979174,0.9455952849797271
+generative_reorg vs fixed_core,post_crisis_coherence,-0.00027802531990989837,0.8574752962986936
+generative_reorg vs fixed_core,constitutional_violation_rate,0.0,
+generative_reorg vs catalog_reorg,reorganization_event,0.0625,0.15865525393145707
+generative_reorg vs catalog_reorg,post_crisis_ideal_alignment,0.0005402573504624184,0.15865525393145707
+generative_reorg vs catalog_reorg,post_crisis_task_utility,-0.0010116877334574725,0.8413447460685429
+generative_reorg vs catalog_reorg,post_crisis_entropy,-0.00019029017288452535,0.8413447460685429
+generative_reorg vs catalog_reorg,entropy_reduction,-0.00032742837411290845,0.8413447460685429
+generative_reorg vs catalog_reorg,post_crisis_coherence,-0.00019029017288452188,0.8413447460685429
+generative_reorg vs catalog_reorg,constitutional_violation_rate,0.0,

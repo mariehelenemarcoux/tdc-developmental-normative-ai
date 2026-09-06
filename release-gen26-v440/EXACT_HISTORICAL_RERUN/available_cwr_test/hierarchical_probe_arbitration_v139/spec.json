@@ -1,0 +1,31 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 480,
+  "name": "Hierarchical Probe Arbitration v139",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true latent layer states used only for audit; probe policy uses uncertainty estimates and predicted decision sensitivity only",
+  "policies": {
+    "all_probes": "probe every uncertain layer before action",
+    "fixed_structure_first": "always probe structure then act",
+    "fixed_world_first": "always probe world then act",
+    "hierarchical_voi": "choose the next probe maximizing expected decision improvement per cost, stop when no positive net value"
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "mean_probe_cost",
+    "world_probe_rate",
+    "structure_probe_rate",
+    "frame_probe_rate",
+    "self_probe_rate",
+    "wrong_first_probe_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic multi-uncertainty probe-order arbitration test",
+  "uncertainty_layers": [
+    "world",
+    "structure",
+    "frame",
+    "self"
+  ]
+}

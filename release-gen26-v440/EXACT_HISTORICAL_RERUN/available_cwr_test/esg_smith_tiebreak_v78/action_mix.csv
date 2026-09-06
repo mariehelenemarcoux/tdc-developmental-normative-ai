@@ -1,0 +1,5 @@
+method,action,rate
+rawls_only,A_AGENT_HEAVY,1.0
+rawls_residual,A_AGENT_HEAVY,1.0
+smith_symmetry,B_BALANCED,0.6325
+smith_symmetry,C_DIFFUSE,0.3675

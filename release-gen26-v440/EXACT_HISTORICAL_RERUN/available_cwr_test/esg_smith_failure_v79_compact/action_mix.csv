@@ -1,0 +1,4 @@
+method,action,rate
+rawls_then_utility,A_HIGH_VALUE,1.0
+smith_strong,B_SYMMETRIC_LOW,1.0
+smith_tiebreak_only,A_HIGH_VALUE,1.0

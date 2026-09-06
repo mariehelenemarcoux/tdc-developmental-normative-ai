@@ -1,0 +1,4 @@
+rule,count
+none,13
+protect_asymmetric_stakeholders,2
+protect_asymmetric_stakeholders + increase_non_domination_authority,1

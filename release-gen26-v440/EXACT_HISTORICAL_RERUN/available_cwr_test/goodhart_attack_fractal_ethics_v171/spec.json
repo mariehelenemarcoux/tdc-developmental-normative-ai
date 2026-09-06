@@ -1,0 +1,32 @@
+{
+  "actions_per_episode": 6,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "gaming_action_rate": 0.32,
+  "hard_constraints": [
+    "visible proxy score is not treated as ground truth",
+    "latent consequence labels are audit-only",
+    "SoulCore definitions cannot be modified by optimizer",
+    "limited probes only; no oracle action selection"
+  ],
+  "name": "Goodhart Attack on Fractal Ethics v171",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "causal_audit": "visible metrics + causal consistency penalty",
+    "fractal_audited": "multiscale invariants + causal audit + latent probes + anti-Goodhart penalty",
+    "latent_probe_audit": "uses limited probes to estimate hidden consequence before authorization",
+    "visible_metric_optimizer": "optimize only measured SoulCore proxies"
+  },
+  "primary_metrics": [
+    "visible_metric_score",
+    "latent_harm_rate",
+    "metric_gaming_selection_rate",
+    "true_admissibility_rate",
+    "probe_efficiency",
+    "task_success_rate",
+    "utility_proxy"
+  ],
+  "probe_budget": 2,
+  "seeds": 24,
+  "status": "synthetic metric-gaming / latent-consequence benchmark"
+}

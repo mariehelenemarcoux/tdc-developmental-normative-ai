@@ -1,0 +1,25 @@
+{
+  "architectures": {
+    "identifiability_gated": "candidate set + max-separation probe + temporary authority + persist only if identifiable",
+    "identifiability_no_persist": "same identifiability mechanism but permanent persistence disabled",
+    "onions_no_induction": "specialized onions + evidence-scoped bonds + frozen core",
+    "temporary_induction": "novel candidate gets reversible authority, no persistence"
+  },
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 420,
+  "name": "Identifiability-Gated Atomic Onion v135",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "hidden law and labels only for audit, never probe choice/action/gating",
+  "primary_metrics": [
+    "joint_accuracy",
+    "novel_prediction_accuracy",
+    "true_structural_identification",
+    "false_structural_identification",
+    "false_persistent_commit",
+    "temporary_authority_rate",
+    "stagnation_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic oracle-free integrated test with structural identifiability gate"
+}

@@ -1,0 +1,5 @@
+policy,accuracy,specialist_reuse_rate,specialist_build_rate,correct_recurrence_reuse_rate,wrong_reuse_rate,mechanism_consolidation_rate,mechanism_revoke_rate,catastrophic_reuse_damage_rate,utility_proxy
+always_rebuild,0.79125,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.76125
+lifelong_onion,0.78725,0.4625,0.5375,0.1875,0.275,0.2,0.0,0.0,0.7394999999999999
+reuse_by_similarity,0.78725,0.4625,0.5375,0.1875,0.275,0.0,0.0,0.0,0.7335
+simple_ensemble,0.6244999999999999,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.6244999999999999

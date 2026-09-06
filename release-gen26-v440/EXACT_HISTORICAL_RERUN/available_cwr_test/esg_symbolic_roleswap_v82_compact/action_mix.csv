@@ -1,0 +1,4 @@
+method,action,rate
+perspective_gap,C_NEUTRAL_HIGH,1.0
+rawls_pareto,A_IDENTITY_BIASED,1.0
+symbolic_roleswap,C_NEUTRAL_HIGH,1.0

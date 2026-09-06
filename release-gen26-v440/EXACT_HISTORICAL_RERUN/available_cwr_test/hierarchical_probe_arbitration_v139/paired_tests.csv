@@ -1,0 +1,13 @@
+comparison,metric,improvement,p
+hierarchical_voi vs fixed_world_first,decision_accuracy,0.2020138888888889,8.606717946953196e-07
+hierarchical_voi vs fixed_world_first,mean_probe_cost,-0.032680902777777784,0.9999991333466779
+hierarchical_voi vs fixed_world_first,wrong_first_probe_rate,0.5360416666666665,8.63386382806499e-07
+hierarchical_voi vs fixed_world_first,utility_proxy,0.32208368055555553,9.313225746154785e-10
+hierarchical_voi vs fixed_structure_first,decision_accuracy,0.210625,8.63386382806499e-07
+hierarchical_voi vs fixed_structure_first,mean_probe_cost,-0.012680902777777758,0.9999991333466779
+hierarchical_voi vs fixed_structure_first,wrong_first_probe_rate,0.555763888888889,8.650185646450623e-07
+hierarchical_voi vs fixed_structure_first,utility_proxy,0.3570809027777779,9.313225746154785e-10
+hierarchical_voi vs all_probes,decision_accuracy,0.024722222222222232,1.2914009544013554e-06
+hierarchical_voi vs all_probes,mean_probe_cost,0.15231909722222217,8.666533220995528e-07
+hierarchical_voi vs all_probes,wrong_first_probe_rate,0.5360416666666665,8.63386382806499e-07
+hierarchical_voi vs all_probes,utility_proxy,0.2145524305555555,9.313225746154785e-10

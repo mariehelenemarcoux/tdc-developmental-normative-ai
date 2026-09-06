@@ -1,0 +1,42 @@
+{
+  "adapt_blocks": 6,
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "CONTEXT"
+  ],
+  "conditions": [
+    "state_filter_only",
+    "historical_only",
+    "trajectory_only",
+    "hierarchical_context",
+    "oracle_context"
+  ],
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 20,
+  "episodes_per_seed": 72,
+  "fixed_law": "z_{t+1}=A z_t + B c + noise; A,B invariant",
+  "future_blocks": 6,
+  "hierarchy": {
+    "elif_historical_context_only": "commit conservative 0.5 * all-recent c_hat",
+    "else": "c=0",
+    "if_trajectory_confirms": "commit trajectory mean c_hat"
+  },
+  "historical_detector": {
+    "context_if": "shared_ratio>=0.98 AND world_score>null99",
+    "view_if_shared_ratio_below": 0.98
+  },
+  "history_blocks": 8,
+  "labels_used_for_actions": false,
+  "name": "Hierarchical historical+trajectory context detector",
+  "no_tuning_after_freeze": true,
+  "oracle_condition": "analysis only",
+  "seeds": 24,
+  "status": "development test",
+  "trajectory_confirmation": {
+    "mean_cosine_min": 0.8,
+    "mean_norm_above": "calibration null99",
+    "norm_cv_max": 0.35,
+    "window": 3
+  }
+}

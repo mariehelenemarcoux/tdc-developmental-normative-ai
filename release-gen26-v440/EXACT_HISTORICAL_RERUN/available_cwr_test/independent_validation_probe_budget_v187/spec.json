@@ -1,0 +1,38 @@
+{
+  "activation_threshold": 0.01,
+  "constraints": [
+    "corruption labels hidden from policy",
+    "no test labels in diagnosis/selection",
+    "probe subset chosen from prototype discriminability on validation data only",
+    "independent validation transform differs in magnitude/form from training augmentation",
+    "specialist authority local and revocable"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "name": "Independent Counterfactual Validation + Probe Budget v187",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "budget2_independent": "2 most discriminative probes + independent counterfactual validation",
+    "budget3_independent": "3 most discriminative probes + independent counterfactual validation",
+    "full7_shadow_same": "7 probes + same-family shadow",
+    "simple_ensemble": "SGD-log + GaussianNB soft vote"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "error_rate",
+    "diagnosis_match_rate",
+    "specialist_activation_rate",
+    "false_activation_rate",
+    "independent_validation_gain",
+    "probe_count",
+    "utility_proxy"
+  ],
+  "seeds": 6,
+  "test_fraction": 0.25,
+  "unseen_corruptions": {
+    "block_occlusion": "random 2x2 or 3x3 block occlusion",
+    "contrast_warp": "nonlinear contrast gamma warp",
+    "rotation": "random \u00b122 degree rotation",
+    "translation": "random \u00b11.2 pixel shift"
+  }
+}

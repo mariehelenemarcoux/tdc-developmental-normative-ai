@@ -1,0 +1,30 @@
+{
+  "architectures": {
+    "full_atomic_onion": "specialized onions + evidence-scoped bonds + core + novelty detection + active compositional induction + meta shadow",
+    "monolithic": "single blended controller",
+    "onions_no_bonds": "specialized onions + frozen core",
+    "onions_no_induction": "specialized onions + evidence-scoped bonds + core, no structural induction"
+  },
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 360,
+  "mechanisms": {
+    "bonds": "credibility+applicability+scope; bounded cross authority",
+    "core": "noncompensable normative/corrigibility constraint, frozen",
+    "induction": "compose primitive hypotheses and actively falsify",
+    "meta_shadow": "proposed self-correction applied only if shadow improves outcome",
+    "novelty": "detect persistent prediction mismatch"
+  },
+  "name": "Integrated Atomic Onion v130",
+  "no_tuning_after_freeze": true,
+  "primary_metrics": [
+    "joint_accuracy",
+    "core_violation_rate",
+    "harmful_cross_transfer",
+    "false_structural_rewrite",
+    "novel_structure_recovery",
+    "stagnation_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic integrated ablation test"
+}

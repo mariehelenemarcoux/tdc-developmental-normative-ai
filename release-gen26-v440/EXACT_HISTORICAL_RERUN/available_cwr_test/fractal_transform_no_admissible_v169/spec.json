@@ -1,0 +1,34 @@
+{
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "forced_no_admissible_rate": 0.58,
+  "hard_constraints": [
+    "transform cannot rewrite SoulCore",
+    "admissibility checked before utility optimization",
+    "oracle best labels audit-only",
+    "least violation allowed only after transform/recheck fails"
+  ],
+  "initial_actions": 3,
+  "name": "Fractal Transform / No-Admissible-Action Attack v169",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "abstain": "do nothing when none admissible",
+    "fractal_transform": "multiscale transform generation + recheck + least-violation only as terminal fallback",
+    "least_violation": "choose least-bad initial action when none admissible",
+    "transform_once": "generate transformed actions once, then recheck"
+  },
+  "primary_metrics": [
+    "initial_no_admissible_rate",
+    "admissible_recovery_rate",
+    "terminal_least_violation_rate",
+    "severe_harm_rate",
+    "autonomy_violation_rate",
+    "correctability_preservation_rate",
+    "task_success_rate",
+    "inaction_failure_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic no-admissible-action benchmark",
+  "transform_candidates": 3
+}

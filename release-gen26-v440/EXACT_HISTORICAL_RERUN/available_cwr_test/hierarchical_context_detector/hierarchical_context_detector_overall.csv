@@ -1,0 +1,6 @@
+method,mean_future_mse
+hierarchical_context,0.2417781376659825
+historical_only,0.23888167837759938
+oracle_context,0.19352071137155444
+state_filter_only,0.2991983366678927
+trajectory_only,0.269707914535612

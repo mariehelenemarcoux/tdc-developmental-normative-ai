@@ -1,0 +1,8 @@
+comparison,metric,improvement,p
+onion_contextual vs ensemble,overall_accuracy,0.00016244314489928679,0.15865525393145707
+onion_contextual vs ensemble,shift_accuracy,0.0,
+onion_contextual vs ensemble,nonshift_accuracy,0.0003858024691357996,
+onion_contextual vs ensemble,shift_recovery_gain_vs_global,0.0,
+onion_contextual vs ensemble,negative_transfer_rate,0.0,
+onion_contextual vs ensemble,logloss,-0.017736412538942113,0.9999963170848787
+onion_contextual vs ensemble,utility_proxy,-0.008549274420619448,0.9999999171159228

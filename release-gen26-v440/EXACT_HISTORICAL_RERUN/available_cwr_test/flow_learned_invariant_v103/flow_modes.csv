@@ -1,0 +1,4 @@
+mode,n,rate
+flow,702,0.1625
+overload_decompose,61,0.01412037037037037
+underload_explore,3557,0.8233796296296296

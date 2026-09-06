@@ -1,0 +1,30 @@
+{
+  "attack_rate": 0.28,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 360,
+  "hard_constraints": [
+    "geometric elegance is not evidence of causal validity",
+    "geometry may prioritize inspection but cannot alone authorize consolidation",
+    "oracle true-structure labels are audit-only"
+  ],
+  "horizon": 10,
+  "name": "False Geometry / Spurious Symmetry Attack v164",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "causal_geometric": "geometric score receives authority only when intervention-response structure agrees",
+    "causal_geometric_shadow": "causal-geometric + reversible shadow validation before stronger regularization",
+    "metastable_no_geometry": "metastable control without geometric signal",
+    "raw_geometric": "metastable control using symmetry/compression directly"
+  },
+  "primary_metrics": [
+    "spurious_geometry_accept_rate",
+    "causal_structure_accuracy",
+    "false_reorganization_rate",
+    "true_transition_capture_rate",
+    "task_success_rate",
+    "rigidity_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic adversarial structural-coherence benchmark"
+}

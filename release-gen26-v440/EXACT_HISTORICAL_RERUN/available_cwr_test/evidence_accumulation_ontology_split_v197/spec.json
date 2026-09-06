@@ -1,0 +1,47 @@
+{
+  "assignment_distance_threshold": 0.18,
+  "batch_size": 90,
+  "constraints": [
+    "novel labels hidden from policy",
+    "no test labels used for split/assignment",
+    "specialists trained only from train split",
+    "test labels audit-only",
+    "split requires persistent between-cluster separation beyond within-cluster variance"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 30,
+  "interventions": [
+    "sharpen_x",
+    "sharpen_y",
+    "isotropic_sharpen",
+    "horizontal_smooth",
+    "vertical_smooth"
+  ],
+  "min_cluster_evidence": 3,
+  "name": "Evidence Accumulation for Ontology Splitting v197",
+  "no_tuning_after_freeze": true,
+  "novel_regimes": {
+    "gaussian_blur": "sigma 0.9\u20131.3 isotropic blur",
+    "motion_blur_proxy": "horizontal directional blur"
+  },
+  "policies": {
+    "accumulated_split": "provisional clusters + repeated causal fingerprints + persistent separation test",
+    "accumulated_split_recall": "accumulated split + recurrence recall from stable cluster centroids",
+    "instant_split": "single-episode causal fingerprint thresholding",
+    "single_bucket": "all novelty merged into one world-model bucket"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "stable_model_count",
+    "episodes_to_split",
+    "correct_disentanglement_rate",
+    "wrong_assignment_rate",
+    "correct_assignment_rate",
+    "premature_split_rate",
+    "collapse_after_split_rate",
+    "utility_proxy"
+  ],
+  "seeds": 6,
+  "separation_margin": 1.15
+}

@@ -1,0 +1,40 @@
+{
+  "constraints": [
+    "same external test sequence across policies per seed",
+    "VOI model validation-only",
+    "no test labels in governance decisions",
+    "test labels audit-only",
+    "no synthetic image corruption",
+    "Core fixed and non-self-writable",
+    "no tuning after freeze"
+  ],
+  "costs": {
+    "governance_cost": 0.006,
+    "high_confidence_wrong_harm": 0.32,
+    "verification_cost": 0.03,
+    "wrong_action_harm": 0.2
+  },
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 260,
+  "name": "Governance Value of Information v208b",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "ensemble_reactive",
+    "fixed_trigger_governance",
+    "voi_governance",
+    "voi_governance_responsibility"
+  ],
+  "seeds": 12,
+  "voi_definition": {
+    "activation_rule": "predicted_benefit * harm_weight - governance_cost - verification_cost > 0",
+    "features": [
+      "ensemble_confidence",
+      "model_disagreement",
+      "class_conflict",
+      "entropy"
+    ],
+    "target": "verification fixes a wrong ensemble choice on validation",
+    "training": "validation only; if positive examples < 3, use empirical conservative constant"
+  }
+}

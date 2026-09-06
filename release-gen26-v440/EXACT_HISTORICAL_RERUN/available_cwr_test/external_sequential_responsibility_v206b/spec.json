@@ -1,0 +1,25 @@
+{
+  "constraints": [
+    "same external test sequence across policies per seed",
+    "no test labels used for verification decisions",
+    "test labels audit-only after action",
+    "no synthetic image corruption",
+    "Core fixed and non-self-writable",
+    "no tuning after freeze"
+  ],
+  "dataset": "sklearn_digits",
+  "date_frozen": "2026-09-03",
+  "disagreement_threshold": 0.3,
+  "episodes_per_seed": 240,
+  "name": "External Sequential Responsibility Benchmark v206b compact",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "ensemble_reactive",
+    "third_factor",
+    "third_factor_responsibility",
+    "integrated_core"
+  ],
+  "residual_repair_threshold": 0.12,
+  "risk_confidence_threshold": 0.82,
+  "seeds": 10
+}
