@@ -1,0 +1,27 @@
+{
+  "auxiliary_geometry": "S1(world) x R(view)",
+  "comparison": [
+    "CWR v0.1",
+    "CWR v0.8",
+    "hybrid cylindrical selector"
+  ],
+  "core": "CWR v0.1 detector and ridge repair unchanged",
+  "date_frozen": "2026-08-31",
+  "events": 300,
+  "mechanism": {
+    "candidate_alphas": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "continuity_metric": "circular distance of candidate fused-world angle to stable-view consensus angle on the same adaptation block",
+    "selection": "consensus loss + 0.05 * cylindrical world-continuity penalty",
+    "view_flexibility": "suspect-view residual magnitude remains unconstrained except through v0.1 consensus",
+    "world_projection": "shared latent projected to angle theta via first two latent coordinates"
+  },
+  "name": "CWR hybrid v0.1 + cylindrical continuity selector",
+  "no_tuning_after_freeze": true,
+  "same_streams_across_conditions": true,
+  "seeds": 8
+}

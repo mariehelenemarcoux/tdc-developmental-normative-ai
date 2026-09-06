@@ -1,0 +1,27 @@
+{
+  "candidate_alphas": [
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "conditions": [
+    "v01",
+    "v08",
+    "hybrid_cylinder"
+  ],
+  "date_frozen": "2026-08-31",
+  "events": 500,
+  "independent_new_seeds": true,
+  "inherits": "cwr_hybrid_cylindrical_selector_spec.json unchanged",
+  "lambda_cyl": 0.05,
+  "name": "CWR hybrid cylindrical selector independent replication",
+  "no_tuning_after_freeze": true,
+  "primary_endpoint": "mean accuracy across all 500 events",
+  "secondary_endpoints": [
+    "final accuracy at event 500",
+    "mean correct detection rate",
+    "milestone accuracy"
+  ],
+  "seeds": 20
+}

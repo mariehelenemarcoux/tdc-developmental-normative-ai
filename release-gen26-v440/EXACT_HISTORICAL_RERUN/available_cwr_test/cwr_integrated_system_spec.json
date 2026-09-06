@@ -1,0 +1,47 @@
+{
+  "conditions": [
+    "plain_v01",
+    "instant_gate_only",
+    "gate_plus_fixed_recon",
+    "gate_plus_metaplastic_recon"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_mix": {
+    "INVISIBLE": 0.02,
+    "STABLE": 0.8,
+    "VIEW": 0.1,
+    "WORLD_VISIBLE": 0.08
+  },
+  "gate": {
+    "classes": [
+      "STABLE",
+      "VIEW",
+      "WORLD_VISIBLE",
+      "INVISIBLE"
+    ],
+    "classifier": "multinomial logistic regression",
+    "view_threshold": 0.55,
+    "world_threshold": 0.45
+  },
+  "heldout_seeds": 10,
+  "name": "Integrated CWR gate + reconsolidation + metaplasticity test",
+  "no_tuning_on_heldout": true,
+  "primary": [
+    "mean_accuracy",
+    "final_accuracy"
+  ],
+  "reconsolidation": {
+    "fixed_strength": 0.1,
+    "metaplastic_strength": "clip(0.02+0.16*C+0.10*D,0.02,0.28)",
+    "trigger": "2 consecutive stable blocks with residual relative range <=0.10",
+    "volatility_window": 20
+  },
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "local_drift_detection",
+    "false_world_repair_rate",
+    "visible_world_confirmation_rate"
+  ],
+  "steps": 180,
+  "train_seeds_gate": 10
+}

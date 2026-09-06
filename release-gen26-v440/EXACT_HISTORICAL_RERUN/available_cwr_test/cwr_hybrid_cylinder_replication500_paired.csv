@@ -1,0 +1,3 @@
+comparison,mean_trajectory_diff,trajectory_wins,trajectory_losses,final_diff,final_wins,final_losses
+hybrid-v01,-0.008201323529411756,9,11,-0.008941176470588248,7,10
+hybrid-v08,-0.013190617647058814,9,11,-0.027250000000000007,8,9

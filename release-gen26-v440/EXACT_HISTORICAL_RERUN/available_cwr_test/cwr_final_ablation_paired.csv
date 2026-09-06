@@ -1,0 +1,6 @@
+best_condition,against,mean_diff,median_diff,wins,losses,ties
+recon_only_meta,frozen_no_adapt,0.14470338983050846,0.11867873651771954,15,1,0
+recon_only_meta,plain_v01,0.04959553158705699,0.030327426810477592,15,1,0
+recon_only_meta,gate_only,0.06465860939907551,0.04608243451463795,14,2,0
+recon_only_meta,gate_plus_fixed_recon,0.03459553158705701,0.013478428351309718,11,5,0
+recon_only_meta,gate_plus_meta_recon,0.03179025423728814,0.011398305084745763,12,4,0

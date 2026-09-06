@@ -1,0 +1,24 @@
+{
+  "classes_instant": [
+    "STABLE",
+    "VIEW",
+    "WORLD_VISIBLE",
+    "INVISIBLE"
+  ],
+  "conditions": [
+    "plain_v01",
+    "instant_gate",
+    "spatiotemporal_gate"
+  ],
+  "date_frozen": "2026-09-01",
+  "heldout_seeds": 8,
+  "name": "Compact CWR spatio-temporal WORLD/VIEW gate",
+  "no_tuning_on_heldout": true,
+  "steps": 160,
+  "temporal_confirmation": {
+    "need_2_of_last_3": true,
+    "view_prob_threshold": 0.55,
+    "world_prob_threshold": 0.45
+  },
+  "train_seeds": 10
+}

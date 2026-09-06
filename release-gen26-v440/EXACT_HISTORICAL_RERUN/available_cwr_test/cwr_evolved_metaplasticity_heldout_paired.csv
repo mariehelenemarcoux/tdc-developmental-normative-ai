@@ -1,0 +1,5 @@
+comparison,mean_diff,wins,losses,ties
+evolved-fixed_010,0.005375330687830683,8,4,0
+evolved-fixed_018,0.0006894841269841264,8,4,0
+evolved-adaptive_C_only,0.0009275793650793581,6,6,0
+evolved-manual_meta,-0.00013227513227510404,6,6,0

@@ -1,0 +1,37 @@
+{
+  "architecture": "instant gate + 2-block stability reconsolidation + metaplastic alpha",
+  "conditions": [
+    "plain_v01",
+    "integrated_cwr"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_mix": {
+    "INVISIBLE": 0.02,
+    "STABLE": 0.8,
+    "VIEW": 0.1,
+    "WORLD_VISIBLE": 0.08
+  },
+  "gate_thresholds": {
+    "VIEW": 0.55,
+    "WORLD_VISIBLE": 0.45
+  },
+  "gate_train_seeds": 12,
+  "heldout_seeds": 16,
+  "name": "Independent replication of integrated CWR",
+  "no_tuning_on_heldout": true,
+  "primary": "paired mean accuracy gain integrated vs v0.1",
+  "reconsolidation": {
+    "alpha": "clip(0.02+0.16*C+0.10*D,0.02,0.28)",
+    "relative_residual_tolerance": 0.1,
+    "volatility_window": 20,
+    "window": 2
+  },
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "final_accuracy",
+    "local_drift_detection",
+    "false_world_repair_rate",
+    "visible_world_confirmation_rate"
+  ],
+  "steps": 220
+}

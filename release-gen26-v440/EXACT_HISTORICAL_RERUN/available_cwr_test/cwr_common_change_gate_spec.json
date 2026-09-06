@@ -1,0 +1,38 @@
+{
+  "conditions": [
+    "plain_v01",
+    "common_change_gate"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_process": {
+    "coherent_world_change_fraction_approx": 0.08,
+    "local_view_drift_fraction_approx": 0.12,
+    "stable_fraction_approx": 0.8
+  },
+  "gate": {
+    "VIEW_if": "max disagreement ratio >= 1.65 and shared_direction_score < 0.72",
+    "WORLD_if": "shared_direction_score >= 0.72 and median_norm_shift above calibration threshold",
+    "features": [
+      "per-view latent mean-shift vectors delta_mu_i",
+      "shared-direction score = leading singular value energy ratio of stacked delta_mu_i",
+      "per-view disagreement residuals d_i"
+    ],
+    "otherwise": "ABSTAIN"
+  },
+  "name": "CWR Common-Change Gate test",
+  "no_tuning_after_freeze": true,
+  "primary": [
+    "false_world_repair_rate",
+    "local_drift_detection"
+  ],
+  "repair": "same v0.1 local ridge repair only if VIEW",
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "mean_accuracy",
+    "final_accuracy",
+    "world_classification_rate"
+  ],
+  "seeds": 12,
+  "steps": 260,
+  "world_behavior": "no local repair if WORLD"
+}

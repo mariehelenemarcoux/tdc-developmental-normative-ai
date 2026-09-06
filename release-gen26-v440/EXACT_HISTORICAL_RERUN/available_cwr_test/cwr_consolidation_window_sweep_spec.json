@@ -1,0 +1,24 @@
+{
+  "base_regime": "95% stable / 5% drift Markov stream",
+  "date_frozen": "2026-09-01",
+  "name": "CWR temporal consolidation window sweep",
+  "no_tuning_after_freeze": true,
+  "primary_endpoint": "mean accuracy over common checkpoints",
+  "reconsolidation_strength": 0.1,
+  "relative_residual_tolerance": 0.1,
+  "same_streams_across_windows": true,
+  "secondary": [
+    "final accuracy",
+    "drift detection",
+    "accuracy after drift"
+  ],
+  "seeds": 12,
+  "steps": 300,
+  "windows": [
+    2,
+    3,
+    5,
+    8,
+    13
+  ]
+}

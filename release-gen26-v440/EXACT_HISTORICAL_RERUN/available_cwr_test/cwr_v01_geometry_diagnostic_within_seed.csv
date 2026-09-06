@@ -1,0 +1,5 @@
+metric,within_seed_corr
+gram_drift,0.9487998785416907
+prototype_distance_drift,0.8002519293771577
+mean_encoder_condition,0.3557643349971453
+max_subspace_angle_rad,0.09129411808752266

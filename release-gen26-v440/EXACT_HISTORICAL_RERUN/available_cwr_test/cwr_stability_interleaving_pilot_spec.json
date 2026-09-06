@@ -1,0 +1,22 @@
+{
+  "coherence_gate": "median residual <= 1.25 * calibration median residual",
+  "date_frozen": "2026-09-01",
+  "drift_events": 80,
+  "eval_size": 1200,
+  "model": "v01",
+  "modes": [
+    "passive",
+    "reconsolidate"
+  ],
+  "name": "CWR stability interleaving pilot",
+  "no_tuning_after_freeze": true,
+  "primary_question": "Do stable intervals, especially when used for gated reconsolidation, reduce cumulative degradation?",
+  "reconsolidation_strength": 0.1,
+  "seeds": 6,
+  "stable_blocks_after_each_drift": [
+    0,
+    2,
+    5,
+    10
+  ]
+}

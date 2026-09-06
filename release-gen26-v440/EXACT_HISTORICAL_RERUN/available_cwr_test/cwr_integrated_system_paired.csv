@@ -1,0 +1,4 @@
+best_condition,against,mean_diff,wins,losses,ties
+gate_plus_metaplastic_recon,plain_v01,0.054187363834422644,8,2,0
+gate_plus_metaplastic_recon,instant_gate_only,0.04752832244008715,9,1,0
+gate_plus_metaplastic_recon,gate_plus_fixed_recon,0.01155882352941175,10,0,0

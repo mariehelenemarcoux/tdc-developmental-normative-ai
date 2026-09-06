@@ -1,0 +1,33 @@
+{
+  "conditions": {
+    "adaptive_C_only": "alpha=clip(0.02+0.20*C_t,0.02,0.22)",
+    "fixed_010": "strength=0.10",
+    "fixed_018": "strength=0.18",
+    "metaplastic_C_D": "alpha=clip(0.02 + 0.16*C_t + 0.10*D_t, 0.02, 0.28)"
+  },
+  "date_frozen": "2026-09-01",
+  "definitions": {
+    "C_t": "exp(-relative residual range / 0.10) over last 2 stable blocks",
+    "D_t": "fraction of drift states in previous 20 steps"
+  },
+  "hypothesis": "High confidence and/or high recent volatility should justify stronger reconsolidation.",
+  "name": "CWR metaplasticity stability+volatility test",
+  "no_tuning_after_freeze": true,
+  "primary": "mean accuracy across common checkpoints",
+  "regimes": [
+    "70S_30D",
+    "85S_15D",
+    "95S_05D"
+  ],
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "final accuracy",
+    "drift detection",
+    "accuracy after drift",
+    "mean alpha"
+  ],
+  "seeds": 12,
+  "steps": 300,
+  "volatility_window": 20,
+  "window_stability": 2
+}

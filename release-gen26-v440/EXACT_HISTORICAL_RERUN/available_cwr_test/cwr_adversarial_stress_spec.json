@@ -1,0 +1,41 @@
+{
+  "adversarial_mix": {
+    "STABLE": 0.55,
+    "VIEW_DOUBLE": 0.08,
+    "VIEW_SINGLE": 0.12,
+    "WEAK_VIEW": 0.05,
+    "WEAK_WORLD": 0.04,
+    "WORLD_PLUS_VIEW": 0.08,
+    "WORLD_VISIBLE": 0.08
+  },
+  "conditions": [
+    "plain_v01",
+    "integrated_cwr"
+  ],
+  "date_frozen": "2026-09-01",
+  "gate_train_seeds": 10,
+  "heldout_seeds": 12,
+  "integrated_system": {
+    "metaplastic_alpha": "clip(0.02+0.16*C+0.10*D,0.02,0.28)",
+    "residual_tolerance": 0.1,
+    "stable_window": 2,
+    "view_threshold": 0.55,
+    "volatility_window": 20,
+    "world_threshold": 0.45
+  },
+  "name": "Integrated CWR adversarial stress test",
+  "no_tuning_on_heldout": true,
+  "primary": [
+    "mean_accuracy",
+    "final_accuracy"
+  ],
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "single_view_detection",
+    "double_view_any_correct",
+    "world_plus_view_local_detection",
+    "false_world_repair_rate",
+    "weak_event_action_rate"
+  ],
+  "steps": 200
+}

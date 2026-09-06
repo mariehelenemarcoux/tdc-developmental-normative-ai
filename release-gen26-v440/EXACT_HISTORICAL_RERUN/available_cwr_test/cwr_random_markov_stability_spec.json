@@ -1,0 +1,45 @@
+{
+  "comparisons": [
+    "no_reconsolidation",
+    "temporal_reconsolidation"
+  ],
+  "date_frozen": "2026-09-01",
+  "drift_types": [
+    "rotation",
+    "bias",
+    "scale"
+  ],
+  "events_per_seed": 300,
+  "model": "v01",
+  "name": "CWR random-order stability/drift Markov test",
+  "no_tuning_after_freeze": true,
+  "primary_endpoints": [
+    "mean_accuracy_all_steps",
+    "mean_accuracy_after_drifts",
+    "final_accuracy",
+    "next_drift_detection"
+  ],
+  "regimes": {
+    "70S_30D": {
+      "P_SS": 0.8,
+      "target_stable_fraction": 0.7
+    },
+    "85S_15D": {
+      "P_SS": 0.9,
+      "target_stable_fraction": 0.85
+    },
+    "95S_05D": {
+      "P_SS": 0.96,
+      "target_stable_fraction": 0.95
+    }
+  },
+  "same_random_streams_across_comparisons": true,
+  "seeds": 10,
+  "stream_model": "two-state Markov process over Stable (S) and Drift (D)",
+  "temporal_stability_rule": {
+    "criterion": "relative change in median all-view residual across consecutive stable blocks <= 10%",
+    "no_reference_to_initial_calibration": true,
+    "reconsolidation_strength": 0.1,
+    "window": 3
+  }
+}

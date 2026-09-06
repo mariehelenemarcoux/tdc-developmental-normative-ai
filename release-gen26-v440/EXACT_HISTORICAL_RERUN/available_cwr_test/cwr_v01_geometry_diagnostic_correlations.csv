@@ -1,0 +1,5 @@
+metric,corr_with_accuracy_loss
+gram_drift,0.8613494706475876
+prototype_distance_drift,0.6572966049814764
+mean_encoder_condition,0.47069924503133886
+max_subspace_angle_rad,0.17763243488140076

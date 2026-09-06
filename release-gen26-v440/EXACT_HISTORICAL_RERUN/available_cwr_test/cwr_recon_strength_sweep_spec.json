@@ -1,0 +1,25 @@
+{
+  "base_regime": "95% stable / 5% drift Markov stream",
+  "date_frozen": "2026-09-01",
+  "name": "CWR reconsolidation strength sweep",
+  "no_tuning_after_freeze": true,
+  "primary_endpoint": "mean accuracy over common checkpoints",
+  "relative_residual_tolerance": 0.1,
+  "same_streams_across_strengths": true,
+  "secondary": [
+    "final accuracy",
+    "drift detection",
+    "accuracy after drift",
+    "reconsolidation count"
+  ],
+  "seeds": 12,
+  "steps": 300,
+  "strengths": [
+    0.02,
+    0.05,
+    0.1,
+    0.2,
+    0.35
+  ],
+  "window": 2
+}

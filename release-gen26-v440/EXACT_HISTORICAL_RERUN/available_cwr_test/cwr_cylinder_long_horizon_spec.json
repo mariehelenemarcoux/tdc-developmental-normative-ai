@@ -1,0 +1,33 @@
+{
+  "conditions": {
+    "cylinder": "shared world factor constrained to S1 and local view factor on R, used as auxiliary reconstruction geometry during online adaptation",
+    "v01": "original CWR v0.1 local detector + ridge repair",
+    "v08": "CWR v0.8 fixed-anchor relational geometry"
+  },
+  "cylinder_details": {
+    "online_update": "after each detected local drift, train only suspect-view encoder/decoder for a few gradient steps against reconstruction + shared-world consistency; other views frozen",
+    "phi": "per-view nuisance head",
+    "theta": "shared latent from mean of per-view world heads",
+    "view_embedding": "[phi]",
+    "world_embedding": "[10*cos(theta), 10*sin(theta)]"
+  },
+  "date_frozen": "2026-08-31",
+  "evaluation": [
+    "accuracy trajectory",
+    "final accuracy",
+    "mean accuracy",
+    "detection correctness"
+  ],
+  "long_horizon": {
+    "event_types": [
+      "rotation",
+      "bias",
+      "scale"
+    ],
+    "events": 300,
+    "same_event_streams_across_conditions": true,
+    "seeds": 8
+  },
+  "name": "CWR cylindrical topology long-horizon test",
+  "no_tuning_after_freeze": true
+}

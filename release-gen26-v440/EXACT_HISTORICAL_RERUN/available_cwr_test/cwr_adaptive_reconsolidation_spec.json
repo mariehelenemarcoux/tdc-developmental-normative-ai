@@ -1,0 +1,29 @@
+{
+  "conditions": {
+    "adaptive": "strength = clip(0.02 + 0.20*C_t, 0.02, 0.22)",
+    "fixed_010": "strength=0.10",
+    "fixed_018": "strength=0.18"
+  },
+  "confidence": {
+    "definition": "C_t = exp(- relative_range / 0.10), using the last 2 stable-block median residuals",
+    "interpretation": "higher temporal consistency -> stronger reconsolidation"
+  },
+  "date_frozen": "2026-09-01",
+  "name": "CWR adaptive reconsolidation confidence test",
+  "no_tuning_after_freeze": true,
+  "primary": "mean accuracy across common checkpoints",
+  "regimes": [
+    "70S_30D",
+    "85S_15D",
+    "95S_05D"
+  ],
+  "same_streams_across_conditions": true,
+  "secondary": [
+    "final accuracy",
+    "drift detection",
+    "accuracy after drift"
+  ],
+  "seeds": 12,
+  "steps": 300,
+  "window": 2
+}
