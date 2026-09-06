@@ -1,0 +1,9 @@
+metric,value
+pairwise_auc,0.7811686111245583
+pairwise_ap,0.7631358714371368
+pairwise_nonneutral_corrective_prevalence,0.49944994499449946
+flip15_error,0.1585
+two_stage_error,0.14485
+error_improvement,0.013649999999999995
+two_stage_corrected_given_probe,0.20733333333333334
+two_stage_harmed_given_probe,0.08633333333333333

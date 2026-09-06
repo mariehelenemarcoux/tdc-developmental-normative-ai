@@ -1,0 +1,6 @@
+metric,value
+audit_brier,0.19853806687852216
+audit_brier_baseline,0.22564942476260044
+audit_brier_skill,0.12014813648473244
+audit_ece,0.1157694083919632
+calibration_base_correct_rate,0.6413288288288288

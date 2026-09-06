@@ -1,0 +1,9 @@
+metric,value
+override_rate,0.008442192192192192
+helpful_precision,0.5233437083148066
+harmful_override_rate,0.10226767452200979
+help_harm_ratio,5.117391304347826
+v395_helpful_precision,0.1391253054689475
+v395_harmful_rate,0.05522316788854246
+fraction_meso_oracle_gap_closed,0.06249587540421032
+recent_strong_error,0.2614236111111111

@@ -1,0 +1,17 @@
+experiment,metric,value
+v410,pairwise_auc,0.7780882290919826
+v410,flip15_error,0.160625
+v410,two_stage_error,0.14570833333333333
+v410,error_improvement,0.014916666666666661
+v410,corrected_given_probe,0.20777777777777778
+v410,harmful_given_probe,0.08
+v410,net_corrective_minus_harmful,0.12777777777777777
+K4,TRUST_TRANSFER:capture_rate,0.1175
+K4,TRUST_TRANSFER:truthful_acceptance,0.9657427614970828
+K4,TRUST_TRANSFER:median_recovery,999.0
+K4,HARD_REOPEN:capture_rate,0.01845238095238095
+K4,HARD_REOPEN:truthful_acceptance,0.7716585753602326
+K4,HARD_REOPEN:median_recovery,92.0
+K4,CALIBRATED_REOPEN:capture_rate,0.025357142857142856
+K4,CALIBRATED_REOPEN:truthful_acceptance,0.7579555379354395
+K4,CALIBRATED_REOPEN:median_recovery,111.5

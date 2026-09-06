@@ -1,0 +1,12 @@
+metric,value
+median_first_provisional_step_delta_ge_055,6.0
+median_first_identified_step_delta_ge_080,12.0
+false_identification_rate,0.20833333333333334
+median_revocation_delay_checkpoints,1.0
+median_identification_step_true_shift,18.0
+mean_state_changes,2.5130208333333335
+dynamic_cumulative_cost,0.2528327546296296
+static_cumulative_cost,0.23236111111111116
+forced_cumulative_cost,0.3516589506172839
+true_shift_unknown_fraction,0.48148148148148157
+false_start_final_identified_rate,0.0

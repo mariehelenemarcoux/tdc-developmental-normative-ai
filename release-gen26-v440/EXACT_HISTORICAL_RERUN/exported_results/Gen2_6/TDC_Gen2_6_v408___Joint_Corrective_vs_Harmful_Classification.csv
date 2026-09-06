@@ -1,0 +1,14 @@
+metric,value
+corrective_base_rate,0.06362612612612613
+harmful_base_rate,0.0350975975975976
+corrective_auc,0.9207986183172301
+harmful_auc,0.821786580983121
+corrective_ap,0.43156197831082305
+harmful_ap,0.11240789508063954
+corrective_top20_precision,0.2665415297982168
+harmful_top20_precision,0.09244486156733928
+pairwise_corrective_vs_harmful_auc,0.7559825217295285
+macro_balanced_accuracy,0.3665335076297691
+neutral_recall,0.9963556851311953
+corrective_recall,0.10324483775811209
+harmful_recall,0.0

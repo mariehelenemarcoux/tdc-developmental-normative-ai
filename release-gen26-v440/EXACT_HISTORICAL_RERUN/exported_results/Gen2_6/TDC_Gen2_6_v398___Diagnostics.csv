@@ -1,0 +1,9 @@
+metric,value
+mass_abs_score_le_002,0.05707394894894895
+mass_score_minus05_to_0,0.3091328828828829
+helpful_brier_skill,-0.16116401663511004
+harmful_brier_skill,0.08639437396406513
+score_helpful_auc,0.5039083432113098
+score_inverse_harm_auc,0.8053139606685863
+mean_delta_error_score_gt_0,-0.15443037974683543
+mean_delta_error_score_ge_005,-0.448547513540128
