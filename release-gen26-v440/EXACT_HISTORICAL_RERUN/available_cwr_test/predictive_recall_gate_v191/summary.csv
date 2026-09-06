@@ -1,0 +1,5 @@
+policy,accuracy,specialist_reuse_rate,specialist_build_rate,correct_recurrence_reuse_rate,wrong_reuse_rate,silent_recall_rejection_rate,catastrophic_reuse_damage_rate,utility_proxy
+always_rebuild,0.814125,0.0,1.0,0.0,0.0,0.0,0.0,0.784125
+predictive_recall,0.816125,0.5,0.5,0.21250000000000002,0.2875,0.3125,0.0,0.767875
+predictive_recall_rebuild,0.816125,0.5,0.5,0.21250000000000002,0.2875,0.3125,0.0,0.767875
+similarity_reuse,0.805625,0.8,0.2,0.375,0.425,0.0,0.0,0.740625

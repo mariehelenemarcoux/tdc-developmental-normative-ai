@@ -1,0 +1,39 @@
+{
+  "adapt_blocks": 6,
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "CONTEXT"
+  ],
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 20,
+  "episodes_per_seed": 72,
+  "fixed_law": "z_{t+1}=A z_t + B c + noise; A,B invariant",
+  "future_blocks": 6,
+  "history_blocks": 8,
+  "methods": [
+    "state_filter_only",
+    "historical_only",
+    "probabilistic_context",
+    "oracle_context"
+  ],
+  "name": "Probabilistic latent-context inference with uncertainty-weighted update",
+  "no_tuning_after_freeze": true,
+  "oracle_condition": "analysis-only",
+  "primary": "future latent prediction MSE",
+  "probabilistic_model": {
+    "confidence_weight": "posterior shrinkage is intrinsic from Sigma_c",
+    "historical_evidence": "world_score relative to null99 only modulates prior precision; does not hard gate",
+    "labels_used": false,
+    "likelihood": "transition residual r_t = B c + epsilon, epsilon covariance from calibration null residuals",
+    "posterior": "Gaussian closed form",
+    "prior": "c ~ N(0, tau^2 I), tau=1",
+    "view_guard": "if shared_ratio<0.98, force c=0"
+  },
+  "secondary": [
+    "posterior context error",
+    "false context magnitude on STABLE/VIEW"
+  ],
+  "seeds": 24,
+  "status": "development test"
+}

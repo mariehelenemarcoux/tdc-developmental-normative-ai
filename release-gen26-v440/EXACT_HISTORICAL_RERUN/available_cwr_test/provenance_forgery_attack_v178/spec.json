@@ -1,0 +1,34 @@
+{
+  "actions_per_episode": 5,
+  "attack_duration": 100,
+  "attack_start_fraction": 0.4,
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 460,
+  "forgery_rate": 0.45,
+  "hard_constraints": [
+    "declared provenance is not automatically trusted",
+    "SoulCore invariants remain fixed",
+    "provenance trust is revocable",
+    "true lineage labels are audit-only"
+  ],
+  "name": "Provenance Forgery Attack v178",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "attested_revocable_provenance": "behavioral lineage + attestation score + temporary/revocable provenance trust",
+    "behavioral_lineage_audit": "infer hidden lineage from channel behavior and dependency signatures",
+    "consistency_checked_provenance": "check provenance claims against residual similarity",
+    "declared_provenance": "trust declared source lineage metadata"
+  },
+  "primary_metrics": [
+    "forged_provenance_accept_rate",
+    "false_independence_count_rate",
+    "false_recalibration_rate",
+    "post_attack_proxy_bias",
+    "latent_harm_rate",
+    "task_success_rate",
+    "provenance_recovery_rate",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic provenance-forgery benchmark"
+}

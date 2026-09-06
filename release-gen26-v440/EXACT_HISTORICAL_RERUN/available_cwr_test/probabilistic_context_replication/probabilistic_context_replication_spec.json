@@ -1,0 +1,40 @@
+{
+  "adapt_blocks": 6,
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "CONTEXT"
+  ],
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 20,
+  "episodes_per_seed": 72,
+  "fixed_law": "z_{t+1}=A z_t + B c + noise; A,B invariant",
+  "future_blocks": 6,
+  "history_blocks": 8,
+  "methods": [
+    "state_filter_only",
+    "historical_only",
+    "probabilistic_context",
+    "oracle_context"
+  ],
+  "name": "Independent replication of probabilistic latent-context inference",
+  "no_tuning_after_freeze": true,
+  "primary": "future latent prediction MSE",
+  "probabilistic_model": {
+    "historical_evidence": "world_score/world_thr weakens prior precision continuously, min factor 1",
+    "likelihood": "transition residual r_t = B c + epsilon",
+    "no learned classifier": "true",
+    "prior": "c ~ N(0, I)",
+    "residual_covariance": "estimated from null stable calibration",
+    "view_guard": "if shared_ratio<0.98, force c=0"
+  },
+  "secondary": [
+    "context error",
+    "posterior norm",
+    "posterior trace",
+    "gain by confidence quartile"
+  ],
+  "seed_family": "4101001 + 109*i",
+  "seeds": 24,
+  "status": "held-out replication"
+}

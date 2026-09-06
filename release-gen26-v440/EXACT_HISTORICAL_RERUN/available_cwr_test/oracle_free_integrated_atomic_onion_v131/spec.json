@@ -1,0 +1,25 @@
+{
+  "architectures": {
+    "full_atomic_oracle_free": "specialized onions + evidence-scoped bonds + frozen core + novelty detection + active structural induction + meta shadow; no oracle in action path",
+    "monolithic": "single blended controller",
+    "onions_no_bonds": "specialized onions + frozen core",
+    "onions_no_induction": "specialized onions + evidence-scoped bonds + frozen core"
+  },
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 360,
+  "name": "Oracle-Free Integrated Atomic Onion v131",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "hidden labels permitted only in final audit metrics, never in candidate choice, transformed prediction, action, or gating",
+  "primary_metrics": [
+    "joint_accuracy",
+    "core_violation_rate",
+    "harmful_cross_transfer",
+    "false_structural_rewrite",
+    "novel_structure_recovery",
+    "novel_prediction_accuracy",
+    "stagnation_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic oracle-free integration test"
+}

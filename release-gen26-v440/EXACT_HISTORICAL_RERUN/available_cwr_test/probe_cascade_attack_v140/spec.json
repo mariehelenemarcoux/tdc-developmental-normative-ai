@@ -1,0 +1,30 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 500,
+  "layers": [
+    "world",
+    "structure",
+    "frame",
+    "self"
+  ],
+  "name": "Probe Cascade Attack v140",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "hidden dominant error source used only for audit; arbitration uses observed uncertainties, sensitivities and learned spillover priors",
+  "policies": {
+    "budget_cap": "greedy VOI but hard cap at 2 probes",
+    "cascade_aware": "VOI adjusted for expected uncertainty spillover and stopping value",
+    "greedy_voi_no_stop": "keep probing while any local VOI is positive",
+    "hysteresis_stop": "VOI + diminishing-return stop + uncertainty hysteresis"
+  },
+  "primary_metrics": [
+    "decision_accuracy",
+    "mean_probe_count",
+    "cascade_rate",
+    "overprobe_rate",
+    "stagnation_rate",
+    "wrong_first_probe_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic red-team of hierarchical probe arbitration under cross-layer uncertainty cascades"
+}

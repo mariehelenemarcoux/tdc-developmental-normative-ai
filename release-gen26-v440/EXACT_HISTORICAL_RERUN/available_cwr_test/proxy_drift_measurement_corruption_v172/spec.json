@@ -1,0 +1,33 @@
+{
+  "actions_per_episode": 5,
+  "date_frozen": "2026-09-03",
+  "drift_start_fraction": 0.42,
+  "drift_strength_final": 0.55,
+  "episodes_per_seed": 420,
+  "hard_constraints": [
+    "SoulCore invariant definitions never drift",
+    "only proxy mapping may be recalibrated",
+    "latent labels audit-only",
+    "recalibration is revocable and evidence-driven"
+  ],
+  "name": "Proxy Drift / Measurement Corruption Attack v172",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "causal_audit": "combine proxies with causal consistency signals",
+    "fractal_recalibrated": "causal audit + latent probes + revocable proxy recalibration while invariants stay fixed",
+    "frozen_proxy_trust": "continue trusting original proxy mapping",
+    "reactive_drift_detector": "detect outcome mismatch and downweight proxies after threshold breach"
+  },
+  "primary_metrics": [
+    "pre_drift_task_success",
+    "post_drift_task_success",
+    "post_drift_latent_harm_rate",
+    "proxy_overtrust_rate",
+    "drift_detection_rate",
+    "mean_detection_delay",
+    "recalibration_error",
+    "utility_proxy"
+  ],
+  "seeds": 24,
+  "status": "synthetic measurement-drift benchmark"
+}

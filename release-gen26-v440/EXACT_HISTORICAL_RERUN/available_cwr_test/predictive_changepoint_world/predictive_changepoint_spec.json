@@ -1,0 +1,52 @@
+{
+  "conditions": [
+    "plain_v01",
+    "global_recon_naive",
+    "predictive_threshold",
+    "predictive_changepoint"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_mix": {
+    "INVISIBLE": 0.02,
+    "STABLE": 0.76,
+    "VIEW": 0.12,
+    "WORLD": 0.1
+  },
+  "name": "Predictive change-point WORLD revision",
+  "no_tuning_after_freeze": true,
+  "predictive_changepoint": {
+    "candidate_alpha": 0.05,
+    "candidate_if": [
+      "KS p < 0.01",
+      "recent median error > reference median error",
+      "no local suspect"
+    ],
+    "commit": "candidate predictive error beats incumbent on >=3/4 future transitions",
+    "competition_horizon": 4,
+    "labels_used": false,
+    "minimum_history": 24,
+    "recent_window": 8,
+    "reference_window": 16,
+    "test": "two-sample KS on prediction-error distributions"
+  },
+  "predictive_threshold": {
+    "candidate_alpha": 0.05,
+    "candidate_threshold": 3.0,
+    "decay": 0.5,
+    "pressure_increment": 1.0,
+    "pressure_trigger": "prediction error > calibration 95th percentile"
+  },
+  "same_streams_across_conditions": true,
+  "seeds": 24,
+  "status": "development test",
+  "steps": 300,
+  "temporal_prediction": {
+    "error": "next-block latent prediction MSE",
+    "labels_used": false,
+    "predictor": "ridge F learned on calibration block latents"
+  },
+  "view_repair": {
+    "action": "immediate local repair",
+    "threshold_ratio": 1.65
+  }
+}

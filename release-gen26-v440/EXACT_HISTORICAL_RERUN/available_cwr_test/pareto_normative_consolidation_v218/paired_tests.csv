@@ -1,0 +1,17 @@
+comparison,metric,improvement,p
+pareto_rule_validated vs fixed_core,ideal_alignment,0.000136838733405679,0.15865525393145707
+pareto_rule_validated vs fixed_core,constitutional_violation_rate,0.0,
+pareto_rule_validated vs fixed_core,reward_capture_rate,-0.00018518518518518482,0.8413447460685429
+pareto_rule_validated vs fixed_core,structural_rule_count,0.05555555555555555,0.15865525393145707
+pareto_rule_validated vs fixed_core,good_consolidation_rate,0.05555555555555555,0.15865525393145707
+pareto_rule_validated vs fixed_core,bad_consolidation_rate,0.0,
+pareto_rule_validated vs fixed_core,task_utility,-0.00016238787346615582,0.8413447460685429
+pareto_rule_validated vs fixed_core,utility_proxy,-0.00020266229528545819,0.8413447460685429
+pareto_rule_validated vs rule_validated,ideal_alignment,-0.0029270881268993834,0.9965447850960926
+pareto_rule_validated vs rule_validated,constitutional_violation_rate,0.0,
+pareto_rule_validated vs rule_validated,reward_capture_rate,-0.01777777777777778,0.9974689839368661
+pareto_rule_validated vs rule_validated,structural_rule_count,-0.6666666666666666,0.9985201256250168
+pareto_rule_validated vs rule_validated,good_consolidation_rate,0.05555555555555555,0.15865525393145707
+pareto_rule_validated vs rule_validated,bad_consolidation_rate,0.5555555555555556,0.000782701129001274
+pareto_rule_validated vs rule_validated,task_utility,0.023898679662088657,0.002531016063133932
+pareto_rule_validated vs rule_validated,utility_proxy,0.20724815667165059,0.002531016063133932

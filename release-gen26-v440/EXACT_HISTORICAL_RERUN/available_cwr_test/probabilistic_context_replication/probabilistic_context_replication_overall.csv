@@ -1,0 +1,5 @@
+method,mean_future_mse
+historical_only,0.24856704012214756
+oracle_context,0.20431996466102884
+probabilistic_context,0.215977031174319
+state_filter_only,0.3043171840257529

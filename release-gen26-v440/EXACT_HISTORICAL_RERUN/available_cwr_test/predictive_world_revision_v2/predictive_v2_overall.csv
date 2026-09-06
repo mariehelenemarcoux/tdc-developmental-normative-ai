@@ -1,0 +1,5 @@
+condition,mean_accuracy,final_accuracy,mean_revisions,mean_trials,mean_commits
+global_recon_naive,0.4718201923076923,0.35867499999999997,0.0,0.0,0.0
+plain_v01,0.42283990384615383,0.285525,0.0,0.0,0.0
+predictive_v1_fixedF,0.42310048076923074,0.280775,0.35,0.55,0.35
+predictive_v2_competingF,0.42301634615384615,0.285625,0.25,0.5,0.25

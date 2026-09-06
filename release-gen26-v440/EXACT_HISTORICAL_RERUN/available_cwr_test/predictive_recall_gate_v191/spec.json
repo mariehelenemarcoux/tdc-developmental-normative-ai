@@ -1,0 +1,41 @@
+{
+  "applicability_gain_threshold": 0.015,
+  "batch_size": 100,
+  "constraints": [
+    "no regime labels used by policy",
+    "no test labels in recall/reuse decisions",
+    "silent recall uses only predictions/coherence/confidence",
+    "fresh specialists come from train-only specialist bank",
+    "test labels audit-only"
+  ],
+  "dataset": "scikit-learn load_digits",
+  "date_frozen": "2026-09-03",
+  "episodes_per_seed": 20,
+  "hidden_regimes": [
+    "clean",
+    "rotation",
+    "translation",
+    "block_occlusion",
+    "contrast_warp"
+  ],
+  "name": "Predictive Recall Gate v191",
+  "no_tuning_after_freeze": true,
+  "policies": {
+    "always_rebuild": "diagnose and instantiate current specialist each episode",
+    "predictive_recall": "similarity candidate -> silent predictive evaluation -> reuse only if applicability improves",
+    "predictive_recall_rebuild": "predictive recall, otherwise rebuild fresh specialist",
+    "similarity_reuse": "reuse nearest remembered specialist when fingerprint close"
+  },
+  "primary_metrics": [
+    "accuracy",
+    "specialist_reuse_rate",
+    "specialist_build_rate",
+    "correct_recurrence_reuse_rate",
+    "wrong_reuse_rate",
+    "silent_recall_rejection_rate",
+    "catastrophic_reuse_damage_rate",
+    "utility_proxy"
+  ],
+  "recall_similarity_threshold": 0.1,
+  "seeds": 4
+}

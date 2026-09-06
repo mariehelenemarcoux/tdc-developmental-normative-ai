@@ -1,0 +1,4 @@
+method,mean_gain,median_gain,wins,losses,ties
+historical_only,0.0557501439036054,0.0,253,18,1457
+probabilistic_context,0.08834015285143397,0.0,741,529,458
+oracle_context,0.09999721936472412,0.0,558,18,1152

@@ -1,0 +1,2 @@
+raw_same_mech_retrieval,struct_same_mech_retrieval,raw_future_mse,struct_future_mse,mean_future_gain_struct,seed_wins_struct,seed_losses_struct,wilcoxon_one_sided_p,raw_analog_same_mech,struct_analog_same_mech
+0.27166666666666667,0.265,0.09824000839124368,0.10002665746243537,-0.0017866490711916927,7,13,0.9384536743164062,0.29,0.2658333333333333

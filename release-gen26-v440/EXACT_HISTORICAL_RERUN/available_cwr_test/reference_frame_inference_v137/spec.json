@@ -1,0 +1,37 @@
+{
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 450,
+  "frames": [
+    "PRE",
+    "POST",
+    "RELATIONAL"
+  ],
+  "laws": [
+    "couple_A",
+    "couple_B",
+    "threshold_A",
+    "threshold_B",
+    "stabilize_A",
+    "stabilize_B"
+  ],
+  "name": "Reference-Frame Inference v137",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "true frame/law/labels used only for audit; rule/learned policies use task descriptor and identified law only",
+  "policies": {
+    "always_inverse": "always invert identified transform",
+    "always_observed": "always use post-transform observed frame",
+    "learned_frame": "learn mapping from task descriptor to frame from outcome feedback",
+    "oracle_free_rule": "infer frame from task descriptor, then select observed/inverse/relational operator"
+  },
+  "primary_metrics": [
+    "prediction_accuracy",
+    "frame_selection_accuracy",
+    "pre_accuracy",
+    "post_accuracy",
+    "relational_accuracy",
+    "false_frame_rate",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic oracle-free frame-selection after structural identification"
+}

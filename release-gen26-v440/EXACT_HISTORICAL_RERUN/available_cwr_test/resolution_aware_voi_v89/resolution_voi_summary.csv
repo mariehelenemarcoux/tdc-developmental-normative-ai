@@ -1,0 +1,4 @@
+method,evaluated_resolution,mean_resolution_probability,mean_voi
+borderline_direct,0.0,,
+borderline_pilot_naive,0.0,,
+borderline_pilot_resolution,0.5758928571428571,0.02248062015503876,-0.8293318181137836

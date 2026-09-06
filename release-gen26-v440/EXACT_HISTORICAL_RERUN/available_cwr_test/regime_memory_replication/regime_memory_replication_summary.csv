@@ -1,0 +1,2 @@
+n,balanced_accuracy,macro_f1,stable_recall,view_recall,world_recall,view_vs_world_accuracy,view_identity_accuracy
+1440,0.7736111111111111,0.7775248235690685,0.98125,0.74375,0.5958333333333333,0.6697916666666667,0.5708333333333333

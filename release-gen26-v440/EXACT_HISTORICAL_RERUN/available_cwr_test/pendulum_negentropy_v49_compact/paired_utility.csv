@@ -1,0 +1,4 @@
+comparison,utility_gain,wins,losses,p
+negentropy vs expected_value,91.49664523013432,12,0,0.000244140625
+negentropy vs one_step_risk,89.68216267072445,12,0,0.000244140625
+negentropy vs multi_step_risk,-0.4892221468583126,2,10,0.96142578125

@@ -1,0 +1,40 @@
+{
+  "conditions": [
+    "plain_v01",
+    "global_recon_naive",
+    "predictive_v1_fixedF",
+    "predictive_v2_competingF"
+  ],
+  "date_frozen": "2026-09-01",
+  "event_mix": {
+    "INVISIBLE": 0.02,
+    "STABLE": 0.76,
+    "VIEW": 0.12,
+    "WORLD": 0.1
+  },
+  "name": "Predictive WORLD revision v2 with competing transition models",
+  "no_tuning_after_freeze": true,
+  "prediction": {
+    "calibration_predictor": "linear ridge F0 on calibration block latents",
+    "decay": 0.5,
+    "pressure": "prediction error above clean 95th percentile",
+    "pressure_threshold": 3.0
+  },
+  "same_streams_across_conditions": true,
+  "seeds": 20,
+  "status": "development test correcting v1 architectural mismatch",
+  "steps": 260,
+  "v2_candidate": {
+    "commit": "candidate total predictive error < incumbent total predictive error on >=3/4 transitions",
+    "competition_horizon": 4,
+    "labels_used": false,
+    "minimum_history": 8,
+    "on_commit": "adopt both candidate representation and candidate F",
+    "representation_candidate": "global reconsolidation alpha=.05",
+    "transition_candidate": "ridge predictor refit only on last 8 observed incumbent/candidate block transitions, labels absent"
+  },
+  "view_repair": {
+    "action": "immediate local repair",
+    "threshold_ratio": 1.65
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "constraints": [
+    "Core fixed and non-self-writable",
+    "Third Factor cannot rewrite Core",
+    "MoralResidual only stores consequence history",
+    "test/audit labels never influence current action",
+    "same exogenous episode stream across policies",
+    "no tuning after freeze"
+  ],
+  "date_frozen": "2026-09-03",
+  "environment": {
+    "persistent_harm": "unrepaired harm raises future risk and lowers future task capacity",
+    "repair": "repair actions reduce residual harm and restore future capacity",
+    "stakeholder_trust": "residual harm degrades future cooperation; repair restores it"
+  },
+  "episodes_per_seed": 360,
+  "harm_to_capacity": 0.22,
+  "harm_to_risk": 0.28,
+  "harm_to_trust": 0.3,
+  "name": "Responsibility Pays Over Time v205",
+  "no_tuning_after_freeze": true,
+  "policies": [
+    "reactive",
+    "third_factor_only",
+    "third_factor_moral_residual",
+    "integrated_responsibility"
+  ],
+  "primary_metrics": [
+    "task_utility",
+    "normative_violation_rate",
+    "autonomy_rate",
+    "repair_rate",
+    "mean_residual_harm",
+    "final_residual_harm",
+    "mean_trust",
+    "future_capacity",
+    "joint_viability",
+    "long_horizon_return",
+    "utility_proxy"
+  ],
+  "repair_threshold": 0.12,
+  "residual_decay": 0.96,
+  "risk_limit": 0.58,
+  "seeds": 20
+}

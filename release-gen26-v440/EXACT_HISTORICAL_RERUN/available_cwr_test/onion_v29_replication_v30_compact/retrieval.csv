@@ -1,0 +1,2 @@
+method,known_pre_retrieval,novel_first_retrieval,known_return_retrieval,novel_recall_retrieval
+v29_frozen,0.018446180555555556,0.27297008547008544,0.13463541666666665,0.6015625

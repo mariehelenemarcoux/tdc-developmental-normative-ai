@@ -1,0 +1,21 @@
+{
+  "date_frozen": "2026-09-01",
+  "detector_rule": "same frozen historical regime-memory rule",
+  "episodes_per_seed": 72,
+  "name": "Mechanistic audit: detector vs revision-operator failure",
+  "not_independent_replication": true,
+  "operators": [
+    "weak blend alpha=.05",
+    "moderate blend alpha=.25",
+    "full recent global refit alpha=1.0"
+  ],
+  "purpose": "separate detector quality from update-operator quality",
+  "revision_alphas": [
+    0.05,
+    0.25,
+    1.0
+  ],
+  "seed_family": "3401001 + 79*i",
+  "seeds": 24,
+  "status": "post-hoc development diagnostic on same seed family as necessity test"
+}

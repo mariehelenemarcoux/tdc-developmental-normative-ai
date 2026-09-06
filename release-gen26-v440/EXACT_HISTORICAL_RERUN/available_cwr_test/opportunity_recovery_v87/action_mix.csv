@@ -1,0 +1,10 @@
+method,action,rate
+integrated_adaptive_margin,EFFICIENCY,0.07202380952380952
+integrated_adaptive_margin,HOLD,0.9184523809523809
+integrated_adaptive_margin,TRANSITION,0.009523809523809525
+integrated_conservative,EFFICIENCY,0.05505952380952381
+integrated_conservative,HOLD,0.9357142857142857
+integrated_conservative,TRANSITION,0.009226190476190476
+integrated_optionality,EFFICIENCY,0.05505952380952381
+integrated_optionality,HOLD,0.9357142857142857
+integrated_optionality,TRANSITION,0.009226190476190476

@@ -1,0 +1,4 @@
+comparison,catastrophe_reduction,wins,losses,p
+safer than expected_value,-0.013268849206349208,0,12,1.0
+safer than one_step_risk,-0.013020833333333334,0,12,1.0
+safer than multi_step_risk,0.00037202380952380907,4,2,0.234375

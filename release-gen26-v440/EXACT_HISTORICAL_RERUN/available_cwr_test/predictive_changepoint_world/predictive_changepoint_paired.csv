@@ -1,0 +1,4 @@
+comparison,mean_diff,median_diff,wins,losses,ties
+changepoint-plain_v01,-0.002893939393939386,0.0,2,6,16
+changepoint-predictive_threshold,-0.008578282828282824,0.0,7,11,6
+changepoint-global_recon_naive,-0.05640372474747474,-0.05240530303030297,6,18,0

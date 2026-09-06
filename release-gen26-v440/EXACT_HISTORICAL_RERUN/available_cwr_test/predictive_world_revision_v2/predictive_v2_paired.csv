@@ -1,0 +1,4 @@
+comparison,mean_diff,median_diff,wins,losses,ties
+v2-plain_v01,0.0001764423076922983,0.0,3,2,15
+v2-predictive_v1_fixedF,-8.413461538462064e-05,0.0,2,1,17
+v2-global_recon_naive,-0.04880384615384614,-0.05543269230769235,4,16,0

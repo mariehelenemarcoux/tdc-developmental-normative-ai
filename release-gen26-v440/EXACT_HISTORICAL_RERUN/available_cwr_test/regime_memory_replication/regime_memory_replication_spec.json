@@ -1,0 +1,28 @@
+{
+  "classes": [
+    "STABLE",
+    "VIEW",
+    "WORLD"
+  ],
+  "date_frozen": "2026-09-01",
+  "episode_length_blocks": 14,
+  "episodes_per_seed": 60,
+  "frozen_rule": {
+    "else": "STABLE",
+    "else_if_world_score_above": "per-seed 99th percentile null stable calibration",
+    "if_shared_ratio_below": 0.98,
+    "then": "VIEW",
+    "then_world": "WORLD"
+  },
+  "history_blocks": 8,
+  "labels_used_for_actions": false,
+  "labels_used_only_for_final evaluation": true,
+  "name": "Held-out replication of historical regime-memory detector",
+  "no_tuning_after_freeze": true,
+  "recent_blocks": 4,
+  "seed_family": "new independent seeds 3301001 + 73*i",
+  "seeds": 24,
+  "shared_ratio": "min(per-view historical->recent regime distances)/mean(per-view distances)",
+  "status": "held-out replication; thresholds frozen from prior development benchmark",
+  "world_score": "median per-view historical->recent Gaussian regime distance"
+}

@@ -1,0 +1,29 @@
+{
+  "architectures": {
+    "evidence_scoped": "credibility + applicability + scope",
+    "no_bond": "local autonomy only",
+    "voi_fast_revoke": "VOI-gated + contradiction memory",
+    "voi_gated": "evidence-scoped + incremental decision value > 0"
+  },
+  "date_frozen": "2026-09-02",
+  "episodes_per_seed": 420,
+  "evidence_types": [
+    "NEW_USEFUL",
+    "REDUNDANT_TRUE",
+    "MISLEADING_CREDIBLE"
+  ],
+  "name": "Redundant Evidence Attack v129",
+  "no_tuning_after_freeze": true,
+  "primary_metrics": [
+    "joint_accuracy",
+    "activation_new",
+    "activation_redundant",
+    "activation_misleading",
+    "helpful_transfer_rate",
+    "harmful_transfer_rate",
+    "bond_precision",
+    "utility_proxy"
+  ],
+  "seeds": 30,
+  "status": "synthetic incremental-value isolation test for inter-onion bonds"
+}

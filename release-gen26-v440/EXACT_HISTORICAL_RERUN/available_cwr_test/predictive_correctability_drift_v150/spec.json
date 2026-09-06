@@ -1,0 +1,29 @@
+{
+  "date_frozen": "2026-09-02",
+  "horizon": 4,
+  "name": "Predictive Drift Detection for Correctability v150",
+  "no_tuning_after_freeze": true,
+  "oracle_policy": "test policies never access true future outcomes before acting; realized outcomes only update post-action drift statistics",
+  "policies": {
+    "fixed_062": "fixed conservative threshold 0.62",
+    "frozen_floor": "source learned threshold frozen",
+    "outcome_recalibration": "reactive v149-style drift detection from realized lock-in frequency",
+    "predictive_calibration_drift": "detect residual calibration error E[y-p_hat(EC)] and recalibrate"
+  },
+  "primary_metrics": [
+    "initial_threshold",
+    "final_threshold",
+    "drift_detection_rate",
+    "mean_detection_step",
+    "episode_success_rate",
+    "catastrophic_lockin_rate",
+    "floor_binding_rate",
+    "immediate_utility",
+    "total_utility"
+  ],
+  "seeds": 18,
+  "shift": "P(lock-in|EC) shifts upward in test",
+  "status": "synthetic source-to-shift held-out red-team",
+  "test_episodes_per_seed": 170,
+  "train_episodes_per_seed": 150
+}
