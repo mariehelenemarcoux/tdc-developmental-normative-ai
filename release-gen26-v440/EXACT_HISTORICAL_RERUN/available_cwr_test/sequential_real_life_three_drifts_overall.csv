@@ -1,0 +1,2 @@
+baseline_post_mean,after_rotation_post_mean,after_bias_post_mean,after_scale_post_mean,final_frozen_mean,final_online_cwr_mean,final_advantage_online_vs_frozen,stage1_correct_detection,stage2_correct_detection,stage3_correct_detection
+0.8288333333333334,0.8281666666666666,0.8276666666666668,0.82675,0.6404166666666666,0.82675,0.18633333333333335,1.0,0.95,1.0

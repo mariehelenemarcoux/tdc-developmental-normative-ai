@@ -1,0 +1,24 @@
+{
+  "date_frozen": "2026-08-31",
+  "fixed_r": 1.0,
+  "goal": "Determine whether performance keeps improving as the torus becomes thinner, or peaks at a finite world/view scale ratio.",
+  "interpretation_test": {
+    "collapse_at_large_R": "suggests too much suppression of the local view factor",
+    "finite_peak": "supports a meaningful toroidal scale balance",
+    "monotonic_improvement": "supports scale separation more than horn/ring topology"
+  },
+  "latent_dimension": 3,
+  "name": "CWR thin-torus ratio sweep",
+  "no_tuning_after_freeze": true,
+  "ratios_R_over_r": [
+    3.0,
+    5.0,
+    7.5,
+    10.0,
+    15.0,
+    20.0,
+    50.0
+  ],
+  "same_protocol_as_previous_ratio_sweep": true,
+  "seeds": 5
+}

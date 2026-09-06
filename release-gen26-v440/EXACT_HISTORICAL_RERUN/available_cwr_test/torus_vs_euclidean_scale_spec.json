@@ -1,0 +1,26 @@
+{
+  "architecture": "same learned shared-world / local-view factorization and reconstruction setup",
+  "conditions": {
+    "euclidean_scaled": "z=[s_w*w, s_v*v] with s_w/s_v in ratios",
+    "torus_scaled": "ring torus with R/r in same ratios"
+  },
+  "date_frozen": "2026-08-31",
+  "epochs": 100,
+  "evaluation": [
+    "clean accuracy",
+    "view-drift accuracy",
+    "world-drift accuracy",
+    "composite"
+  ],
+  "goal": "Determine whether toroidal topology adds value beyond matched world/view scale separation.",
+  "name": "CWR torus vs Euclidean scale-separation control",
+  "no_tuning_after_freeze": true,
+  "seeds": 10,
+  "world_view_scale_ratios": [
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "date_frozen": "2026-08-31",
+  "evaluation": [
+    "clean world-class accuracy",
+    "view-drift accuracy",
+    "world-drift accuracy",
+    "world-factor score"
+  ],
+  "geometry_classes": {
+    "R/r < 1": "spindle torus",
+    "R/r = 1": "horn torus",
+    "R/r > 1": "ring/normal torus"
+  },
+  "goal": "Test whether performance peaks near the horn-torus transition or is a generic property of toroidal geometry.",
+  "latent_dimension": 3,
+  "name": "CWR torus geometry ratio sweep",
+  "no_tuning_after_freeze": true,
+  "ratios_R_over_r": [
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0,
+    3.0,
+    5.0
+  ],
+  "seeds": 5,
+  "torus_parameterization": "x=(R+r*cos(phi))*cos(theta), y=(R+r*cos(phi))*sin(theta), z=r*sin(phi), with r=1",
+  "training_protocol": "same learned world/view factorization architecture and unsupervised loss as prior learned torus-vs-horn test"
+}

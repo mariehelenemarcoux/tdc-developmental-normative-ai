@@ -1,0 +1,4 @@
+best_condition,against,mean_diff,wins,losses,ties
+S1_x_R,R_x_R,0.01919047619047621,7,3,0
+S1_x_R,R_x_S1,0.029333333333333343,6,4,0
+S1_x_R,S1_x_S1,0.020571428571428595,5,5,0

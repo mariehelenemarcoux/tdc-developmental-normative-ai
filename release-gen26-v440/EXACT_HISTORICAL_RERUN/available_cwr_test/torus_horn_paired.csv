@@ -1,0 +1,5 @@
+drift_type,comparison,mean_diff,wins,losses,ties
+view,horn - euclidean3,0.00018749999999996547,6,2,0
+view,horn - standard_torus,0.00012152777777776902,6,1,1
+world,horn - euclidean3,-0.00012037037037038179,2,5,1
+world,horn - standard_torus,-4.398148148147818e-05,1,7,0

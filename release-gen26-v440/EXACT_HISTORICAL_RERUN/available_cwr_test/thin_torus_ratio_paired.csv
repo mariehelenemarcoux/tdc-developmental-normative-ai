@@ -1,0 +1,7 @@
+metric,best_R_minus_R,best_R,mean_diff,wins,losses,ties
+view_drift_acc,3.0,20.0,-0.008999999999999963,1,4,0
+view_drift_acc,5.0,20.0,0.0033333333333333435,2,3,0
+view_drift_acc,7.5,20.0,-0.0016666666666666607,2,3,0
+view_drift_acc,10.0,20.0,0.001000000000000023,3,2,0
+view_drift_acc,15.0,20.0,0.002499999999999991,3,2,0
+view_drift_acc,50.0,20.0,0.03583333333333333,3,2,0

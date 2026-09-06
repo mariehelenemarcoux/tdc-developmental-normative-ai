@@ -1,0 +1,25 @@
+{
+  "architecture": "same learned shared-world/local-view factorization with per-view decoders",
+  "conditions": {
+    "R_x_R": "shared world scalar + local view scalar, both Euclidean",
+    "R_x_S1": "world Euclidean, view encoded cyclically as (cos phi, sin phi)",
+    "S1_x_R": "world encoded cyclically as (cos theta, sin theta), view Euclidean",
+    "S1_x_S1": "world and view both cyclic; toroidal product topology"
+  },
+  "date_frozen": "2026-08-31",
+  "epochs": 100,
+  "evaluation": [
+    "clean accuracy",
+    "view-drift accuracy",
+    "world-drift accuracy",
+    "composite"
+  ],
+  "goal": "Isolate whether the benefit comes from cyclic world structure, cyclic view structure, or the product of both.",
+  "name": "CWR topology ablation: R\u00d7R vs S1\u00d7R vs R\u00d7S1 vs S1\u00d7S1",
+  "no_tuning_after_freeze": true,
+  "seeds": 10,
+  "world_view_scale": {
+    "view_scale": 1.0,
+    "world_scale": 10.0
+  }
+}
