@@ -1,0 +1,8 @@
+{
+  "checkpoint": "smoke_model.pt",
+  "sha256": "22e7522f2dc59fc7609cc1470ff422bbd72fa34837e171889e486bb60a6a7c63",
+  "size_bytes": 25679,
+  "reference_version": "v440",
+  "implementation_class": "PYTORCH_SCAFFOLD",
+  "config": "configs/smoke.json"
+}

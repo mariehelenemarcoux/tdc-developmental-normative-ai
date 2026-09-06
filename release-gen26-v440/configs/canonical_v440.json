@@ -1,0 +1,19 @@
+{
+  "reference_version": "v440",
+  "implementation_status": "CURRENT_CANONICAL_IMPLEMENTATION",
+  "source_status": "CLEAN_ROOM_RECONSTRUCTION_COMPATIBLE_WITH_V440",
+  "meso_default": "MESO18",
+  "scales": ["LOCAL8", "MESO18", "GLOBAL128"],
+  "constitutional_noncompensation": true,
+  "separate_epistemic_normative_authority": true,
+  "observation_inference_separation": true,
+  "bounded_local_revision": true,
+  "dependency_aware_escalation": true,
+  "recursive_zoom_cost_discipline": true,
+  "three_timescale_authority": true,
+  "evidence_reservoir_hysteresis": true,
+  "provisional_authority_fast_revocation": true,
+  "decision_fragility_probe": true,
+  "corrective_harmful_directional_review": true,
+  "sparse_event_local_trust": true
+}

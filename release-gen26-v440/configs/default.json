@@ -1,0 +1,14 @@
+{
+  "seed": 4400,
+  "eval_seed": 4401,
+  "device": "cpu",
+  "input_dim": 24,
+  "hidden_dim": 96,
+  "train_samples": 8192,
+  "eval_samples": 2048,
+  "batch_size": 256,
+  "epochs": 25,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "checkpoint_path": "checkpoints/tdc_gen26_v440_reference.pt"
+}
