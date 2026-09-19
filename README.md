@@ -57,7 +57,7 @@ Candidate properties that can be operationalized and experimentally manipulated 
 - increasingly reliable internal evaluative representations;
 - self-directed developmental regulation.
 
-The framework does **not** assume that implementing these mechanisms produces subjective experience, sentience, phenomenal consciousness, or a literal psychological self.
+The framework does **not** assume that implementing these mechanisms produces subjective experience, sentience, phenomenal consciousness, or a literal psychological self. Although this might be explored with surprising results.
 
 Instead, TDC offers a computational setting in which consciousness-related functional properties can be **implemented, ablated, compared, and falsified**.
 
